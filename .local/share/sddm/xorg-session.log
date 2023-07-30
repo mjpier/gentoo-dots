@@ -1,0 +1,117 @@
+config: Unknown setting: 'paddingless_monocle'.
+xsettingsd: no process found
+sxhkd: no process found
+dunst: no process found
+ksuperkey: no process found
+xfce4-power-manager: no process found
+bspc: no process found
+xsettingsd: Loaded 10 settings from /home/marlon/.config/bspwm/xsettingsd
+xsettingsd: Created window 0x400001 on screen 0 with timestamp 32342
+xsettingsd: Selection _XSETTINGS_S0 is owned by 0x0
+xsettingsd: Took ownership of selection _XSETTINGS_S0
+No keycodes found for keysym 96.
+
+(xfce4-power-manager:1019): Gdk-WARNING **: 18:07:36.488: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(xfce-polkit:1015): Gdk-WARNING **: 18:07:36.493: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(xfce-polkit:1015): Gdk-WARNING **: 18:07:36.599: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(xfce-polkit:1015): Gdk-WARNING **: 18:07:36.599: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+
+(xfce-polkit:1015): Gdk-WARNING **: 18:07:36.599: Cannot transform xsetting gtk-enable-event-sounds of type gchararray to type gboolean
+
+
+(xfce4-power-manager:1019): Gdk-WARNING **: 18:07:36.600: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(xfce4-power-manager:1019): Gdk-WARNING **: 18:07:36.600: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+
+(xfce4-power-manager:1019): Gdk-WARNING **: 18:07:36.600: Cannot transform xsetting gtk-enable-event-sounds of type gchararray to type gboolean
+
+
+(xfce4-power-manager:1019): Gdk-WARNING **: 18:07:36.602: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gc
+(xfce-polkit:1015): Gdk-WARNING **: 18:07:36.602: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararrayhararray to type gboolean
+
+ to type gboolean
+
+
+(xfce4-power-manager:1019): xfce4-power-manager-WARNING **: 18:07:36.625: Unable to connect to session manager : Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+
+(xfce4-power-manager:1019): xfce4-power-manager-WARNING **: 18:07:36.819: could not map keysym 1008ffa8 to keycode
+
+
+** (xfce4-power-manager:1019): WARNING **: 18:07:36.847: could not get output property
+
+(xfce4-power-manager:1019): xfce4-power-manager-WARNING **: 18:07:36.858: It seems the kernel brightness switch handling value was not restored properly on exit last time, xfce4-power-manager will try to restore it this time.
+polybar|error: /home/marlon/.config/bspwm/themes/default/polybar/config.ini:46: Value '"google\-mdi:size=12;3"' of key 'font-2' contains one or more unescaped backslashes, please prepend them with the backslash escape character.
+polybar|error: module/mpd: Connection refused
+xfce4-power-manager-Message: 18:07:36.886: Set kernel brightness switch to 1
+polybar|error: module/mpd: Connection refused
+May 30 18:07 : decoder: Decoder plugin 'wildmidi' is unavailable: configuration file does not exist: /etc/timidity/timidity.cfg
+
+(process:1366): Helpers.IconFetcher-WARNING **: 18:07:51.519: Failed to load image: Failed to open file “2to3-3.10”: No such file or directory
+
+(process:1366): Helpers.IconFetcher-WARNING **: 18:07:51.520: Failed to load image: Failed to open file “2to3-2.7”: No such file or directory
+CRITICAL: Source ID 16 was not found when attempting to remove it
+CRITICAL: Source ID 21 was not found when attempting to remove it
+CRITICAL: Source ID 31 was not found when attempting to remove it
+desktop: Unknown command: '--follow'.
+
+(process:2385): Helpers.IconFetcher-WARNING **: 18:08:19.648: Failed to load image: Failed to open file “2to3-2.7”: No such file or directory
+
+(process:2385): Helpers.IconFetcher-WARNING **: 18:08:19.649: Failed to load image: Failed to open file “2to3-3.10”: No such file or directory
+CRITICAL: Source ID 41 was not found when attempting to remove it
+CRITICAL: Source ID 46 was not found when attempting to remove it
+
+(process:2655): GLib-CRITICAL **: 18:08:38.109: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
+
+(firefox:2680): Gdk-WARNING **: 18:08:38.449: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:2680): Gdk-WARNING **: 18:08:38.492: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:2680): Gdk-WARNING **: 18:08:38.492: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+
+(firefox:2680): Gdk-WARNING **: 18:08:38.492: Cannot transform xsetting gtk-enable-event-sounds of type gchararray to type gboolean
+
+
+(firefox:2680): Gdk-WARNING **: 18:08:38.493: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+
+(firefox:2680): Gdk-WARNING **: 18:12:07.979: Cannot transform xsetting gtk-enable-event-sounds of type gchararray to type gboolean
+
+
+(firefox:2680): Gdk-WARNING **: 18:12:09.630: Cannot transform xsetting gtk-enable-event-sounds of type gchararray to type gboolean
+
+
+(process:3562): GLib-CRITICAL **: 18:13:45.095: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
+
+(geany:3691): Gdk-WARNING **: 18:14:04.355: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(geany:3691): Gdk-WARNING **: 18:14:04.389: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(geany:3691): Gdk-WARNING **: 18:14:04.389: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+
+(geany:3691): Gdk-WARNING **: 18:14:04.389: Cannot transform xsetting gtk-enable-event-sounds of type gchararray to type gboolean
+
+
+(geany:3691): Gdk-WARNING **: 18:14:04.391: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+
+(process:3767): GLib-CRITICAL **: 18:15:10.314: g_string_insert_len: assertion 'len == 0 || val != NULL' failed

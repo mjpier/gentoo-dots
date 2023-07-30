@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="es"
+ xmlns:fb="http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="es"
+ xmlns:fb="http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="es"
+ xmlns:fb="http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="es"
+ xmlns:fb="http://ogp.me/ns/fb#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://www.ingdiaz.org/xmlrpc.php" />
+<title>Biblia para Ubuntu - Herramienta de estudio - IngDiaz</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v12.6.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Blog de informática (redes, Windows, gnu/Linux, entre otros), asuntos cristianos, cosas personales y otros."/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Biblia para Ubuntu - Herramienta de estudio - IngDiaz" />
+<meta property="og:description" content="Blog de informática (redes, Windows, gnu/Linux, entre otros), asuntos cristianos, cosas personales y otros." />
+<meta property="og:url" content="https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/" />
+<meta property="og:site_name" content="IngDiaz" />
+<meta property="article:publisher" content="https://www.facebook.com/ingdzsv" />
+<meta property="article:author" content="https://www.facebook.com/oscard1984" />
+<meta property="article:tag" content="bibletime" />
+<meta property="article:tag" content="biblia" />
+<meta property="article:tag" content="estudio" />
+<meta property="article:tag" content="herramienta" />
+<meta property="article:tag" content="ubuntu" />
+<meta property="article:section" content="Software Libre" />
+<meta property="article:published_time" content="2017-02-14T18:22:08+00:00" />
+<meta property="og:image" content="http://www.ingdiaz.org/wp-content/uploads/2017/02/Bibletime-150x150.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Blog de informática (redes, Windows, gnu/Linux, entre otros), asuntos cristianos, cosas personales y otros." />
+<meta name="twitter:title" content="Biblia para Ubuntu - Herramienta de estudio - IngDiaz" />
+<meta name="twitter:site" content="@skrdz1984" />
+<meta name="twitter:image" content="http://www.ingdiaz.org/wp-content/uploads/2017/02/Bibletime-150x150.png" />
+<meta name="twitter:creator" content="@skrdz1984" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://www.ingdiaz.org/#/schema/person/622c4ec27fff646e37eb203d9e363d55","name":"\u00d3scar Humberto D\u00edaz Jurado","image":{"@type":"ImageObject","@id":"https://www.ingdiaz.org/#personlogo","url":"https://secure.gravatar.com/avatar/0ef61702eb044d0683d53a2ae24a530c?s=96&d=wavatar&r=g","caption":"\u00d3scar Humberto D\u00edaz Jurado"},"logo":{"@id":"https://www.ingdiaz.org/#personlogo"},"description":"Cristiano, Ing. en Sistemas, Docente, M\u00fasico, Investigador y Temeroso de Dios.","sameAs":["https://www.facebook.com/oscard1984","https://www.instagram.com/skrdz1984","https://www.linkedin.com/in/oscard1984/","https://twitter.com/skrdz1984","https://www.youtube.com/channel/UCMoom5mWf25ZinSdRmbPdTw","https://soundcloud.com/ingdiaz"]},{"@type":"WebSite","@id":"https://www.ingdiaz.org/#website","url":"https://www.ingdiaz.org/","name":"IngDiaz","description":"Blog de inform\u00e1tica, asuntos espirituales y otros.","publisher":{"@id":"https://www.ingdiaz.org/#/schema/person/622c4ec27fff646e37eb203d9e363d55"},"potentialAction":{"@type":"SearchAction","target":"https://www.ingdiaz.org/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/#primaryimage","url":"http://www.ingdiaz.org/wp-content/uploads/2017/02/Bibletime-150x150.png"},{"@type":"WebPage","@id":"https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/#webpage","url":"https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/","inLanguage":"es","name":"Biblia para Ubuntu - Herramienta de estudio - IngDiaz","isPartOf":{"@id":"https://www.ingdiaz.org/#website"},"primaryImageOfPage":{"@id":"https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/#primaryimage"},"datePublished":"2017-02-14T18:22:08+00:00","dateModified":"2017-02-14T18:22:08+00:00","description":"Blog de inform\u00e1tica (redes, Windows, gnu/Linux, entre otros), asuntos cristianos, cosas personales y otros."},{"@type":"Article","@id":"https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/#article","isPartOf":{"@id":"https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/#webpage"},"author":{"@id":"https://www.ingdiaz.org/#/schema/person/622c4ec27fff646e37eb203d9e363d55"},"headline":"Biblia para Ubuntu &#8211; Herramienta de estudio","datePublished":"2017-02-14T18:22:08+00:00","dateModified":"2017-02-14T18:22:08+00:00","commentCount":"5","mainEntityOfPage":{"@id":"https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/#webpage"},"publisher":{"@id":"https://www.ingdiaz.org/#/schema/person/622c4ec27fff646e37eb203d9e363d55"},"image":{"@id":"https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/#primaryimage"},"keywords":"bibletime,biblia,estudio,herramienta,ubuntu","articleSection":"Cristianismo,Otros,Software,Software Libre"}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="IngDiaz &raquo; Feed" href="https://www.ingdiaz.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="IngDiaz &raquo; RSS de los comentarios" href="https://www.ingdiaz.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="IngDiaz &raquo; Biblia para Ubuntu &#8211; Herramienta de estudio RSS de los comentarios" href="https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.ingdiaz.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.18"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.ingdiaz.org/wp-content/plugins/gutenberg/build/block-library/style.css?ver=1575254142' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://www.ingdiaz.org/wp-content/plugins/gutenberg/build/block-library/theme.css?ver=1575254142' type='text/css' media='all' />
+<link rel='stylesheet' id='avatar-manager-css'  href='https://www.ingdiaz.org/wp-content/plugins/avatar-manager/assets/css/avatar-manager.min.css?ver=1.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.ingdiaz.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='cff-css'  href='https://www.ingdiaz.org/wp-content/plugins/custom-facebook-feed/css/cff-style.css?ver=2.12.2' type='text/css' media='all' />
+<link crossorigin="anonymous" rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=5.2.18' type='text/css' media='all' />
+<link rel='stylesheet' id='sow-social-media-buttons-atom-ff5f0ae80b45-css'  href='https://www.ingdiaz.org/wp-content/uploads/siteorigin-widgets/sow-social-media-buttons-atom-ff5f0ae80b45.css?ver=5.2.18' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='https://www.ingdiaz.org/wp-content/themes/catch-box/genericons/genericons.css?ver=3.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='catchbox-style-css'  href='https://www.ingdiaz.org/wp-content/themes/catch-box/style.css?ver=5.2.18' type='text/css' media='all' />
+<link rel='stylesheet' id='catchbox-block-style-css'  href='https://www.ingdiaz.org/wp-content/themes/catch-box/css/blocks.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='__EPYT__style-css'  href='https://www.ingdiaz.org/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?ver=13.1.2.4' type='text/css' media='all' />
+<style id='__EPYT__style-inline-css' type='text/css'>
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+</style>
+<script type='text/javascript' src='https://www.ingdiaz.org/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://www.ingdiaz.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.ingdiaz.org/wp-content/plugins/avatar-manager/assets/js/avatar-manager.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"expandir men\u00fa hijo","collapse":"plegar men\u00fa hijo"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ingdiaz.org/wp-content/themes/catch-box/js/menu.min.js?ver=2.1.1.1'></script>
+<script type='text/javascript' src='https://www.ingdiaz.org/wp-content/themes/catch-box/js/html5.min.js?ver=3.7.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _EPYT_ = {"ajaxurl":"https:\/\/www.ingdiaz.org\/wp-admin\/admin-ajax.php","security":"ebb3138e9c","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/www.ingdiaz.org\/wp-content\/plugins\/youtube-embed-plus\/scripts\/","eppath":"https:\/\/www.ingdiaz.org\/wp-content\/plugins\/youtube-embed-plus\/","epresponsiveselector":"[\"iframe.__youtube_prefs_widget__\"]","epdovol":"1","version":"13.1.2.4","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","ytapi_load":"light","stopMobileBuffer":"1","vi_active":"","vi_js_posttypes":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ingdiaz.org/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js?ver=13.1.2.4'></script>
+<link rel='https://api.w.org/' href='https://www.ingdiaz.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.ingdiaz.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.ingdiaz.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2.18" />
+<link rel='shortlink' href='https://www.ingdiaz.org/?p=1753' />
+<link rel="alternate" type="application/json+oembed" href="https://www.ingdiaz.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ingdiaz.org%2Fbiblia-ubuntu-herramienta-estudio%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.ingdiaz.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ingdiaz.org%2Fbiblia-ubuntu-herramienta-estudio%2F&#038;format=xml" />
+<meta property="fb:app_id" content="324322394609948"/>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+			<style type="text/css">
+			#site-title,
+		#site-description {
+			position: absolute !important;
+			clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+		</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("https://www.ingdiaz.org/wp-content/uploads/2018/10/bg-04.jpg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+</style>
+	<link rel="amphtml" href="https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/amp/"><link rel="icon" href="https://www.ingdiaz.org/wp-content/uploads/2016/10/cropped-cropped-logo-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.ingdiaz.org/wp-content/uploads/2016/10/cropped-cropped-logo-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.ingdiaz.org/wp-content/uploads/2016/10/cropped-cropped-logo-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.ingdiaz.org/wp-content/uploads/2016/10/cropped-cropped-logo-270x270.png" />
+
+<!-- BEGIN ExactMetrics v5.3.9 Universal Analytics - https://exactmetrics.com/ -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-26828569-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- END ExactMetrics Universal Analytics -->
+</head>
+
+<body class="post-template-default single single-post postid-1753 single-format-standard custom-background wp-custom-logo wp-embed-responsive single-author right-sidebar header-image-top">
+
+
+
+<div id="page" class="hfeed site">
+
+	<a href="#main" class="skip-link screen-reader-text">Saltar al contenido</a>
+	<header id="branding" role="banner">
+
+    	
+    	<div id="header-content" class="clearfix">
+
+			<div class="logo-wrap clearfix">	<div id="hgroup" class="site-details">
+					<p id="site-title"><a href="https://www.ingdiaz.org/" rel="home">IngDiaz</a></p>
+					<p id="site-description">Blog de informática, asuntos espirituales y otros.</p>
+			
+   	</div><!-- #hgroup -->
+<div id="site-logo"><a href="https://www.ingdiaz.org/" class="custom-logo-link" rel="home"><img width="273" height="135" src="https://www.ingdiaz.org/wp-content/uploads/2018/10/cropped-IngDiaz-pequeño.png" class="custom-logo" alt="IngDiaz" srcset="https://www.ingdiaz.org/wp-content/uploads/2018/10/cropped-IngDiaz-pequeño.png 273w, https://www.ingdiaz.org/wp-content/uploads/2018/10/cropped-IngDiaz-pequeño-272x135.png 272w" sizes="(max-width: 273px) 100vw, 273px" /></a></div><!-- #site-logo --></div><!-- .logo-wrap -->	<form role="search" method="get" class="searchform" action="https://www.ingdiaz.org/">
+		<label>
+			<span class="screen-reader-text">Buscar por:</span>
+			<input type="search" class="search-field" placeholder="Buscar" value="" name="s" title="Buscar por:" />
+		</label>
+		<button type="submit" class="search-submit"><span class="screen-reader-text">Buscar</span></button>
+	</form>
+
+		</div><!-- #header-content -->
+
+    	    <div class="menu-access-wrap mobile-header-menu clearfix">
+        <div id="mobile-header-left-menu" class="mobile-menu-anchor primary-menu">
+            <a href="#mobile-header-left-nav" id="menu-toggle-primary" class="genericon genericon-menu">
+                <span class="mobile-menu-text">Menu</span>
+            </a>
+        </div><!-- #mobile-header-left-menu -->
+            
+                    <div id="mobile-header-right-menu" class="mobile-menu-anchor secondary-menu">
+                <a href="#mobile-header-right-nav" id="menu-toggle-secondary" class="genericon genericon-menu">
+                    <span class="mobile-menu-text">Menú secundario</span>
+                </a>
+            </div><!-- #mobile-header-right-menu -->
+        
+        <div id="site-header-menu-primary" class="site-header-menu">
+            <nav id="access" class="main-navigation menu-focus" role="navigation" aria-label="Menú principal">
+            
+                <h3 class="screen-reader-text">Menú principal</h3>
+                <div class="menu-header-container"><ul class="menu"><li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-33"><a href="http://www.ingdiaz.org">Inicio</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-has-children menu-item-34"><a href="https://www.ingdiaz.org/blog/">Blog</a>
+<ul class="sub-menu">
+	<li id="menu-item-1251" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-1251"><a href="https://www.ingdiaz.org/category/software-2/">Software</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1252" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1252"><a href="https://www.ingdiaz.org/category/software-2/software-libre/">Software Libre</a></li>
+		<li id="menu-item-1253" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1253"><a href="https://www.ingdiaz.org/category/software-2/software-privativo/">Software Privativo</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1254" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1254"><a href="https://www.ingdiaz.org/category/programacion/">Programación</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1255" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1255"><a href="https://www.ingdiaz.org/category/programacion/desarrollo-programacion/">Desarrollo</a></li>
+		<li id="menu-item-1256" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1256"><a href="https://www.ingdiaz.org/category/programacion/base-datos/">Base de datos</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1250" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1250"><a href="https://www.ingdiaz.org/category/redes/">Redes</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1257" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1257"><a href="https://www.ingdiaz.org/category/redes/seguridad-ti/">Seguridad de TI</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1247" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-1247"><a href="https://www.ingdiaz.org/category/otros/">Otros</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1249" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1249"><a href="https://www.ingdiaz.org/category/otros/cristiano/">Cristianismo</a></li>
+		<li id="menu-item-1248" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1248"><a href="https://www.ingdiaz.org/category/otros/educacion/">Educación</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-3590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3590"><a href="https://www.ingdiaz.org/videos-recomendados/">Videos Recomendados</a>
+<ul class="sub-menu">
+	<li id="menu-item-3587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3587"><a href="https://www.ingdiaz.org/asuntos-espirituales/">Asuntos Espirituales</a></li>
+	<li id="menu-item-3585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3585"><a href="https://www.ingdiaz.org/interesantes/">Interesantes</a></li>
+	<li id="menu-item-3586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3586"><a href="https://www.ingdiaz.org/videojuegos/">Videojuegos</a></li>
+	<li id="menu-item-3600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3600"><a href="https://www.ingdiaz.org/canal-ingdiaz/">Canal IngDiaz</a></li>
+</ul>
+</li>
+<li id="menu-item-3608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3608"><a href="https://www.ingdiaz.org/otras-publicaciones/">Publicaciones en FB</a></li>
+</ul></div>            </nav><!-- #access -->
+        </div><!-- .site-header-menu -->
+
+                    <div id="site-header-menu-secondary" class="site-header-menu">
+                <nav id="access-secondary" class="mobile-enable"  role="navigation" aria-label="Menú secundario">
+                    <h3 class="screen-reader-text">Menú secundario</h3>
+                    <div class="menu-secondary-container"><ul id="menu-secundario" class="menu"><li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://www.ingdiaz.org/presentacion/">Sobre mi</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://www.ingdiaz.org/contacto/">Contacto</a></li>
+</ul></div>                </nav><!-- #access-secondary -->
+            </div><!-- .site-header-menu -->
+                </div><!-- .menu-access-wrap -->
+    
+	</header><!-- #branding -->
+
+	
+	
+	<div id="main" class="clearfix">
+
+		
+		<div id="primary" class="content-area">
+
+			
+			<div id="content" role="main">
+				
+				
+<article id="post-1753" class="post-1753 post type-post status-publish format-standard hentry category-cristiano category-otros category-software-2 category-software-libre tag-bibletime tag-biblia tag-estudio tag-herramienta tag-ubuntu">
+	<header class="entry-header">
+		<h1 class="entry-title">Biblia para Ubuntu &#8211; Herramienta de estudio</h1>
+
+		            <div class="entry-meta">
+                <span class="sep">Publicado el</span> <a href="https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/" title="12:22 pm" rel="bookmark"><time class="entry-date" datetime="2017-02-14T12:22:08-06:00" pubdate>14 febrero, 2017</time></a> <span class="by-author"><span class="sep"> por </span> <span class="author vcard"> <a class="url fn n" href="https://www.ingdiaz.org/author/oscard/" title="Ver todas las entradas de Óscar Humberto Díaz Jurado" rel="author">Óscar Humberto Díaz Jurado</a></span></span>                                    <span class="sep sep-comment"> &mdash; </span>
+                    <span class="comments-link">
+                        <a href="https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/#comments">5 comentarios &darr;</a>                    </span>
+                            </div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<!-- WP QUADS Content Ad Plugin v. 1.8.8 -->
+<div class="quads-location quads-ad2" id="quads-ad2" style="float:none;margin:1px 0 1px 0;text-align:center;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- arriba-horizontal -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-1382285027958878"
+     data-ad-slot="7205516969"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<p style="text-align: justify;"><a href="http://www.ingdiaz.org/wp-content/uploads/2017/02/Bibletime.png"><img class="alignleft size-thumbnail wp-image-1754" src="http://www.ingdiaz.org/wp-content/uploads/2017/02/Bibletime-150x150.png" alt="Bibletime" width="150" height="150" srcset="https://www.ingdiaz.org/wp-content/uploads/2017/02/Bibletime-150x150.png 150w, https://www.ingdiaz.org/wp-content/uploads/2017/02/Bibletime-300x297.png 300w, https://www.ingdiaz.org/wp-content/uploads/2017/02/Bibletime.png 400w" sizes="(max-width: 150px) 100vw, 150px" /></a>¡Buen día a tod@s!</p>
+<p style="text-align: justify;">Sé que muchos dirán que es suficiente tener Internet para leer la biblia y tener herramientas de estudio&#8230; por ejemplo, https://www.biblegateway.com es un excelente sitio para leer diferentes versiones de la biblia, tener marcadores, agregar comentarios, ver concordancias o referencias, etc., Pero hay ocasiones en donde no tendremos el recurso Internet y necesitamos un programa instalado localmente para poder leer la biblia. Adicional, tener herramientas de estudio de la misma no esta de más!, de hecho, sirve de muuucho. Por ejemplo, podemos tener la versión Reina Valera 1960 en el lado izquierdo, en el centro la biblia Traducción Kadosh Israelita Mesiánica, y en el lado derecho Comentarios de la Biblia Matthew Henry. Todo obviamente, es cuestión de gustos.</p>
+<p style="text-align: justify;">Hay una aplicación muy famosa llamada e-sword, pero no hay para Linux&#8230; Pero les traigo una alternativa bastante buena llamada BibleTime 🙂</p>
+<p style="text-align: justify;">Para instalarlo desde Ubuntu (o sistemas basados en Debian&#8230;), en la terminal colocamos:</p>
+<blockquote>
+<p style="text-align: justify;">sudo apt install bibletime</p>
+</blockquote>
+<p style="text-align: justify;">Con esto instalamos el sistema base y solo nos falta descargar las biblias, comentarios, diccionarios, etc. que necesitemos! 🙂</p>
+<p style="text-align: justify;">Así luce:</p>
+<p style="text-align: justify;"><a href="http://www.ingdiaz.org/wp-content/uploads/2017/02/01.png"><img class="aligncenter size-full wp-image-1755" src="http://www.ingdiaz.org/wp-content/uploads/2017/02/01.png" alt="01" width="1161" height="726" srcset="https://www.ingdiaz.org/wp-content/uploads/2017/02/01.png 1161w, https://www.ingdiaz.org/wp-content/uploads/2017/02/01-300x188.png 300w, https://www.ingdiaz.org/wp-content/uploads/2017/02/01-768x480.png 768w, https://www.ingdiaz.org/wp-content/uploads/2017/02/01-1024x640.png 1024w" sizes="(max-width: 1161px) 100vw, 1161px" /></a></p>
+<p style="text-align: justify;">Creo que la primera vez que se ejecute (en Ubuntu, damos clic en el Dash y digitamos bibletime para ejecutar la aplicación), aparece el «Administrador de biblioteca»&#8230; pero bueno, si no se abre al principio, podemos entrar en él dando clic a la opción de menú Preferencias -&gt; Administrador de biblioteca (O presionando F4 también xD ).</p>
+<p style="text-align: justify;"><a href="http://www.ingdiaz.org/wp-content/uploads/2017/02/02.png"><img class="aligncenter size-full wp-image-1756" src="http://www.ingdiaz.org/wp-content/uploads/2017/02/02.png" alt="02" width="973" height="478" srcset="https://www.ingdiaz.org/wp-content/uploads/2017/02/02.png 973w, https://www.ingdiaz.org/wp-content/uploads/2017/02/02-300x147.png 300w, https://www.ingdiaz.org/wp-content/uploads/2017/02/02-768x377.png 768w" sizes="(max-width: 973px) 100vw, 973px" /></a></p>
+<p style="text-align: justify;">Por defecto la fuente es «CrossWire Bible Society», pero podemos cambiar la fuente. Una vez seleccionada la fuente deseada, se da clic en el icono de actualizar obras (<img class="alignnone size-full wp-image-1757" src="http://www.ingdiaz.org/wp-content/uploads/2017/02/03.png" alt="03" width="21" height="22" />) y aparecerá la lista de las obras, entre las que están las categorías de: Biblia, comentarios, Libros, Léxcos, Diccionarios, Glosarios, Devocionales diarios, entre otros (dependiendo de la fuente).</p>
+<p style="text-align: justify;">Si desplegamos en Biblias, nos aparece los idiomas disponibles (de la fuente) y desplegamos hasta encontrar lo que queramos, chequeando cada uno de los elementos. Una vez chequeado todo lo deseado, se da clic en «Instalar». Se nos mostrará un resumen de lo que descargará/instalará; basta con que confirmemos dando clic en «Si».</p>
+<p style="text-align: justify;"><a href="http://www.ingdiaz.org/wp-content/uploads/2017/02/04.png"><img class="aligncenter size-full wp-image-1758" src="http://www.ingdiaz.org/wp-content/uploads/2017/02/04.png" alt="04" width="550" height="368" srcset="https://www.ingdiaz.org/wp-content/uploads/2017/02/04.png 550w, https://www.ingdiaz.org/wp-content/uploads/2017/02/04-300x201.png 300w, https://www.ingdiaz.org/wp-content/uploads/2017/02/04-272x182.png 272w" sizes="(max-width: 550px) 100vw, 550px" /></a></p>
+<p style="text-align: justify;">Empieza a descargar, esperamos un momento, finaliza la descarga/instalación! Ahora, yo recomiendo también que nos vayamos siempre en la ventana del «Administrador de biblioteca» a la opción «Buscar índices», que esta en la parte izquierda.</p>
+<p style="text-align: justify;"><a href="http://www.ingdiaz.org/wp-content/uploads/2017/02/05.png"><img class="aligncenter size-full wp-image-1759" src="http://www.ingdiaz.org/wp-content/uploads/2017/02/05.png" alt="05" width="973" height="478" srcset="https://www.ingdiaz.org/wp-content/uploads/2017/02/05.png 973w, https://www.ingdiaz.org/wp-content/uploads/2017/02/05-300x147.png 300w, https://www.ingdiaz.org/wp-content/uploads/2017/02/05-768x377.png 768w" sizes="(max-width: 973px) 100vw, 973px" /></a></p>
+<p style="text-align: justify;">Por defecto nos seleccionará las obras que no están indexadas, por cuanto damos clic al botón «Crear&#8230;» para así indexarlas y mejorar las búsquedas que realicemos.</p>
+<p style="text-align: justify;"><a href="http://www.ingdiaz.org/wp-content/uploads/2017/02/06.png"><img class="aligncenter size-full wp-image-1760" src="http://www.ingdiaz.org/wp-content/uploads/2017/02/06.png" alt="06" width="287" height="131" /></a></p>
+<p style="text-align: justify;">Ok, ahora cerramos la ventana y ya podemos hacer uso nuestra herramienta de estudio de la biblia!.</p>
+<p style="text-align: justify;">Siento que es muy intuitivo&#8230; pero solo como ayuda básica, tenemos en la parte izquierda las obras que tenemos instaladas y en la parte derecha tenemos el contenido de las mismas. Para reemplazar las obras o agregar una más en otra columna, damos clic en el botón que tiene una punta de flecha hacia abajo (ver imagen de abajo) y seleccionamos lo que queremos hacer. En el ejemplo de abajo, se agregará una columna con la versión Kadosh.</p>
+<p style="text-align: justify;"><a href="http://www.ingdiaz.org/wp-content/uploads/2017/02/07.png"><img class="aligncenter size-full wp-image-1761" src="http://www.ingdiaz.org/wp-content/uploads/2017/02/07.png" alt="07" width="966" height="454" srcset="https://www.ingdiaz.org/wp-content/uploads/2017/02/07.png 966w, https://www.ingdiaz.org/wp-content/uploads/2017/02/07-300x141.png 300w, https://www.ingdiaz.org/wp-content/uploads/2017/02/07-768x361.png 768w" sizes="(max-width: 966px) 100vw, 966px" /></a></p>
+<p style="text-align: justify;">Para cambiar el libro, capítulo o versículo, nos colocamos con el cursos en donde corresponde al mismo y se habilitarán unos botones para facilitar la selección.</p>
+<p style="text-align: justify;"><a href="http://www.ingdiaz.org/wp-content/uploads/2017/02/08.png"><img class="aligncenter size-full wp-image-1762" src="http://www.ingdiaz.org/wp-content/uploads/2017/02/08.png" alt="08" width="234" height="120" /></a></p>
+<p style="text-align: justify;">Y pues podemos hacer búsquedas presionando en el ícono de los binoculares (o dando clic en la opción de menú Buscar -&gt; Buscar en Abrir Obras&#8230;), y podemos hasta crear nuestros propios criterios de búsquedas&#8230; lo más fácil es digitar una palabra clave que queramos, seleccionamos la versión (obra) y damos clic en buscar. Se muestra entonces el resultado, con unos versículos para ver el contexto y sombreado en amarillo la palabra clave; en resultados, vemos los diferentes lugares donde se encontró lo que buscamos.</p>
+<p style="text-align: justify;"><a href="http://www.ingdiaz.org/wp-content/uploads/2017/02/09.png"><img class="aligncenter size-full wp-image-1763" src="http://www.ingdiaz.org/wp-content/uploads/2017/02/09.png" alt="09" width="767" height="589" srcset="https://www.ingdiaz.org/wp-content/uploads/2017/02/09.png 767w, https://www.ingdiaz.org/wp-content/uploads/2017/02/09-300x230.png 300w" sizes="(max-width: 767px) 100vw, 767px" /></a></p>
+<p>¡POR CIERTO!, si quieres más obras en español (como por ejemplo la versión Reina Valera Revisión 1960 &#8211; RVR1960), les recomiendo descargar el archivo publicado en http://recursos-xiphos.blogspot.mx/2012/09/pack-biblias-y-diccionarios-para.html</p>
+<p>En ésa página pueden descargar un pack con una gran cantidad de obras, entre las que están: Reina Valera 1960 (RV 1960), BTX Biblia Textual, Nueva traducción viviente NTV, Diccionario Strong en español, comentarios de la biblia Matthew Henry y muchos más.</p>
+<p>Por si el link en un futuro se rompe, a continuación les dejo un «espejo» de la descarga:</p>
+<blockquote><p>https://drive.google.com/open?id=0B-xgTwixGa4DTXpCN2QwZVAzams</p></blockquote>
+<p>Bien, espero que a más de uno le sirva.</p>
+<p>Saludos!</p>
+
+<!-- WP QUADS Content Ad Plugin v. 1.8.8 -->
+<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:1px 0 1px 0;text-align:center;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-1382285027958878"
+     data-ad-slot="5360283957"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<!-- Facebook Comments Plugin for WordPress: http://peadig.com/wordpress-plugins/facebook-comments/ --><h3>Comentarios por Facebook</h3><p><fb:comments-count href=https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/></fb:comments-count> comentarios</p><div class="fb-comments" data-href="https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/" data-numposts="5" data-width="100%" data-colorscheme="light"></div>			</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+		Esta entrada fue publicada en <a href="https://www.ingdiaz.org/category/otros/cristiano/" rel="category tag">Cristianismo</a>, <a href="https://www.ingdiaz.org/category/otros/" rel="category tag">Otros</a>, <a href="https://www.ingdiaz.org/category/software-2/" rel="category tag">Software</a>, <a href="https://www.ingdiaz.org/category/software-2/software-libre/" rel="category tag">Software Libre</a> y etiquetada <a href="https://www.ingdiaz.org/tag/bibletime/" rel="tag">bibletime</a>, <a href="https://www.ingdiaz.org/tag/biblia/" rel="tag">biblia</a>, <a href="https://www.ingdiaz.org/tag/estudio/" rel="tag">estudio</a>, <a href="https://www.ingdiaz.org/tag/herramienta/" rel="tag">herramienta</a>, <a href="https://www.ingdiaz.org/tag/ubuntu/" rel="tag">ubuntu</a> por <a href="https://www.ingdiaz.org/author/oscard/">Óscar Humberto Díaz Jurado</a>. Guarda <a href="https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/" title="Permalink to Biblia para Ubuntu &#8211; Herramienta de estudio" rel="bookmark">enlace permanente</a>.		
+		
+	</footer><!-- .entry-meta -->
+</article><!-- #post-1753 -->
+
+	<div id="comments">
+	
+	
+			<h2 id="comments-title">
+			5 respuestas a &ldquo;Biblia para Ubuntu &#8211; Herramienta de estudio&rdquo;		</h2>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-8773">
+		<article id="comment-8773" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/8000734ac8bd1c77b52df6d183ba381f?s=68&#038;d=wavatar&#038;r=g' srcset='https://secure.gravatar.com/avatar/8000734ac8bd1c77b52df6d183ba381f?s=136&#038;d=wavatar&#038;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.facebook.com/angel.clerc' rel='external nofollow' class='url'>Angel</a></span> en <a href="https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/#comment-8773"><time pubdate datetime="2019-04-15T07:50:57-06:00">15 abril, 2019 a las 7:50 am</time></a> <span class="says">dijo:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Muchas Gracias por el aporte, estoy estudiando sobre la Biblia y por mi trabajo utilizo sistemas linux principalmente y no había encontrado mucho al respecto. Muy bueno e interesante el blog. Saludos desde Argentina</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='#comment-8773' data-commentid="8773" data-postid="1753" data-belowelement="comment-8773" data-respondelement="respond" aria-label='Responder a Angel'>Responder <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-oscard bypostauthor odd alt depth-2" id="li-comment-8774">
+		<article id="comment-8774" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" class="avatar avatar-39 photo avatar-default" height="39" src="https://www.ingdiaz.org/wp-content/uploads/2016/11/logo2-1-39x39.png" width="39"><span class="fn"><a href='http://www.ingdiaz.org/presentacion/' rel='external nofollow' class='url'>Óscar Humberto Díaz Jurado</a></span> en <a href="https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/#comment-8774"><time pubdate datetime="2019-04-15T09:39:02-06:00">15 abril, 2019 a las 9:39 am</time></a> <span class="says">dijo:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hola. De nada, qué bueno que te sea útil ésta información. Gracias! Saludos!</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='#comment-8774' data-commentid="8774" data-postid="1753" data-belowelement="comment-8774" data-respondelement="respond" aria-label='Responder a Óscar Humberto Díaz Jurado'>Responder <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-70499">
+		<article id="comment-70499" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/1824e3bd52e71f77130137e445ce3e3c?s=68&#038;d=wavatar&#038;r=g' srcset='https://secure.gravatar.com/avatar/1824e3bd52e71f77130137e445ce3e3c?s=136&#038;d=wavatar&#038;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">christian</span> en <a href="https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/#comment-70499"><time pubdate datetime="2020-08-02T11:03:18-06:00">2 agosto, 2020 a las 11:03 am</time></a> <span class="says">dijo:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>sabes que tipo de formato usan las biblias de bibletime o si hay alguna manera de pasar las de esword a bibletime</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='#comment-70499' data-commentid="70499" data-postid="1753" data-belowelement="comment-70499" data-respondelement="respond" aria-label='Responder a christian'>Responder <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-oscard bypostauthor odd alt depth-2" id="li-comment-70748">
+		<article id="comment-70748" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" class="avatar avatar-39 photo avatar-default" height="39" src="https://www.ingdiaz.org/wp-content/uploads/2016/11/logo2-1-39x39.png" width="39"><span class="fn"><a href='http://www.ingdiaz.org/presentacion/' rel='external nofollow' class='url'>Óscar Humberto Díaz Jurado</a></span> en <a href="https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/#comment-70748"><time pubdate datetime="2020-08-03T07:22:24-06:00">3 agosto, 2020 a las 7:22 am</time></a> <span class="says">dijo:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hola. Lo siento, la verdad no estoy seguro&#8230; pero según entiendo, es el mismo del e-sword porque en el sitio oficial menciona que utiliza la  biblioteca de programación SWORD (<a href="http://bibletime.info/index.html" rel="nofollow">http://bibletime.info/index.html</a>)</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='#comment-70748' data-commentid="70748" data-postid="1753" data-belowelement="comment-70748" data-respondelement="respond" aria-label='Responder a Óscar Humberto Díaz Jurado'>Responder <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-163960">
+		<article id="comment-163960" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/1eb3fd981546ddea59992fc0126c756e?s=68&#038;d=wavatar&#038;r=g' srcset='https://secure.gravatar.com/avatar/1eb3fd981546ddea59992fc0126c756e?s=136&#038;d=wavatar&#038;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Jorge</span> en <a href="https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/#comment-163960"><time pubdate datetime="2022-01-23T09:36:58-06:00">23 enero, 2022 a las 9:36 am</time></a> <span class="says">dijo:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hola buenas, no se si siga abierto este foro, pero quiero comentar que he descargado el pack de material bíblico y todo bien, excepto el diccionario strong en español, no lo he podido instalar, es lo único que me falta para usarlo de lleno en linux. No se si alguien le sucede lo mismo y si alguien ya lo solucionó. Tal vez alguien tenga el módulo y que esté funcionando y lo quisiera compartir. Muchas gracias, Dios les bendiga</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='#comment-163960' data-commentid="163960" data-postid="1753" data-belowelement="comment-163960" data-respondelement="respond" aria-label='Responder a Jorge'>Responder <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+	
+		<div id="respond" class="comment-respond">
+		<h2 id="reply-title" class="comment-reply-title">Deja un comentario <small><a rel="nofollow" id="cancel-comment-reply-link" href="/biblia-ubuntu-herramienta-estudio/#respond" style="display:none;">Cancelar respuesta</a></small></h2>			<form action="https://www.ingdiaz.org/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> Los campos obligatorios están marcados con <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comentario</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Nombre</label> <span class="required">*</span><input id="author" name="author" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico</label> <span class="required">*</span><input id="email" name="email" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Publicar comentario" /> <input type='hidden' name='comment_post_ID' value='1753' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="66f0273c32" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="131"/></p>			</form>
+			</div><!-- #respond -->
+	
+</div><!-- #comments -->
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Navegación de entradas</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://www.ingdiaz.org/los-dinosaurios-no-existieron/" rel="prev"><span class="meta-nav" aria-hidden="true"><span class="nav-icon">&larr;</span> Anterior</span> <span class="screen-reader-text">Entrada anterior:</span> <span class="post-title">Los Dinosaurios no existieron&#8230;</span></a></div><div class="nav-next"><a href="https://www.ingdiaz.org/texto-voz-ubuntu-sintesis-voz-habla/" rel="next"><span class="meta-nav" aria-hidden="true">Siguiente <span class="nav-icon">&rarr;</span></span> <span class="screen-reader-text">Siguiente entrada:</span> <span class="post-title">De Texto a voz en Ubuntu &#8211; Síntesis de voz o habla</span></a></div></div>
+	</nav>
+		</div><!-- #content -->
+        
+		            
+	</div><!-- #primary -->
+    
+	    
+
+
+		<aside id="secondary" class="sidebar widget-area" role="complementary">
+			<h2 class="screen-reader-text">El área de widget barra lateral primaria</h2>
+			<section id="sow-social-media-buttons-3" class="widget widget_sow-social-media-buttons"><div class="so-widget-sow-social-media-buttons so-widget-sow-social-media-buttons-atom-23824a4cddfa">
+<div class="social-media-button-container">
+	
+		<a class="ow-button-hover sow-social-media-button-facebook sow-social-media-button" title="IngDiaz en Facebook" aria-label="IngDiaz en Facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/ingdiaz.sv/" >
+			<span>
+								<span class="sow-icon-fontawesome sow-fab" data-sow-icon="&#xf39e;" ></span>							</span>
+		</a>
+	
+		<a class="ow-button-hover sow-social-media-button-twitter sow-social-media-button" title="IngDiaz en Twitter" aria-label="IngDiaz en Twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/skrdz1984" >
+			<span>
+								<span class="sow-icon-fontawesome sow-fab" data-sow-icon="&#xf099;" ></span>							</span>
+		</a>
+	
+		<a class="ow-button-hover sow-social-media-button-email sow-social-media-button" title="Email IngDiaz" aria-label="Email IngDiaz" target="_blank" rel="noopener noreferrer" href="mailto:oscard@ingdiaz.org" >
+			<span>
+								<span class="sow-icon-fontawesome sow-fas" data-sow-icon="&#xf0e0;" ></span>							</span>
+		</a>
+	
+		<a class="ow-button-hover sow-social-media-button-linkedin sow-social-media-button" title="IngDiaz en Linkedin" aria-label="IngDiaz en Linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/oscard1984/" >
+			<span>
+								<span class="sow-icon-fontawesome sow-fab" data-sow-icon="&#xf0e1;" ></span>							</span>
+		</a>
+	
+		<a class="ow-button-hover sow-social-media-button-youtube sow-social-media-button" title="IngDiaz en Youtube" aria-label="IngDiaz en Youtube" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCMoom5mWf25ZinSdRmbPdTw" >
+			<span>
+								<span class="sow-icon-fontawesome sow-fab" data-sow-icon="&#xf167;" ></span>							</span>
+		</a>
+	
+		<a class="ow-button-hover sow-social-media-button-google-plus sow-social-media-button" title="IngDiaz en Google Plus" aria-label="IngDiaz en Google Plus" target="_blank" rel="noopener noreferrer" href="https://plus.google.com/u/0/+skrdz" >
+			<span>
+								<span class="sow-icon-fontawesome sow-fab" data-sow-icon="&#xf0d5;" ></span>							</span>
+		</a>
+	</div>
+</div></section><section id="calendar-6" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+	<caption>junio 2023</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="lunes">L</th>
+		<th scope="col" title="martes">M</th>
+		<th scope="col" title="miércoles">X</th>
+		<th scope="col" title="jueves">J</th>
+		<th scope="col" title="viernes">V</th>
+		<th scope="col" title="sábado">S</th>
+		<th scope="col" title="domingo">D</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="https://www.ingdiaz.org/2023/01/">&laquo; Ene</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="3" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td>
+	</tr>
+	<tr>
+		<td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+	</tr>
+	<tr>
+		<td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+	</tr>
+	<tr>
+		<td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td id="today">25</td>
+	</tr>
+	<tr>
+		<td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+		<td class="pad" colspan="2">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></section><section id="archives-7" class="widget widget_archive"><h2 class="widget-title">Archivos</h2>		<label class="screen-reader-text" for="archives-dropdown-7">Archivos</label>
+		<select id="archives-dropdown-7" name="archive-dropdown">
+			
+			<option value="">Elegir mes</option>
+				<option value='https://www.ingdiaz.org/2023/01/'> enero 2023 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2022/12/'> diciembre 2022 &nbsp;(3)</option>
+	<option value='https://www.ingdiaz.org/2022/11/'> noviembre 2022 &nbsp;(3)</option>
+	<option value='https://www.ingdiaz.org/2022/10/'> octubre 2022 &nbsp;(6)</option>
+	<option value='https://www.ingdiaz.org/2022/09/'> septiembre 2022 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2022/08/'> agosto 2022 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2022/07/'> julio 2022 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2022/05/'> mayo 2022 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2022/04/'> abril 2022 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2022/03/'> marzo 2022 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2022/02/'> febrero 2022 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2022/01/'> enero 2022 &nbsp;(7)</option>
+	<option value='https://www.ingdiaz.org/2021/10/'> octubre 2021 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2021/08/'> agosto 2021 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2021/05/'> mayo 2021 &nbsp;(5)</option>
+	<option value='https://www.ingdiaz.org/2021/04/'> abril 2021 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2021/03/'> marzo 2021 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2021/02/'> febrero 2021 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2020/12/'> diciembre 2020 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2020/11/'> noviembre 2020 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2020/10/'> octubre 2020 &nbsp;(4)</option>
+	<option value='https://www.ingdiaz.org/2020/09/'> septiembre 2020 &nbsp;(5)</option>
+	<option value='https://www.ingdiaz.org/2020/08/'> agosto 2020 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2020/07/'> julio 2020 &nbsp;(7)</option>
+	<option value='https://www.ingdiaz.org/2020/06/'> junio 2020 &nbsp;(7)</option>
+	<option value='https://www.ingdiaz.org/2020/05/'> mayo 2020 &nbsp;(6)</option>
+	<option value='https://www.ingdiaz.org/2020/04/'> abril 2020 &nbsp;(3)</option>
+	<option value='https://www.ingdiaz.org/2020/03/'> marzo 2020 &nbsp;(4)</option>
+	<option value='https://www.ingdiaz.org/2019/12/'> diciembre 2019 &nbsp;(3)</option>
+	<option value='https://www.ingdiaz.org/2019/11/'> noviembre 2019 &nbsp;(4)</option>
+	<option value='https://www.ingdiaz.org/2019/10/'> octubre 2019 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2019/09/'> septiembre 2019 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2019/08/'> agosto 2019 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2019/07/'> julio 2019 &nbsp;(3)</option>
+	<option value='https://www.ingdiaz.org/2019/06/'> junio 2019 &nbsp;(5)</option>
+	<option value='https://www.ingdiaz.org/2019/05/'> mayo 2019 &nbsp;(7)</option>
+	<option value='https://www.ingdiaz.org/2019/04/'> abril 2019 &nbsp;(4)</option>
+	<option value='https://www.ingdiaz.org/2019/03/'> marzo 2019 &nbsp;(5)</option>
+	<option value='https://www.ingdiaz.org/2019/02/'> febrero 2019 &nbsp;(5)</option>
+	<option value='https://www.ingdiaz.org/2019/01/'> enero 2019 &nbsp;(3)</option>
+	<option value='https://www.ingdiaz.org/2018/12/'> diciembre 2018 &nbsp;(7)</option>
+	<option value='https://www.ingdiaz.org/2018/11/'> noviembre 2018 &nbsp;(6)</option>
+	<option value='https://www.ingdiaz.org/2018/10/'> octubre 2018 &nbsp;(7)</option>
+	<option value='https://www.ingdiaz.org/2018/08/'> agosto 2018 &nbsp;(3)</option>
+	<option value='https://www.ingdiaz.org/2018/07/'> julio 2018 &nbsp;(3)</option>
+	<option value='https://www.ingdiaz.org/2018/06/'> junio 2018 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2018/05/'> mayo 2018 &nbsp;(10)</option>
+	<option value='https://www.ingdiaz.org/2018/04/'> abril 2018 &nbsp;(9)</option>
+	<option value='https://www.ingdiaz.org/2018/03/'> marzo 2018 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2018/02/'> febrero 2018 &nbsp;(4)</option>
+	<option value='https://www.ingdiaz.org/2018/01/'> enero 2018 &nbsp;(16)</option>
+	<option value='https://www.ingdiaz.org/2017/12/'> diciembre 2017 &nbsp;(20)</option>
+	<option value='https://www.ingdiaz.org/2017/11/'> noviembre 2017 &nbsp;(5)</option>
+	<option value='https://www.ingdiaz.org/2017/10/'> octubre 2017 &nbsp;(3)</option>
+	<option value='https://www.ingdiaz.org/2017/09/'> septiembre 2017 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2017/08/'> agosto 2017 &nbsp;(3)</option>
+	<option value='https://www.ingdiaz.org/2017/07/'> julio 2017 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2017/06/'> junio 2017 &nbsp;(6)</option>
+	<option value='https://www.ingdiaz.org/2017/05/'> mayo 2017 &nbsp;(3)</option>
+	<option value='https://www.ingdiaz.org/2017/04/'> abril 2017 &nbsp;(6)</option>
+	<option value='https://www.ingdiaz.org/2017/03/'> marzo 2017 &nbsp;(3)</option>
+	<option value='https://www.ingdiaz.org/2017/02/'> febrero 2017 &nbsp;(7)</option>
+	<option value='https://www.ingdiaz.org/2017/01/'> enero 2017 &nbsp;(5)</option>
+	<option value='https://www.ingdiaz.org/2016/12/'> diciembre 2016 &nbsp;(6)</option>
+	<option value='https://www.ingdiaz.org/2016/11/'> noviembre 2016 &nbsp;(24)</option>
+	<option value='https://www.ingdiaz.org/2016/10/'> octubre 2016 &nbsp;(4)</option>
+	<option value='https://www.ingdiaz.org/2016/09/'> septiembre 2016 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2016/07/'> julio 2016 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2016/06/'> junio 2016 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2016/05/'> mayo 2016 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2016/04/'> abril 2016 &nbsp;(5)</option>
+	<option value='https://www.ingdiaz.org/2016/02/'> febrero 2016 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2016/01/'> enero 2016 &nbsp;(10)</option>
+	<option value='https://www.ingdiaz.org/2015/11/'> noviembre 2015 &nbsp;(5)</option>
+	<option value='https://www.ingdiaz.org/2015/10/'> octubre 2015 &nbsp;(6)</option>
+	<option value='https://www.ingdiaz.org/2015/08/'> agosto 2015 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2015/07/'> julio 2015 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2015/03/'> marzo 2015 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2014/09/'> septiembre 2014 &nbsp;(6)</option>
+	<option value='https://www.ingdiaz.org/2014/08/'> agosto 2014 &nbsp;(8)</option>
+	<option value='https://www.ingdiaz.org/2014/07/'> julio 2014 &nbsp;(7)</option>
+	<option value='https://www.ingdiaz.org/2013/07/'> julio 2013 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2013/06/'> junio 2013 &nbsp;(4)</option>
+	<option value='https://www.ingdiaz.org/2013/05/'> mayo 2013 &nbsp;(6)</option>
+	<option value='https://www.ingdiaz.org/2013/04/'> abril 2013 &nbsp;(4)</option>
+	<option value='https://www.ingdiaz.org/2013/03/'> marzo 2013 &nbsp;(5)</option>
+	<option value='https://www.ingdiaz.org/2013/02/'> febrero 2013 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2012/12/'> diciembre 2012 &nbsp;(2)</option>
+	<option value='https://www.ingdiaz.org/2012/11/'> noviembre 2012 &nbsp;(1)</option>
+	<option value='https://www.ingdiaz.org/2011/06/'> junio 2011 &nbsp;(1)</option>
+
+		</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "archives-dropdown-7" );
+	function onSelectChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+			document.location.href = this.options[ this.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+
+		</section>
+<!-- Quick Adsense Reloaded -->
+<section id="adswidget1-quick-adsense-reloaded-2" class="widget quads-ad1_widget"><div id="quads-ad1_widget" style="float:none;margin:0px 0 0px 0;text-align:center;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- enWidget -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-1382285027958878"
+     data-ad-slot="9084864406"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></section>
+<!-- Quick Adsense Reloaded -->
+<section id="adswidget2-quick-adsense-reloaded-2" class="widget quads-ad2_widget"><div id="quads-ad2_widget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- enWidget-grande -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-1382285027958878"
+     data-ad-slot="3033148293"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></section><section id="weblizar_twitter-2" class="widget widget_weblizar_twitter"><h2 class="widget-title">Twitter</h2>        <div style="display:block;width:100%;float:left;overflow:hidden">
+	    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/skrdz1984"
+		min-width=""
+		height="700"
+		data-theme="light"
+		data-lang="es"
+		data-link-color=""></a>
+			<script>
+				!function(d,s,id) {
+					var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}
+				} (document,"script","twitter-wjs");
+			</script>
+		</div>
+        </section>		</aside><!-- #secondary .widget-area -->
+
+	</div><!-- #main -->
+
+	
+	<footer id="colophon" role="contentinfo">
+		<div id="supplementary" class="three">
+		<div id="first" class="widget-area" role="complementary">
+				<aside id="recent-posts-4" class="widget widget_recent_entries">		<h3 class="widget-title">Entradas recientes</h3>		<ul>
+											<li>
+					<a href="https://www.ingdiaz.org/el-ministerio-del-senor-jesucristo/">El ministerio del Señor Jesucristo</a>
+									</li>
+											<li>
+					<a href="https://www.ingdiaz.org/recibir-y-enviar-btc-desde-electrum-wallet-bitcoin/">Recibir y Enviar BTC desde Electrum Wallet &#8211; Bitcoin</a>
+									</li>
+											<li>
+					<a href="https://www.ingdiaz.org/introduccion-e-instalacion-de-electrum-wallet-billetera-caliente-para-bitcoin-ubuntu/">Introducción e instalación de Electrum Wallet (Billetera caliente) para Bitcoin &#8211; Ubuntu</a>
+									</li>
+											<li>
+					<a href="https://www.ingdiaz.org/la-obra-de-jesucristo-2/">La obra de Jesucristo</a>
+									</li>
+											<li>
+					<a href="https://www.ingdiaz.org/la-persona-de-jesucristo/">La persona de Jesucristo</a>
+									</li>
+					</ul>
+		</aside>	</div><!-- #first .widget-area -->
+	
+		<div id="second" class="widget-area" role="complementary">
+		<aside id="recent-comments-5" class="widget widget_recent_comments"><h3 class="widget-title">Comentarios recientes</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Felix Leis</span> en <a href="https://www.ingdiaz.org/en-que-dia-murio-y-que-dia-resucito-nuestro-senor-jesus/#comment-249763">¿En qué día murió y qué día resucitó nuestro Señor Jesús?</a></li><li class="recentcomments"><span class="comment-author-link">Guille</span> en <a href="https://www.ingdiaz.org/posibilidad-de-instalar-diferentes-versiones-de-php-en-ubuntu-desde-la-version-5-6-pasando-por-la-7-4-hasta-la-8-1/#comment-249148">Posibilidad de instalar diferentes versiones de PHP en Ubuntu, desde la versión 5.6 (pasando por la 7.4) hasta la 8.1</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://seguridad&#038;estructuras' rel='external nofollow' class='url'>nelson</a></span> en <a href="https://www.ingdiaz.org/plantilla-excel-plan-estrategico-empresas/#comment-247583">Plantilla en Excel &#8211; Plan estratégico para empresas</a></li></ul></aside>	</div><!-- #second .widget-area -->
+	
+		<div id="third" class="widget-area" role="complementary">
+		
+<!-- Quick Adsense Reloaded -->
+<aside id="adswidget1-quick-adsense-reloaded-4" class="widget quads-ad1_widget"><div id="quads-ad1_widget" style="float:none;margin:0px 0 0px 0;text-align:center;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- enWidget -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-1382285027958878"
+     data-ad-slot="9084864406"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></aside>	</div><!-- #third .widget-area -->
+	</div><!-- #supplementary -->        
+        <div id="site-footer-mobile-menu" class="site-footer-menu">
+            <nav id="access-footer" class="mobile-disable" role="navigation" aria-label="Menú del pie de página">
+                <h3 class="screen-reader-text">Menú del pie de página</h3>
+                <div class="menu-footer-container"><ul id="menu-pie" class="menu"><li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="https://www.facebook.com/ingdiaz.sv/">Facebook</a></li>
+<li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="https://www.youtube.com/user/skrdz">Canal de YouTube</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a href="http://www.ingdiaz.org/presentacion/">Acerca de mi</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a href="mailto:oscard@ingdiaz.org">Correo-e</a></li>
+</ul></div>            </nav>
+        </div><!-- .site-footer-menu -->
+    
+        <div id="site-generator" class="clearfix">
+
+            
+			<nav class="social-profile" role="navigation" aria-label="Menú de enlaces sociales del pié de página">
+ 		 		<ul>
+				</ul>
+			</nav><!-- .social-profile --><div class="copyright">Copyright &copy; 2023 <a href="https://www.ingdiaz.org/" title="IngDiaz" ><span>IngDiaz</span></a>. Todos los Derechos Reservados. </div><div class="powered"><span class="theme-name">Theme: Catch Box by </span><span class="theme-author"><a href="https://catchthemes.com/" title="Catch Themes">Catch Themes</a></span></div>
+        </div> <!-- #site-generator -->
+
+	</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+<a href="#branding" id="scrollup"><span class="screen-reader-text">Desplazar hacia arriba</span></a>
+<!-- Custom Facebook Feed JS -->
+<script type="text/javascript">
+var cfflinkhashtags = "true";
+</script>
+<script>
+	var refTagger = {
+		settings: {
+			bibleVersion: "NVI",
+			libronixBibleVersion: "NVI",
+			addLogosLink: false,
+			appendIconToLibLinks: false,
+			libronixLinkIcon: "dark",
+			noSearchClassNames: [],
+			useTooltip: true,
+			noSearchTagNames: ["h1", "h2", "h3"],
+			linksOpenNewWindow: false,
+			convertHyperlinks: false,
+			caseInsensitive: false,
+			tagChapters: false 
+		}
+	};
+
+	(function(d, t) {
+		var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+		g.src = '//api.reftagger.com/v2/reftagger.es.js';
+		s.parentNode.insertBefore(g, s);
+	}(document, 'script'));
+</script>
+<link rel='stylesheet' id='sow-social-media-buttons-atom-23824a4cddfa-css'  href='https://www.ingdiaz.org/wp-content/uploads/siteorigin-widgets/sow-social-media-buttons-atom-23824a4cddfa.css?ver=5.2.18' type='text/css' media='all' />
+<link rel='stylesheet' id='siteorigin-widget-icon-font-fontawesome-css'  href='https://www.ingdiaz.org/wp-content/plugins/so-widgets-bundle/icons/fontawesome/style.css?ver=5.2.18' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/www.ingdiaz.org\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ingdiaz.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.6'></script>
+<script type='text/javascript' src='https://www.ingdiaz.org/wp-content/plugins/custom-facebook-feed/js/cff-scripts.js?ver=2.12.2'></script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6LcqMaYUAAAAAJ4j6-btRltSmcqNNuVrGMyYrTCY&#038;ver=3.0'></script>
+<script type='text/javascript' src='https://www.ingdiaz.org/wp-content/themes/catch-box/js/skip-link-focus-fix.js?ver=20151112'></script>
+<script type='text/javascript' src='https://www.ingdiaz.org/wp-includes/js/comment-reply.min.js?ver=5.2.18'></script>
+<script type='text/javascript' src='https://www.ingdiaz.org/wp-content/themes/catch-box/js/catchbox-scrollup.min.js?ver=20072014'></script>
+<script type='text/javascript' src='https://www.ingdiaz.org/wp-content/plugins/youtube-embed-plus/scripts/fitvids.min.js?ver=13.1.2.4'></script>
+<script type='text/javascript' src='https://www.ingdiaz.org/wp-includes/js/wp-embed.min.js?ver=5.2.18'></script>
+<script async="async" type='text/javascript' src='https://www.ingdiaz.org/wp-content/plugins/akismet/_inc/form.js?ver=4.1.3'></script>
+<script type="text/javascript">
+( function( grecaptcha, sitekey, actions ) {
+
+	var wpcf7recaptcha = {
+
+		execute: function( action ) {
+			grecaptcha.execute(
+				sitekey,
+				{ action: action }
+			).then( function( token ) {
+				var forms = document.getElementsByTagName( 'form' );
+
+				for ( var i = 0; i < forms.length; i++ ) {
+					var fields = forms[ i ].getElementsByTagName( 'input' );
+
+					for ( var j = 0; j < fields.length; j++ ) {
+						var field = fields[ j ];
+
+						if ( 'g-recaptcha-response' === field.getAttribute( 'name' ) ) {
+							field.setAttribute( 'value', token );
+							break;
+						}
+					}
+				}
+			} );
+		},
+
+		executeOnHomepage: function() {
+			wpcf7recaptcha.execute( actions[ 'homepage' ] );
+		},
+
+		executeOnContactform: function() {
+			wpcf7recaptcha.execute( actions[ 'contactform' ] );
+		},
+
+	};
+
+	grecaptcha.ready(
+		wpcf7recaptcha.executeOnHomepage
+	);
+
+	document.addEventListener( 'change',
+		wpcf7recaptcha.executeOnContactform, false
+	);
+
+	document.addEventListener( 'wpcf7submit',
+		wpcf7recaptcha.executeOnHomepage, false
+	);
+
+} )(
+	grecaptcha,
+	'6LcqMaYUAAAAAJ4j6-btRltSmcqNNuVrGMyYrTCY',
+	{"homepage":"homepage","contactform":"contactform"}
+);
+</script>
+<!-- Facebook Comments Plugin for WordPress: http://peadig.com/wordpress-plugins/facebook-comments/ -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=324322394609948&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</body>
+</html>
+m��@-      d�M�d�jE�#d�M�   d    O^partitionKey=%28https%2Cingdiaz.org%29,:https://www.ingdiaz.org/biblia-ubuntu-herramienta-estudio/ necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Sun, 25 Jun 2023 14:23:40 GMT
+Server: Apache
+X-Pingback: https://www.ingdiaz.org/xmlrpc.php
+Link: <https://www.ingdiaz.org/wp-json/>; rel="https://api.w.org/", <https://www.ingdiaz.org/?p=1753>; rel=shortlink
+Content-Type: text/html; charset=UTF-8
+ original-response-headers Date: Sun, 25 Jun 2023 14:23:40 GMT
+Server: Apache
+X-Pingback: https://www.ingdiaz.org/xmlrpc.php
+Link: <https://www.ingdiaz.org/wp-json/>; rel="https://api.w.org/", <https://www.ingdiaz.org/?p=1753>; rel=shortlink
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+ ctid 1 uncompressed-len 0 net-response-time-onstart 12188 net-response-time-onstop 12473  �

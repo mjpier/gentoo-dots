@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>MPD - Gentoo Wiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"5d6bea680f35766b9e510f3a","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"MPD","wgTitle":"MPD","wgCurRevisionId":1244810,"wgRevisionId":1244810,"wgArticleId":843,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Multimedia","Daemons"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"MPD","wgRelevantArticleId":843,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgULSCurrentAutonym":"English","wgPageFormsTargetName":null,
+"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":!1,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"srfFilteredConfig":null,"wgULSPosition":"personal","wgULSisCompactLinksEnabled":!0,"wgEditSubmitButtonLabelPublish":!1};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","mediawiki.toc.styles":"ready","ext.smw.style":"ready",
+"ext.smw.tooltip.styles":"ready","ext.uls.pt":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.srf.styles":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.tyrian.styles":"ready","skins.tyrian.icons":"ready"};RLPAGEMODULES=["ext.gentooPackages","ext.smw.style","ext.smw.tooltips","smw.entityexaminer","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","ext.uls.compactlinks","ext.uls.interface","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=ext.smw.style%7Cext.smw.tooltip.styles&amp;only=styles&amp;skin=tyrian"/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=ext.srf.styles&amp;only=styles&amp;skin=tyrian"/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=ext.uls.pt%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.tyrian.icons%2Cstyles&amp;only=styles&amp;skin=tyrian"/>
+<script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=tyrian"></script>
+<link rel="stylesheet" href="https://assets.gentoo.org/tyrian/bootstrap.min.css"/><link rel="stylesheet" href="https://assets.gentoo.org/tyrian/tyrian.min.css"/><style>#mw-indicator-mw-helplink {display:none;}</style>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=tyrian"/>
+<meta name="generator" content="MediaWiki 1.35.9"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#54487a"/>
+<link rel="alternate" type="application/rdf+xml" title="MPD" href="/index.php?title=Special:ExportRDF/MPD&amp;xmlmime=rdf"/>
+<link rel="shortcut icon" href="https://www.gentoo.org/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Gentoo Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//wiki.gentoo.org/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-MPD rootpage-MPD skin-tyrian action-view">	<div class="mw-jump sr-only">
+		Jump to:		<a href="#top">content</a>
+	</div>
+	<header>
+		<div class="site-title">
+			<div class="container">
+				<div class="row">
+					<div class="site-title-buttons">
+						<div class="btn-group btn-group-sm">
+							<a href="https://get.gentoo.org/" role="button" class="btn get-gentoo"><span class="fa fa-fw fa-download"></span> <strong>Get Gentoo!</strong></a>
+							<div class="btn-group btn-group-sm">
+								<a class="btn gentoo-org-sites dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+									<span class="fa fa-fw fa-map-o"></span> <span class="hidden-xs">gentoo.org sites</span> <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a href="https://www.gentoo.org/" title="Main Gentoo website"><span class="fa fa-home fa-fw"></span> gentoo.org</a></li>
+									<li><a href="https://wiki.gentoo.org/" title="Find and contribute documentation"><span class="fa fa-file-text-o fa-fw"></span> Wiki</a></li>
+									<li><a href="https://bugs.gentoo.org/" title="Report issues and find common issues"><span class="fa fa-bug fa-fw"></span> Bugs</a></li>
+									<li><a href="https://forums.gentoo.org/" title="Discuss with the community"><span class="fa fa-comments-o fa-fw"></span> Forums</a></li>
+									<li><a href="https://packages.gentoo.org/" title="Find software for your Gentoo"><span class="fa fa-hdd-o fa-fw"></span> Packages</a></li>
+									<li class="divider"></li>
+									<li><a href="https://planet.gentoo.org/" title="Find out what's going on in the developer community"><span class="fa fa-rss fa-fw"></span> Planet</a></li>
+									<li><a href="https://archives.gentoo.org/" title="Read up on past discussions"><span class="fa fa-archive fa-fw"></span> Archives</a></li>
+									<li><a href="https://gitweb.gentoo.org/" title="Browse our source code in Gitweb"><span class="fa fa-code fa-fw"></span> Gitweb</a></li>
+									<li class="divider"></li>
+									<li><a href="https://infra-status.gentoo.org/" title="Get updates on the services provided by Gentoo"><span class="fa fa-server fa-fw"></span> Infra Status</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="logo">
+						<a href="/" title="Back to the homepage" class="site-logo"><object data="https://assets.gentoo.org/tyrian/site-logo.svg" type="image/svg+xml">
+							<img src="https://assets.gentoo.org/tyrian/site-logo.png" alt="Gentoo Linux Logo">
+						</object></a>
+						<span class="site-label">Wiki</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="tyrian-navbar" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse navbar-main-collapse">
+						<ul class="nav navbar-nav">
+							<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-help"><a href="/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>			<li class="dropdown">
+				<a href="/wiki/Gentoo_Wiki:Menu-Gentoo" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gentoo <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu"><li id="n-Gentoo-Projects"><a href="/wiki/Project:Gentoo">Gentoo Projects</a></li>				</ul>
+			</li>			<li class="dropdown">
+				<a href="/wiki/Gentoo_Wiki:Menu-Documentation" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu"><li id="n-Gentoo-Handbook"><a href="/wiki/Handbook:Main_Page">Gentoo Handbook</a></li><li id="n-Gentoo-FAQ"><a href="/wiki/FAQ">Gentoo FAQ</a></li><li id="n-Featured-Documents"><a href="/wiki/Project:Documentation/Overview">Featured Documents</a></li><li role="presentation" class="divider"></li><li role="presentation" class="dropdown-header">Topics</li><li id="n-Core-system"><a href="/wiki/Category:Core_system">Core system</a></li><li id="n-Hardware"><a href="/wiki/Category:Hardware">Hardware</a></li><li id="n-Software"><a href="/wiki/Category:Software">Software</a></li><li id="n-Desktop"><a href="/wiki/Category:Desktop">Desktop</a></li><li id="n-Server-.26-Security"><a href="/wiki/Category:Server_and_Security">Server &amp; Security</a></li><li id="n-Project-.26-Community"><a href="/wiki/Category:Project_and_Community">Project &amp; Community</a></li>				</ul>
+			</li>						</ul>
+						<ul class="nav navbar-nav navbar-right hidden-xs">
+									<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-cog"></i> Tools <span class="caret"></span></a>
+			<ul class="dropdown-menu" role="menu">
+				<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/MPD" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/MPD" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=MPD&amp;oldid=1244810" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=MPD&amp;action=info" title="More information about this page">Page information</a></li><li id="t-smwbrowselink"><a href="/wiki/Special:Browse/:MPD" rel="search">Browse properties</a></li>			</ul>
+		</li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+				<span class="fa fa-user" aria-label="Personal tools"></span>
+				User				<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li id="pt-uls" class="active"><a href="#" class="uls-trigger">English</a></li><li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=MPD" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=MPD" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>			</ul>
+		</li>
+								</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<nav class="navbar navbar-grey navbar-stick" id="wiki-actions" role="navigation">
+			<div class="container"><div class="row">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gw-toolbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="gw-toolbar">
+					<ul class="nav navbar-nav">
+					<li id="ca-nstab-main" class="selected active"><a href="/wiki/MPD" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk"><a href="/wiki/Talk:MPD" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>					</ul>
+							<form action="/index.php" id="searchform" class="navbar-form navbar-right" role="search">
+			<input type='hidden' name="title" value="Special:Search"/>
+
+				<div class="input-group">
+					<input type="search" name="search" placeholder="Search" title="Search Gentoo Wiki [f]" accesskey="f" id="searchInput" class="form-control"/>					<div class="input-group-btn"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton btn btn-default"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton btn btn-default"/></div>
+				</div>
+		</form>
+						<ul class="nav navbar-nav navbar-right hidden-xs">
+					<li id="ca-viewsource"><a href="/index.php?title=MPD&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">more <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+					<li id="ca-history"><a href="/index.php?title=MPD&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>							</ul>
+						</li>
+					</ul>
+				</div>
+			</div></div>
+		</nav>
+		</header>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="content" class="mw-body" role="main">
+						<a id="top"></a>
+						
+						<h1 id="firstHeading" class="first-header" lang="en">
+							<span dir="auto">MPD</span>
+						</h1>
+
+						<div id="bodyContent" class="mw-body-content">
+							<div id="siteSub">From Gentoo Wiki</div>
+							<div id="contentSub">
+															</div>
+												                <div id="jump-to-nav"></div>
+					                <a class="mw-jump-link" href="#mw-head">Jump to:navigation</a>
+					                <a class="mw-jump-link" href="#searchInput">Jump to:search</a>
+
+							<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="infobox-stack" class="list-group" style="width: 25em; float: right; clear: right; font-size: 90%; margin-left: 1em;">
+<div class="list-group-item text-center" style="padding-top: 3px; padding-bottom: 3px; background-color: #463C65; color: white;"><b>Resources</b></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><span class="fa fa-home fa-fw fa-2x"></span></span><span><a rel="nofollow" class="external text" href="https://www.musicpd.org/">Home</a></span></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><span class="fa fa-file-text fa-fw fa-2x"></span></span><span><a rel="nofollow" class="external text" href="https://www.musicpd.org/doc/html/user.html">Official documentation</a></span></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><span class="fa fa-hdd-o fa-fw fa-2x"></span></span><span><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/mpd">Package information</a></span></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><span class="fa fa-wikipedia-w fa-fw fa-2x"></span></span><span><a href="https://en.wikipedia.org/wiki/Music_Player_Daemon" class="extiw" title="wikipedia:Music Player Daemon">Wikipedia</a></span></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><span class="fa fa-comments-o fa-fw fa-2x"></span></span><span><span style="font-family: monospace; font-size: 95%;"><a rel="nofollow" class="external text" href="ircs://irc.libera.chat/#mpd">#mpd</a></span> (<span style="font-family: monospace; font-size: 95%;"><a rel="nofollow" class="external text" href="https://web.libera.chat/#mpd">webchat</a></span>)(registration required)</span></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><img alt="Ohloh Logo" src="/images/thumb/c/c1/Ohloh-logo.png/30px-Ohloh-logo.png" decoding="async" width="30" height="30" srcset="/images/c/c1/Ohloh-logo.png 1.5x" /></span><span><a rel="nofollow" class="external text" href="https://www.openhub.net/p/mpd">Open Hub</a></span></div>
+</div>
+<p><b>MPD</b> (<b>M</b>usic <b>P</b>layer <b>D</b>aemon) is a flexible, server-side application for playing music. Through plugins and libraries it can play a variety of sound files while being controlled by a network protocol.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Installation"><span class="tocnumber">1</span> <span class="toctext">Installation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#USE_flags"><span class="tocnumber">1.1</span> <span class="toctext">USE flags</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Emerge"><span class="tocnumber">1.2</span> <span class="toctext">Emerge</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Configuration"><span class="tocnumber">2</span> <span class="toctext">Configuration</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#System-wide_configuration"><span class="tocnumber">2.1</span> <span class="toctext">System-wide configuration</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Basic_configuration"><span class="tocnumber">2.1.1</span> <span class="toctext">Basic configuration</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#PulseAudio_.28optional.29"><span class="tocnumber">2.1.2</span> <span class="toctext">PulseAudio (optional)</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Pipewire_.28optional.29"><span class="tocnumber">2.1.3</span> <span class="toctext">Pipewire (optional)</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Built-in_HTTP_streaming_server_.28optional.29"><span class="tocnumber">2.1.4</span> <span class="toctext">Built-in HTTP streaming server (optional)</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Bluetooth_headset_.28optional.29"><span class="tocnumber">2.1.5</span> <span class="toctext">Bluetooth headset (optional)</span></a>
+<ul>
+<li class="toclevel-4 tocsection-11"><a href="#ALSA_.28non-PulseAudio.29_setup_with_BlueZ_5"><span class="tocnumber">2.1.5.1</span> <span class="toctext">ALSA (non-PulseAudio) setup with BlueZ 5</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-12"><a href="#FIFO_.28optional.29"><span class="tocnumber">2.1.6</span> <span class="toctext">FIFO (optional)</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Service"><span class="tocnumber">2.1.7</span> <span class="toctext">Service</span></a>
+<ul>
+<li class="toclevel-4 tocsection-14"><a href="#OpenRC"><span class="tocnumber">2.1.7.1</span> <span class="toctext">OpenRC</span></a></li>
+<li class="toclevel-4 tocsection-15"><a href="#systemd"><span class="tocnumber">2.1.7.2</span> <span class="toctext">systemd</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="#Per-user_configuration"><span class="tocnumber">2.2</span> <span class="toctext">Per-user configuration</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="#Basic_configuration_2"><span class="tocnumber">2.2.1</span> <span class="toctext">Basic configuration</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#Service_2"><span class="tocnumber">2.2.2</span> <span class="toctext">Service</span></a>
+<ul>
+<li class="toclevel-4 tocsection-19"><a href="#systemd_2"><span class="tocnumber">2.2.2.1</span> <span class="toctext">systemd</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#Clients"><span class="tocnumber">3</span> <span class="toctext">Clients</span></a>
+<ul>
+<li class="toclevel-2 tocsection-21"><a href="#Commandline.2FConsole"><span class="tocnumber">3.1</span> <span class="toctext">Commandline/Console</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Graphical_.28GTK.29"><span class="tocnumber">3.2</span> <span class="toctext">Graphical (GTK)</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Graphical_.28Qt.29"><span class="tocnumber">3.3</span> <span class="toctext">Graphical (Qt)</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Web"><span class="tocnumber">3.4</span> <span class="toctext">Web</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Scrobblers"><span class="tocnumber">3.5</span> <span class="toctext">Scrobblers</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a href="#Troubleshooting"><span class="tocnumber">4</span> <span class="toctext">Troubleshooting</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#External_resources"><span class="tocnumber">6</span> <span class="toctext">External resources</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Installation">Installation</span></h2>
+<h3><span class="mw-headline" id="USE_flags">USE flags</span></h3>
+<p class="mw-empty-elt">      </p><div class="panel panel-default gp-panel">
+        <div class="panel-heading gp-panel-heading">
+          <h3 class="panel-title">
+            <span class="text-muted">USE flags for</span>
+            <a href="https://packages.gentoo.org/packages/media-sound/mpd">media-sound/mpd</a>
+            <small><span class="fa fa-external-link-square"></span></small>
+            <small class="gp-pkg-desc">The Music Player Daemon (mpd)</small>
+          </h3>
+        </div>
+        <div class="table-responsive gp-useflag-table-container">
+                <table class="table gp-useflag-table">        <tbody><tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/alsa">alsa</a></code>
+          </td>
+          <td>
+            Add support for media-libs/alsa-lib (Advanced Linux Sound Architecture)
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/ao">ao</a></code>
+          </td>
+          <td>
+            Use libao audio output library for sound playback
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/audiofile">audiofile</a></code>
+          </td>
+          <td>
+            Add support for libaudiofile where applicable
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/bzip2">bzip2</a></code>
+          </td>
+          <td>
+            Use the bzlib compression library
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/cdio">cdio</a></code>
+          </td>
+          <td>
+            Use libcdio for ISO9660 parsing support
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/chromaprint">chromaprint</a></code>
+          </td>
+          <td>
+            Enable ChromaPrint / AcoustID support
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/cue">cue</a></code>
+          </td>
+          <td>
+            Enable CUE sheet support
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/curl">curl</a></code>
+          </td>
+          <td>
+            Support for web stream listening
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/dbus">dbus</a></code>
+          </td>
+          <td>
+            Enable dbus support for anything that needs it (gpsd, gnomemeeting, etc)
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/doc">doc</a></code>
+          </td>
+          <td>
+            Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/eventfd">eventfd</a></code>
+          </td>
+          <td>
+            Use the eventfd function in MPD's event loop
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/expat">expat</a></code>
+          </td>
+          <td>
+            Enable the use of dev-libs/expat for XML parsing
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/faad">faad</a></code>
+          </td>
+          <td>
+            Use external faad library for AAC decoding
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/ffmpeg">ffmpeg</a></code>
+          </td>
+          <td>
+            Enable ffmpeg/libav-based audio/video codec support
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/fifo">fifo</a></code>
+          </td>
+          <td>
+            Support writing audio to a FIFO
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/flac">flac</a></code>
+          </td>
+          <td>
+            Add support for FLAC: Free Lossless Audio Codec
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/fluidsynth">fluidsynth</a></code>
+          </td>
+          <td>
+            Enables Fluidsynth MIDI software synthesis (discouraged)
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/gme">gme</a></code>
+          </td>
+          <td>
+            Enables support for media-libs/game-music-emu for playing various video game music formats.
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/icu">icu</a></code>
+          </td>
+          <td>
+            Enable ICU (Internationalization Components for Unicode) support, using dev-libs/icu
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/id3tag">id3tag</a></code>
+          </td>
+          <td>
+            Support for ID3 tags
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/inotify">inotify</a></code>
+          </td>
+          <td>
+            Use the Linux kernel inotify subsystem to notice changes to mpd music library
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/jack">jack</a></code>
+          </td>
+          <td>
+            Add support for the JACK Audio Connection Kit
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/lame">lame</a></code>
+          </td>
+          <td>
+            Support for MP3 streaming via Icecast2
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/libmpdclient">libmpdclient</a></code>
+          </td>
+          <td>
+            Enable support for remote mpd databases
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/libsamplerate">libsamplerate</a></code>
+          </td>
+          <td>
+            Build with support for converting sample rates using libsamplerate
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/libsoxr">libsoxr</a></code>
+          </td>
+          <td>
+            Enable the libsoxr resampler
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/mad">mad</a></code>
+          </td>
+          <td>
+            Add support for mad (high-quality mp3 decoder library and cli frontend)
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/mikmod">mikmod</a></code>
+          </td>
+          <td>
+            Add libmikmod support to allow playing of SoundTracker-style music files
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/mms">mms</a></code>
+          </td>
+          <td>
+            Support for Microsoft Media Server (MMS) streams
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/modplug">modplug</a></code>
+          </td>
+          <td>
+            Add libmodplug support for playing SoundTracker-style music files
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/mpg123">mpg123</a></code>
+          </td>
+          <td>
+            Enable support for mp3 decoding over media-sound/mpg123
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/musepack">musepack</a></code>
+          </td>
+          <td>
+            Enable support for the musepack audio codec
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/network">network</a></code>
+          </td>
+          <td>
+            Enables network streaming support
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/nfs">nfs</a></code>
+          </td>
+          <td>
+            Enable support for the Network File System
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/openal">openal</a></code>
+          </td>
+          <td>
+            Add support for the Open Audio Library
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/openmpt">openmpt</a></code>
+          </td>
+          <td>
+            OpenMPT decoder plugin
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/opus">opus</a></code>
+          </td>
+          <td>
+            Enable Opus audio codec support
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/oss">oss</a></code>
+          </td>
+          <td>
+            Add support for OSS (Open Sound System)
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/pipe">pipe</a></code>
+          </td>
+          <td>
+            Support writing audio to a pipe
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/pipewire">pipewire</a></code>
+          </td>
+          <td>
+            PipeWire support
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/pulseaudio">pulseaudio</a></code>
+          </td>
+          <td>
+            Add sound server support via media-libs/libpulse (may be PulseAudio or PipeWire)
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/qobuz">qobuz</a></code>
+          </td>
+          <td>
+            Build plugin to access qobuz
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/recorder">recorder</a></code>
+          </td>
+          <td>
+            Enables output plugin for recording radio streams
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/samba">samba</a></code>
+          </td>
+          <td>
+            Add support for SAMBA (Windows File and Printer sharing)
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/selinux">selinux</a></code>
+          </td>
+          <td>
+            !!internal use only!! Security Enhanced Linux support, this must be set by the selinux profile or breakage will occur
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/sid">sid</a></code>
+          </td>
+          <td>
+            Build with SID (Commodore 64 Audio) support
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/signalfd">signalfd</a></code>
+          </td>
+          <td>
+            Use the signalfd function in MPD's event loop
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/snapcast">snapcast</a></code>
+          </td>
+          <td>
+            Snapcast audio plugin
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/sndfile">sndfile</a></code>
+          </td>
+          <td>
+            Add support for libsndfile
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/sndio">sndio</a></code>
+          </td>
+          <td>
+            Enable support for the media-sound/sndio backend
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/soundcloud">soundcloud</a></code>
+          </td>
+          <td>
+            Build plugin to access soundcloud
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/sqlite">sqlite</a></code>
+          </td>
+          <td>
+            Add support for sqlite - embedded sql database
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/systemd">systemd</a></code>
+          </td>
+          <td>
+            Enable support for systemd socket activation
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/test">test</a></code>
+          </td>
+          <td>
+            Enable dependencies and/or preparations necessary to run tests (usually controlled by FEATURES=test but can be toggled independently)
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/twolame">twolame</a></code>
+          </td>
+          <td>
+            Support twolame MPEG-2 encoding
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/udisks">udisks</a></code>
+          </td>
+          <td>
+            Enable storage management support (automounting, volume monitoring, etc)
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/upnp">upnp</a></code>
+          </td>
+          <td>
+            Enable UPnP port mapping support
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/vorbis">vorbis</a></code>
+          </td>
+          <td>
+            Add support for the OggVorbis audio codec
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/wavpack">wavpack</a></code>
+          </td>
+          <td>
+            Add support for wavpack audio compression tools
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/webdav">webdav</a></code>
+          </td>
+          <td>
+            Enable using music from a WebDAV share
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/wildmidi">wildmidi</a></code>
+          </td>
+          <td>
+            Enable MIDI support via wildmidi
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/zeroconf">zeroconf</a></code>
+          </td>
+          <td>
+            Support for DNS Service Discovery (DNS-SD)
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/zip">zip</a></code>
+          </td>
+          <td>
+            Enable support for ZIP archives
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/zlib">zlib</a></code>
+          </td>
+          <td>
+            Add support for zlib (de)compression
+          </td>
+        </tr>      </tbody></table>
+        </div>
+        <div class="panel-footer gp-panel-footer">
+          <small class="pull-right">
+            Data provided by the <a href="https://packages.gentoo.org">Gentoo Package Database</a>
+            &#183;
+            Last update: 2023-06-11 21:21
+          </small>
+          <small>
+            <a href="/wiki/Handbook:AMD64/Working/USE">More information about USE flags</a>
+          </small>
+        </div>
+      </div>
+<p class="mw-empty-elt"></p>
+<div class="alert alert-info gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-sticky-note-o fa-rotate-180"></i> Note</strong><br />A number of these flags are set by the <a href="/wiki/Profile_(Portage)" title="Profile (Portage)">desktop profile</a>.</div>
+<h3><span class="mw-headline" id="Emerge">Emerge</span></h3>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>emerge --ask media-sound/mpd</code></div></div> 
+<h2><span class="mw-headline" id="Configuration">Configuration</span></h2>
+<p>After finished installation MPD should be working with the Gentoo shipped default configuration.
+</p><p>A list of supported plugins/features of your MPD can be obtained by issuing:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>mpd --version</code></div></div>
+<p>MPD can be configured in a system-wide or per-user fashion. The configuration style choice depends on the intended usage.
+</p>
+<h3><span class="mw-headline" id="System-wide_configuration">System-wide configuration</span></h3>
+<h4><span class="mw-headline" id="Basic_configuration">Basic configuration</span></h4>
+<p>Below an example of a simple configuration:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">/etc/mpd.conf</code></strong><strong></strong></div><pre class="captioned">music_directory      "/var/lib/mpd/music"
+playlist_directory   "/var/lib/mpd/playlists"
+db_file              "/var/lib/mpd/database"
+log_file             "/var/lib/mpd/log"
+state_file           "/var/lib/mpd/state"
+
+user                 "mpd"
+
+bind_to_address      "localhost"
+bind_to_address      "/var/lib/mpd/socket"
+
+input {
+        plugin "curl"
+}
+
+audio_output {
+        type            "alsa"
+        name            "default"
+        mixer_type      "software"
+}</pre>
+<p>At this point MPD should be able to run as a system daemon with its own user called <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">mpd</span>, which is the default setting of MPD.
+</p>
+<h4><span id="PulseAudio_(optional)"></span><span class="mw-headline" id="PulseAudio_.28optional.29">PulseAudio (optional)</span></h4>
+<p>If MPD was build with <a href="/wiki/PulseAudio" title="PulseAudio">PulseAudio</a> support (<code>pulseaudio</code> USE flag), add a dedicated <var>audio_output</var> section to your <span style="font-family: monospace; font-size: 95%">/etc/mpd.conf</span>:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">/etc/mpd.conf</code></strong><strong></strong></div><pre class="captioned">audio_output {
+        type            "pulse"
+        name            "Pulse Output"
+        mixer_control   "Master"
+}</pre>
+<div class="alert alert-info gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-sticky-note-o fa-rotate-180"></i> Note</strong><br />If running pipewire with libpulse, this option will allow a system level MPD daemon to access the user level pipewire server if one of the tcp options is enabled in /etc/pipewire/pipewire-pulse.conf. See "Adding multi user support" in the <a href="/wiki/Pipewire" class="mw-redirect" title="Pipewire">Pipewire</a> page.</div>
+<div class="alert alert-info gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-sticky-note-o fa-rotate-180"></i> Note</strong><br />It may be a good practice to <a href="#Per-user_configuration">run both PulseAudio and MPD under X11 user instead</a>.</div>
+<h4><span id="Pipewire_(optional)"></span><span class="mw-headline" id="Pipewire_.28optional.29">Pipewire (optional)</span></h4>
+<p>If MPD was build with <a href="/wiki/Pipewire" class="mw-redirect" title="Pipewire">Pipewire</a> support (<code>pipewire</code> USE flag), add a dedicated <var>audio_output</var> section to your <span style="font-family: monospace; font-size: 95%">/etc/mpd.conf</span>:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">/etc/mpd.conf</code></strong><strong></strong></div><pre class="captioned">audio_output {
+        type            "pipewire"
+        name            "Pipewire Output"
+}</pre>
+<div class="alert alert-info gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-sticky-note-o fa-rotate-180"></i> Note</strong><br />Pipewire will not let an MPD system daemon access a user level pipewire socket, so this option should only be used if running MPD as a user level daemon.</div>
+<h4><span id="Built-in_HTTP_streaming_server_(optional)"></span><span class="mw-headline" id="Built-in_HTTP_streaming_server_.28optional.29">Built-in HTTP streaming server (optional)</span></h4>
+<p>If MPD was build with <code>network</code> USE flag, add a dedicated <var>audio_output</var> section to your <span style="font-family: monospace; font-size: 95%">/etc/mpd.conf</span>:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">/etc/mpd.conf</code></strong><strong></strong></div><pre class="captioned">audio_output {    
+        type            "httpd"
+        name            "HTTP Stream"
+        encoder         "vorbis"                # optional, vorbis(OGG) or lame(MP3)
+        port            "8000"
+        bitrate         "192"                   # do not define if quality is defined      
+        format          "44100:16:1"
+}
+
+bind_to_address "0.0.0.0"</pre>
+<p>Replace <code>localhost</code> with <code>0.0.0.0</code> or a specific interface IP. Bind to address <code>0.0.0.0</code> means here: stream on all local found IP interfaces. You could change it to a specific interface IP address like e.g. <code>192.168.1.2</code> then the streaming server is bound to that interface IP only. 
+</p>
+<div class="alert alert-info gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-sticky-note-o fa-rotate-180"></i> Note</strong><br />Some players require to specify the file format in the URL to be able to connect to the stream. Example: <tt>http://192.168.1.2:8000/mpd.ogg</tt></div>
+<h4><span id="Bluetooth_headset_(optional)"></span><span class="mw-headline" id="Bluetooth_headset_.28optional.29">Bluetooth headset (optional)</span></h4>
+<p>Setup a Bluetooth headset first, according to the <a href="/wiki/Bluetooth_headset" title="Bluetooth headset">Bluetooth headset</a> article.
+</p>
+<h5><span id="ALSA_(non-PulseAudio)_setup_with_BlueZ_5"></span><span class="mw-headline" id="ALSA_.28non-PulseAudio.29_setup_with_BlueZ_5">ALSA (non-PulseAudio) setup with BlueZ 5</span></h5>
+<p>Put a user level <span style="font-family: monospace; font-size: 95%">~/.asoundrc</span> file in MPD's <var>$HOME</var> directory, which is <span style="font-family: monospace; font-size: 95%">/var/lib/mpd</span> by default. MPD will be able to control the volume of the headset.
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">/var/lib/mpd/.asoundrc</code></strong><strong></strong></div><pre class="captioned"># Specify the parameters of the Bluetooth connection
+defaults.bluealsa {
+     interface "hci0"            # host Bluetooth adapter
+     device "XX:XX:XX:XX:XX:XX"  # Bluetooth headset MAC address
+     profile "a2dp"
+}</pre>
+<p>To be able to switch between the Bluetooth headset and the default sound card, add these lines to the <var>audio_output</var> section in <span style="font-family: monospace; font-size: 95%">/etc/mpd.conf</span>:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">/etc/mpd.conf</code></strong><strong></strong></div><pre class="captioned">audio_output {
+        type            "alsa"
+        name            "My ALSA Device"
+}
+
+audio_output {
+        type            "alsa"
+        name            "ALSA Bluetooth Headset"
+        device          "bluealsa"
+        mixer_type    "software"
+}</pre>
+<p>MPD might crash when switching output _while_ playing (if so, pause before switching).
+</p><p>If you experience some issues while trying to play AAC or other files, like:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>mpd --no-daemon --stderr</code></div><pre>...
+alsa_output: Failed to open "My ALSA Device" [alsa]: Error opening ALSA device "bluealsa" (snd_pcm_hw_params): Invalid argument
+...</pre></div>
+<p>Then add this line to your <var>audio_output</var>:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">/etc/mpd.conf</code></strong><strong></strong></div><pre class="captioned"><pre>        format          "44100:16:2"</pre></pre>
+<h4><span id="FIFO_(optional)"></span><span class="mw-headline" id="FIFO_.28optional.29">FIFO (optional)</span></h4>
+<p>The FIFO output is needed for a visualiser plugin which is used by the <a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/ncmpcpp">media-sound/ncmpcpp</a> client. Following additional settings enable the FIFO functionality:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">/etc/mpd.conf</code></strong><strong></strong></div><pre class="captioned">audio_output {
+        type  "fifo"
+        name  "mpdFIFO"
+        path  "/tmp/mpd.fifo"
+        enabled  "yes"
+}</pre>
+<p>The <var>name</var> and <var>path</var> variables values can be set to reflect own needs.
+</p>
+<h4><span class="mw-headline" id="Service">Service</span></h4>
+<h5><span class="mw-headline" id="OpenRC">OpenRC</span></h5>
+<p>To start MPD:
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>rc-service mpd start</code></div></div>
+<p>To start MPD at boot time, add it the default runlevel:
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>rc-update add mpd default</code></div></div>
+<h5><span class="mw-headline" id="systemd">systemd</span></h5>
+<p>To start MPD immediately:
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>systemctl start mpd</code></div></div>
+<p>To start MPD at boot time:
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>systemctl enable mpd</code></div></div>
+<h3><span class="mw-headline" id="Per-user_configuration">Per-user configuration</span></h3>
+<p>It may be handy to run MPD configured for a specific user.
+</p>
+<h4><span class="mw-headline" id="Basic_configuration_2">Basic configuration</span></h4>
+<p>Start with copying <span style="font-family: monospace; font-size: 95%">/etc/mpd.conf</span> to <span style="font-family: monospace; font-size: 95%">$XDG_CONFIG_HOME/mpd/mpd.conf</span>. Then you need to adjust the configuration to your needs.
+</p><p>Sample configuration using PulseAudio output:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">$XDG_CONFIG_HOME/mpd/mpd.conf</code></strong><strong></strong></div><pre class="captioned"># Recommended location for database
+db_file                 "~/.mpd/database"
+
+# Input
+input {
+        plugin          "curl"
+}
+
+# PulseAudio output
+audio_output {
+        type            "pulse"
+        name            "Pulse Audio"
+}</pre><p>
+Now it should be possible to start MPD simply issuing: </p><div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>mpd</code></div></div>
+<h4><span class="mw-headline" id="Service_2">Service</span></h4>
+<div class="alert alert-info gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-sticky-note-o fa-rotate-180"></i> Note</strong><br />If your <a href="/wiki/Cron" title="Cron">cron</a> program supports <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">@reboot</span> you can create a cronjob that has <span style="font-family: monospace; font-size: 95%">/usr/bin/mpd</span> start at boot in place of an  init script.</div>
+<h5><span class="mw-headline" id="systemd_2">systemd</span></h5>
+<p>It is possible to leverage <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">systemd</span> <a href="/wiki/Systemd#User_services" title="Systemd">user services</a> to control MPD in a per-user way.
+</p><p>To start MPD immediately: 
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>systemctl --user start mpd</code></div></div>
+<p>To start MPD at user's first login:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>systemctl --user enable mpd</code></div></div>
+<h2><span class="mw-headline" id="Clients">Clients</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="https://www.musicpd.org/clients/">Sorted List of MPD clients</a></li></ul>
+<h3><span id="Commandline/Console"></span><span class="mw-headline" id="Commandline.2FConsole">Commandline/Console</span></h3>
+<ul><li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/mpc">media-sound/mpc</a> â€” <a rel="nofollow" class="external text" href="https://www.musicpd.org/clients/mpc/">A commandline client for Music Player Daemon (media-sound/mpd)</a> (useful for key-bindings)</li>
+<li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/ncmpc">media-sound/ncmpc</a> â€” <a rel="nofollow" class="external text" href="https://www.musicpd.org/clients/ncmpc/">An ncurses client for the Music Player Daemon (MPD)</a></li>
+<li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/ncmpcpp">media-sound/ncmpcpp</a> â€” <a rel="nofollow" class="external text" href="https://rybczak.net/ncmpcpp/">An ncurses mpd client, ncmpc clone with some new features, written in C++</a></li>
+<li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/pms">media-sound/pms</a> â€” <a rel="nofollow" class="external text" href="https://kimtore.no/pms/">Practical Music Search, another ncurses based mpd client with vi like keys, written in Golang</a></li>
+<li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/vimpc">media-sound/vimpc</a> â€” <a rel="nofollow" class="external text" href="https://github.com/boysetsfrog/vimpc">An ncurses based mpd client with vi like key bindings</a></li>
+<li><a rel="nofollow" class="external text" href="https://elpa.gnu.org/packages/ampc.html">Ampc</a> â€” Asynchronous Music Player Controller for <a href="/wiki/Emacs" title="Emacs">Emacs</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/carnager/clerk">clerk</a> â€” mpd client, based on rofi/fzf, written in Perl</li>
+<li><a rel="nofollow" class="external text" href="https://hackage.haskell.org/package/vimus">vimus</a> â€” An MPD client with vim-like key bindings, written in Haskell</li></ul>
+<h3><span id="Graphical_(GTK)"></span><span class="mw-headline" id="Graphical_.28GTK.29">Graphical (GTK)</span></h3>
+<ul><li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/ario">media-sound/ario</a></li>
+<li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/gimmix">media-sound/gimmix</a></li>
+<li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/glurp">media-sound/glurp</a></li>
+<li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/sonata">media-sound/sonata</a></li>
+<li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/xfmpc">media-sound/xfmpc</a></li></ul>
+<h3><span id="Graphical_(Qt)"></span><span class="mw-headline" id="Graphical_.28Qt.29">Graphical (Qt)</span></h3>
+<ul><li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/cantata">media-sound/cantata</a></li>
+<li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/qmpdclient">media-sound/qmpdclient</a></li>
+<li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/qtmpc">media-sound/qtmpc</a></li>
+<li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/quimup">media-sound/quimup</a></li></ul>
+<h3><span class="mw-headline" id="Web">Web</span></h3>
+<ul><li><a rel="nofollow" class="external text" href="https://www.ympd.org/">ympd</a> â€” MPD Web GUI - written in C, utilizing Websockets and Bootstrap/JS</li></ul>
+<h3><span class="mw-headline" id="Scrobblers">Scrobblers</span></h3>
+<p>Scrobblers are clients that submit to <a rel="nofollow" class="external text" href="https://www.audioscrobbler.net/">Audioscrobbler</a> â€” compatible services (eg. <a rel="nofollow" class="external text" href="https://libre.fm">libre.fm</a> or <a rel="nofollow" class="external text" href="https://last.fm">last.fm</a>)
+</p>
+<ul><li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/mpdas">media-sound/mpdas</a></li>
+<li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/mpdscribble">media-sound/mpdscribble</a></li>
+<li><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/scmpc">media-sound/scmpc</a></li></ul>
+<h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<p>For general troubleshooting refer to the <a rel="nofollow" class="external text" href="https://www.musicpd.org/doc/html/user.html#chapter-8-troubleshooting">MPD user manual troubleshooting section</a>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="/wiki/Upmpdcli" title="Upmpdcli">Upmpdcli</a> â€” a free and open source UPnP media renderer front-end for Music Player Daemon (MPD).</li></ul>
+<h2><span class="mw-headline" id="External_resources">External resources</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="https://forum.musicpd.org/">MPD Forum</a></li>
+<li><a rel="nofollow" class="external text" href="https://sourceforge.net/projects/musicpd/">MPD on Sourceforge</a></li>
+<li><a rel="nofollow" class="external text" href="https://wiki.archlinux.org/index.php/Music_Player_Daemon">MPD at Arch Wiki</a></li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20230625121528
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+[SMW] Inâ€text annotation parser time: 0.002 seconds
+CPU time usage: 0.114 seconds
+Real time usage: 1.020 seconds
+Preprocessor visited node count: 2637/1000000
+Postâ€expand include size: 57641/2097152 bytes
+Template argument size: 18953/2097152 bytes
+Highest expansion depth: 19/40
+Expensive parser function count: 1/100
+Unstrip recursion depth: 0/20
+Unstrip postâ€expand size: 16569/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  973.799      1 -total
+ 92.40%  899.767      1 Template:USEflag
+  3.30%   32.104      1 Template:InfoBox_stack
+  1.47%   14.311      6 Template:InfoBox
+  1.43%   13.894      1 Template:See_also
+  0.77%    7.536     10 Template:GenericCmd
+  0.68%    6.626      5 Template:RootCmd
+  0.65%    6.296      1 Template:InfoBox_irc
+  0.65%    6.292     38 Template:Trim
+  0.64%    6.258      1 Template:InfoBox_package
+-->
+
+<!-- Saved in parser cache with key gentoo?hwiki:pcache:idhash:843-0!dateformat=default and timestamp 20230625121527 and revision id 1244810
+ -->
+</div></div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.gentoo.org/index.php?title=MPD&amp;oldid=1244810">https://wiki.gentoo.org/index.php?title=MPD&amp;oldid=1244810</a>"</div>
+<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/Category:Multimedia" title="Category:Multimedia">Multimedia</a></li><li><a href="/wiki/Category:Daemons" title="Category:Daemons">Daemons</a></li></ul></div></div>						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-offset-2 col-md-7">
+											<div class="spacer"></div>
+						<ul id="f-list">
+							<li id="lastmod>"> This page was last edited on 15 June 2023, at 19:42.</li><li id="privacy>"><a href="/wiki/Gentoo_Wiki:Privacy_policy" class="mw-redirect" title="Gentoo Wiki:Privacy policy">Privacy policy</a></li><li id="about>"><a href="/wiki/Gentoo_Wiki:About" title="Gentoo Wiki:About">About Gentoo Wiki</a></li><li id="disclaimer>"><a href="/wiki/Gentoo_Wiki:General_disclaimer" title="Gentoo Wiki:General disclaimer">Disclaimers</a></li>						</ul>
+									</div>
+				<div class="col-xs-12 col-md-3">
+					<!-- No questions or comments, the Wiki has enough information on how to contact us. -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3 col-md-2">
+					<ul class="footerlinks three-icons">
+						<li><a href="https://twitter.com/gentoo" title="@Gentoo on Twitter"><span class="fa fa-twitter fa-fw"></span></a></li>
+						<li><a href="https://www.facebook.com/gentoo.org" title="Gentoo on Facebook"><span class="fa fa-facebook fa-fw"></span></a></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="col-xs-9 col-md-9">
+					<strong>&copy; 2001&ndash;2023 Gentoo Authors</strong><br />
+					<small>
+						Gentoo is a trademark of the Gentoo Foundation, Inc.
+						The contents of this document, unless otherwise expressly stated, are licensed under the
+						<a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC-BY-SA-4.0</a> license.
+						The <a href="https://www.gentoo.org/inside-gentoo/foundation/name-logo-guidelines.html">Gentoo Name and Logo Usage Guidelines</a> apply.
+					</small>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+<script>
+function defer(method) {
+    if (window.jQuery) {
+        method();
+    } else {
+        setTimeout(function() { defer(method) }, 50);
+    }
+}
+defer(function() { mw.loader.load( 'https://assets.gentoo.org/tyrian/bootstrap.min.js'); });
+</script>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0.002},"limitreport":{"cputime":"0.114","walltime":"1.020","ppvisitednodes":{"value":2637,"limit":1000000},"postexpandincludesize":{"value":57641,"limit":2097152},"templateargumentsize":{"value":18953,"limit":2097152},"expansiondepth":{"value":19,"limit":40},"expensivefunctioncount":{"value":1,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":16569,"limit":5000000},"timingprofile":["100.00%  973.799      1 -total"," 92.40%  899.767      1 Template:USEflag","  3.30%   32.104      1 Template:InfoBox_stack","  1.47%   14.311      6 Template:InfoBox","  1.43%   13.894      1 Template:See_also","  0.77%    7.536     10 Template:GenericCmd","  0.68%    6.626      5 Template:RootCmd","  0.65%    6.296      1 Template:InfoBox_irc","  0.65%    6.292     38 Template:Trim","  0.64%    6.258      1 Template:InfoBox_package"]},"cachereport":{"timestamp":"20230625121528","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":71});});</script></body></html>×4óñb&           d˜¢ˆEº]­d˜¢h   I    O^partitionKey=%28https%2Cgentoo.org%29,:https://wiki.gentoo.org/wiki/MPD strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br request-Accept-Language en-US,en;q=0.5 response-head HTTP/2 200 OK
+server: nginx
+date: Sun, 25 Jun 2023 20:24:06 GMT
+content-type: text/html; charset=UTF-8
+x-content-type-options: nosniff
+content-language: en
+vary: Accept-Encoding, Accept-Language, Cookie, Authorization
+expires: Sun, 25 Jun 2023 20:24:06 GMT
+cache-control: private, must-revalidate, max-age=0
+last-modified: Sun, 25 Jun 2023 20:24:06 GMT
+x-request-id: 5d6bea680f35766b9e510f3a
+x-clacks-overhead: Terry Pratchett, Noirin Trouble Pluinceid, Dan Kaminsky
+permissions-policy: interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000
+X-Firefox-Spdy: h2
+ original-response-headers server: nginx
+date: Sun, 25 Jun 2023 20:24:06 GMT
+content-type: text/html; charset=UTF-8
+x-content-type-options: nosniff
+content-language: en
+vary: Accept-Encoding, Accept-Language, Cookie, Authorization
+expires: Sun, 25 Jun 2023 20:24:06 GMT
+cache-control: private, must-revalidate, max-age=0
+last-modified: Sun, 25 Jun 2023 20:24:06 GMT
+x-request-id: 5d6bea680f35766b9e510f3a
+x-clacks-overhead: Terry Pratchett, Noirin Trouble Pluinceid, Dan Kaminsky
+permissions-policy: interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0   üÐ

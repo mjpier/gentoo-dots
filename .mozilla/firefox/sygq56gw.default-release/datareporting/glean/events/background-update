@@ -1,0 +1,5 @@
+{"timestamp":740228,"category":"nimbus_events","name":"validation_failed","extra":{"reason":"invalid-feature","feature":"accessibilityCache","experiment":"next-generation-accessibility-engine-powering-screen-readers"}}
+{"timestamp":740228,"category":"nimbus_events","name":"validation_failed","extra":{"feature":"accessibilityCache","reason":"invalid-feature","experiment":"next-generation-accessibility-engine-powering-screen-readers-and-other-ats-copy"}}
+{"timestamp":769715,"category":"nimbus_events","name":"unenrollment","extra":{"enrollment_id":"c970a213-7cb7-4fe7-b377-76b1c12c2f14","reason":"recipe-not-seen","experiment":"firefox-accounts-toolbar-button-badge","branch":"control"}}
+{"timestamp":769715,"category":"nimbus_events","name":"validation_failed","extra":{"experiment":"next-generation-accessibility-engine-powering-screen-readers","reason":"invalid-feature","feature":"accessibilityCache"}}
+{"timestamp":769715,"category":"nimbus_events","name":"validation_failed","extra":{"experiment":"next-generation-accessibility-engine-powering-screen-readers-and-other-ats-copy","feature":"accessibilityCache","reason":"invalid-feature"}}

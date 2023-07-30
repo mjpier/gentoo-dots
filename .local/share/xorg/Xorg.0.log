@@ -1,0 +1,988 @@
+[    52.240] 
+X.Org X Server 1.21.1.8
+X Protocol Version 11, Revision 0
+[    52.243] Current Operating System: Linux microx 6.3.12-gentoo-dist #1 SMP PREEMPT_DYNAMIC Thu Jul  6 03:23:28 -00 2023 x86_64
+[    52.243] Kernel command line: BOOT_IMAGE=/vmlinuz-6.3.12-gentoo-dist root=/dev/mapper/vg0-root ro root=/dev/mapper/vg0-root rd.luks.key=/crypt_key.luks.gpg:UUID=3221-66B0 rd.luks.uuid=cb2ad9bc-8cad-4bbd-bb1c-fea97747a9cd rd.lvm.lv=vg0/root
+[    52.245]  
+[    52.246] Current version of pixman: 0.42.2
+[    52.248] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    52.248] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    52.252] (==) Log file: "/home/marlon/.local/share/xorg/Xorg.0.log", Time: Sun Jul 30 06:30:24 2023
+[    52.254] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    52.254] (==) No Layout section.  Using the first Screen section.
+[    52.254] (==) No screen section available. Using defaults.
+[    52.254] (**) |-->Screen "Default Screen Section" (0)
+[    52.254] (**) |   |-->Monitor "<default monitor>"
+[    52.254] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    52.254] (==) Automatically adding devices
+[    52.254] (==) Automatically enabling devices
+[    52.254] (==) Automatically adding GPU devices
+[    52.254] (==) Automatically binding GPU devices
+[    52.254] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    52.256] (WW) The directory "/usr/share/fonts/TTF" does not exist.
+[    52.256] 	Entry deleted from font path.
+[    52.256] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[    52.256] 	Entry deleted from font path.
+[    52.256] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[    52.256] 	Entry deleted from font path.
+[    52.257] (==) FontPath set to:
+	/usr/share/fonts/misc,
+	/usr/share/fonts/100dpi,
+	/usr/share/fonts/75dpi
+[    52.257] (==) ModulePath set to "/usr/lib64/xorg/modules"
+[    52.257] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    52.257] (II) Module ABI versions:
+[    52.258] 	X.Org ANSI C Emulation: 0.4
+[    52.258] 	X.Org Video Driver: 25.2
+[    52.258] 	X.Org XInput driver : 24.4
+[    52.258] 	X.Org Server Extension : 10.0
+[    52.258] (++) using VT number 1
+
+[    52.259] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_31
+[    52.259] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    52.259] (II) Platform probe for /sys/devices/pci0000:00/0000:00:01.1/0000:01:00.0/drm/card0
+[    53.223] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 10 paused 0
+[    53.223] (II) xfree86: Adding drm device (/dev/dri/card1)
+[    53.224] (II) Platform probe for /sys/devices/pci0000:00/0000:00:08.1/0000:05:00.0/drm/card1
+[    53.224] (II) systemd-logind: got fd for /dev/dri/card1 226:1 fd 11 paused 0
+[    53.226] (--) PCI: (1@0:0:0) 10de:25a2:1043:16ad rev 161, Mem @ 0xfb000000/16777216, 0xfe00000000/4294967296, 0xff00000000/33554432, I/O @ 0x0000f000/128, BIOS @ 0x????????/524288
+[    53.226] (--) PCI:*(5@0:0:0) 1002:1636:1043:16ad rev 199, Mem @ 0xff10000000/268435456, 0xff20000000/2097152, 0xfc500000/524288, I/O @ 0x0000d000/256
+[    53.226] (II) LoadModule: "glx"
+[    53.234] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[    53.249] (II) Module glx: vendor="X.Org Foundation"
+[    53.249] 	compiled for 1.21.1.8, module version = 1.0.0
+[    53.249] 	ABI class: X.Org Server Extension, version 10.0
+[    53.249] (II) Applying OutputClass "AMDgpu" to /dev/dri/card1
+[    53.249] 	loading driver: amdgpu
+[    53.249] (==) Matched amdgpu as autoconfigured driver 0
+[    53.249] (==) Matched ati as autoconfigured driver 1
+[    53.249] (==) Matched nouveau as autoconfigured driver 2
+[    53.249] (==) Matched nv as autoconfigured driver 3
+[    53.249] (==) Matched modesetting as autoconfigured driver 4
+[    53.249] (==) Matched fbdev as autoconfigured driver 5
+[    53.249] (==) Matched vesa as autoconfigured driver 6
+[    53.249] (==) Assigned the driver to the xf86ConfigLayout
+[    53.249] (II) LoadModule: "amdgpu"
+[    53.249] (II) Loading /usr/lib64/xorg/modules/drivers/amdgpu_drv.so
+[    53.254] (II) Module amdgpu: vendor="X.Org Foundation"
+[    53.254] 	compiled for 1.21.1.8, module version = 23.0.0
+[    53.255] 	Module class: X.Org Video Driver
+[    53.255] 	ABI class: X.Org Video Driver, version 25.2
+[    53.255] (II) LoadModule: "ati"
+[    53.255] (II) Loading /usr/lib64/xorg/modules/drivers/ati_drv.so
+[    53.255] (II) Module ati: vendor="X.Org Foundation"
+[    53.255] 	compiled for 1.21.1.8, module version = 22.0.0
+[    53.255] 	Module class: X.Org Video Driver
+[    53.255] 	ABI class: X.Org Video Driver, version 25.2
+[    53.255] (II) LoadModule: "radeon"
+[    53.255] (II) Loading /usr/lib64/xorg/modules/drivers/radeon_drv.so
+[    53.260] (II) Module radeon: vendor="X.Org Foundation"
+[    53.260] 	compiled for 1.21.1.8, module version = 22.0.0
+[    53.260] 	Module class: X.Org Video Driver
+[    53.260] 	ABI class: X.Org Video Driver, version 25.2
+[    53.260] (II) LoadModule: "nouveau"
+[    53.260] (WW) Warning, couldn't open module nouveau
+[    53.260] (EE) Failed to load module "nouveau" (module does not exist, 0)
+[    53.260] (II) LoadModule: "nv"
+[    53.260] (WW) Warning, couldn't open module nv
+[    53.260] (EE) Failed to load module "nv" (module does not exist, 0)
+[    53.260] (II) LoadModule: "modesetting"
+[    53.260] (II) Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+[    53.262] (II) Module modesetting: vendor="X.Org Foundation"
+[    53.262] 	compiled for 1.21.1.8, module version = 1.21.1
+[    53.262] 	Module class: X.Org Video Driver
+[    53.262] 	ABI class: X.Org Video Driver, version 25.2
+[    53.262] (II) LoadModule: "fbdev"
+[    53.262] (WW) Warning, couldn't open module fbdev
+[    53.262] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[    53.262] (II) LoadModule: "vesa"
+[    53.262] (WW) Warning, couldn't open module vesa
+[    53.262] (EE) Failed to load module "vesa" (module does not exist, 0)
+[    53.262] (II) AMDGPU: Driver for AMD Radeon:
+	All GPUs supported by the amdgpu kernel driver
+[    53.262] (II) RADEON: Driver for ATI/AMD Radeon chipsets:
+	ATI Radeon Mobility X600 (M24), ATI FireMV 2400,
+	ATI Radeon Mobility X300 (M24), ATI FireGL M24 GL,
+	ATI Radeon X600 (RV380), ATI FireGL V3200 (RV380),
+	ATI Radeon IGP320 (A3), ATI Radeon IGP330/340/350 (A4),
+	ATI Radeon 9500, ATI Radeon 9600TX, ATI FireGL Z1, ATI Radeon 9800SE,
+	ATI Radeon 9800, ATI FireGL X2, ATI Radeon 9600, ATI Radeon 9600SE,
+	ATI Radeon 9600XT, ATI FireGL T2, ATI Radeon 9650, ATI FireGL RV360,
+	ATI Radeon 7000 IGP (A4+), ATI Radeon 8500 AIW,
+	ATI Radeon IGP320M (U1), ATI Radeon IGP330M/340M/350M (U2),
+	ATI Radeon Mobility 7000 IGP, ATI Radeon 9000/PRO, ATI Radeon 9000,
+	ATI Radeon X800 (R420), ATI Radeon X800PRO (R420),
+	ATI Radeon X800SE (R420), ATI FireGL X3 (R420),
+	ATI Radeon Mobility 9800 (M18), ATI Radeon X800 SE (R420),
+	ATI Radeon X800XT (R420), ATI Radeon X800 VE (R420),
+	ATI Radeon X850 (R480), ATI Radeon X850 XT (R480),
+	ATI Radeon X850 SE (R480), ATI Radeon X850 PRO (R480),
+	ATI Radeon X850 XT PE (R480), ATI Radeon Mobility M7,
+	ATI Mobility FireGL 7800 M7, ATI Radeon Mobility M6,
+	ATI FireGL Mobility 9000 (M9), ATI Radeon Mobility 9000 (M9),
+	ATI Radeon 9700 Pro, ATI Radeon 9700/9500Pro, ATI FireGL X1,
+	ATI Radeon 9800PRO, ATI Radeon 9800XT,
+	ATI Radeon Mobility 9600/9700 (M10/M11),
+	ATI Radeon Mobility 9600 (M10), ATI Radeon Mobility 9600 (M11),
+	ATI FireGL Mobility T2 (M10), ATI FireGL Mobility T2e (M11),
+	ATI Radeon, ATI FireGL 8700/8800, ATI Radeon 8500, ATI Radeon 9100,
+	ATI Radeon 7500, ATI Radeon VE/7000, ATI ES1000,
+	ATI Radeon Mobility X300 (M22), ATI Radeon Mobility X600 SE (M24C),
+	ATI FireGL M22 GL, ATI Radeon X800 (R423), ATI Radeon X800PRO (R423),
+	ATI Radeon X800LE (R423), ATI Radeon X800SE (R423),
+	ATI Radeon X800 XTP (R430), ATI Radeon X800 XL (R430),
+	ATI Radeon X800 SE (R430), ATI Radeon X800 (R430),
+	ATI FireGL V7100 (R423), ATI FireGL V5100 (R423),
+	ATI FireGL unknown (R423), ATI Mobility FireGL V5000 (M26),
+	ATI Mobility Radeon X700 XL (M26), ATI Mobility Radeon X700 (M26),
+	ATI Radeon X550XTX, ATI Radeon 9100 IGP (A5),
+	ATI Radeon Mobility 9100 IGP (U3), ATI Radeon XPRESS 200,
+	ATI Radeon XPRESS 200M, ATI Radeon 9250, ATI Radeon 9200,
+	ATI Radeon 9200SE, ATI FireMV 2200, ATI Radeon X300 (RV370),
+	ATI Radeon X600 (RV370), ATI Radeon X550 (RV370),
+	ATI FireGL V3100 (RV370), ATI FireMV 2200 PCIE (RV370),
+	ATI Radeon Mobility 9200 (M9+), ATI Mobility Radeon X800 XT (M28),
+	ATI Mobility FireGL V5100 (M28), ATI Mobility Radeon X800 (M28),
+	ATI Radeon X850, ATI unknown Radeon / FireGL (R480),
+	ATI Radeon X800XT (R423), ATI FireGL V5000 (RV410),
+	ATI Radeon X700 XT (RV410), ATI Radeon X700 PRO (RV410),
+	ATI Radeon X700 SE (RV410), ATI Radeon X700 (RV410),
+	ATI Radeon X1800, ATI Mobility Radeon X1800 XT,
+	ATI Mobility Radeon X1800, ATI Mobility FireGL V7200,
+	ATI FireGL V7200, ATI FireGL V5300, ATI Mobility FireGL V7100,
+	ATI FireGL V7300, ATI FireGL V7350, ATI Radeon X1600, ATI RV505,
+	ATI Radeon X1300/X1550, ATI Radeon X1550, ATI M54-GL,
+	ATI Mobility Radeon X1400, ATI Radeon X1550 64-bit,
+	ATI Mobility Radeon X1300, ATI Radeon X1300, ATI FireGL V3300,
+	ATI FireGL V3350, ATI Mobility Radeon X1450,
+	ATI Mobility Radeon X2300, ATI Mobility Radeon X1350,
+	ATI FireMV 2250, ATI Radeon X1650, ATI Mobility FireGL V5200,
+	ATI Mobility Radeon X1600, ATI Radeon X1300 XT/X1600 Pro,
+	ATI FireGL V3400, ATI Mobility FireGL V5250,
+	ATI Mobility Radeon X1700, ATI Mobility Radeon X1700 XT,
+	ATI FireGL V5200, ATI Radeon X2300HD, ATI Mobility Radeon HD 2300,
+	ATI Radeon X1950, ATI Radeon X1900, ATI AMD Stream Processor,
+	ATI RV560, ATI Mobility Radeon X1900, ATI Radeon X1950 GT, ATI RV570,
+	ATI FireGL V7400, ATI Radeon 9100 PRO IGP,
+	ATI Radeon Mobility 9200 IGP, ATI Radeon X1200, ATI RS740,
+	ATI RS740M, ATI Radeon HD 2900 XT, ATI Radeon HD 2900 Pro,
+	ATI Radeon HD 2900 GT, ATI FireGL V8650, ATI FireGL V8600,
+	ATI FireGL V7600, ATI Radeon 4800 Series, ATI Radeon HD 4870 x2,
+	ATI Radeon HD 4850 x2, ATI FirePro V8750 (FireGL),
+	ATI FirePro V7760 (FireGL), ATI Mobility RADEON HD 4850,
+	ATI Mobility RADEON HD 4850 X2, ATI FirePro RV770,
+	AMD FireStream 9270, AMD FireStream 9250, ATI FirePro V8700 (FireGL),
+	ATI Mobility RADEON HD 4870, ATI Mobility RADEON M98,
+	ATI FirePro M7750, ATI M98, ATI Mobility Radeon HD 4650,
+	ATI Radeon RV730 (AGP), ATI Mobility Radeon HD 4670,
+	ATI FirePro M5750, ATI RV730XT [Radeon HD 4670], ATI RADEON E4600,
+	ATI Radeon HD 4600 Series, ATI RV730 PRO [Radeon HD 4650],
+	ATI FirePro V7750 (FireGL), ATI FirePro V5700 (FireGL),
+	ATI FirePro V3750 (FireGL), ATI Mobility Radeon HD 4830,
+	ATI Mobility Radeon HD 4850, ATI FirePro M7740, ATI RV740,
+	ATI Radeon HD 4770, ATI Radeon HD 4700 Series, ATI RV610,
+	ATI Radeon HD 2400 XT, ATI Radeon HD 2400 Pro,
+	ATI Radeon HD 2400 PRO AGP, ATI FireGL V4000, ATI Radeon HD 2350,
+	ATI Mobility Radeon HD 2400 XT, ATI Mobility Radeon HD 2400,
+	ATI RADEON E2400, ATI FireMV 2260, ATI RV670, ATI Radeon HD3870,
+	ATI Mobility Radeon HD 3850, ATI Radeon HD3850,
+	ATI Mobility Radeon HD 3850 X2, ATI Mobility Radeon HD 3870,
+	ATI Mobility Radeon HD 3870 X2, ATI Radeon HD3870 X2,
+	ATI FireGL V7700, ATI Radeon HD3690, AMD Firestream 9170,
+	ATI Radeon HD 4550, ATI Radeon RV710, ATI Radeon HD 4350,
+	ATI Mobility Radeon 4300 Series, ATI Mobility Radeon 4500 Series,
+	ATI FirePro RG220, ATI Mobility Radeon 4330, ATI RV630,
+	ATI Mobility Radeon HD 2600, ATI Mobility Radeon HD 2600 XT,
+	ATI Radeon HD 2600 XT AGP, ATI Radeon HD 2600 Pro AGP,
+	ATI Radeon HD 2600 XT, ATI Radeon HD 2600 Pro, ATI Gemini RV630,
+	ATI Gemini Mobility Radeon HD 2600 XT, ATI FireGL V5600,
+	ATI FireGL V3600, ATI Radeon HD 2600 LE,
+	ATI Mobility FireGL Graphics Processor, ATI Radeon HD 3470,
+	ATI Mobility Radeon HD 3430, ATI Mobility Radeon HD 3400 Series,
+	ATI Radeon HD 3450, ATI Radeon HD 3430, ATI FirePro V3700,
+	ATI FireMV 2450, ATI Radeon HD 3600 Series, ATI Radeon HD 3650 AGP,
+	ATI Radeon HD 3600 PRO, ATI Radeon HD 3600 XT,
+	ATI Mobility Radeon HD 3650, ATI Mobility Radeon HD 3670,
+	ATI Mobility FireGL V5700, ATI Mobility FireGL V5725,
+	ATI Radeon HD 3200 Graphics, ATI Radeon 3100 Graphics,
+	ATI Radeon HD 3300 Graphics, ATI Radeon 3000 Graphics, SUMO, SUMO2,
+	ATI Radeon HD 4200, ATI Radeon 4100, ATI Mobility Radeon HD 4200,
+	ATI Mobility Radeon 4100, ATI Radeon HD 4290, ATI Radeon HD 4250,
+	AMD Radeon HD 6310 Graphics, AMD Radeon HD 6250 Graphics,
+	AMD Radeon HD 6300 Series Graphics,
+	AMD Radeon HD 6200 Series Graphics, PALM, CYPRESS,
+	ATI FirePro (FireGL) Graphics Adapter, AMD Firestream 9370,
+	AMD Firestream 9350, ATI Radeon HD 5800 Series,
+	ATI Radeon HD 5900 Series, ATI Mobility Radeon HD 5800 Series,
+	ATI Radeon HD 5700 Series, ATI Radeon HD 6700 Series,
+	ATI Mobility Radeon HD 5000 Series, ATI Mobility Radeon HD 5570,
+	ATI Radeon HD 5670, ATI Radeon HD 5570, ATI Radeon HD 5500 Series,
+	REDWOOD, ATI Mobility Radeon Graphics, CEDAR, ATI FirePro 2270,
+	ATI Radeon HD 5450, CAYMAN, AMD Radeon HD 6900 Series,
+	AMD Radeon HD 6900M Series, Mobility Radeon HD 6000 Series, BARTS,
+	AMD Radeon HD 6800 Series, AMD Radeon HD 6700 Series, TURKS, CAICOS,
+	ARUBA, TAHITI, PITCAIRN, VERDE, OLAND, HAINAN, BONAIRE, KABINI,
+	MULLINS, KAVERI, HAWAII
+[    53.263] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    53.265] (WW) Falling back to old probe method for modesetting
+[    53.265] (II) modeset(G0): using drv /dev/dri/card0
+[    53.265] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[    53.265] (II) AMDGPU(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    53.265] (==) AMDGPU(0): Depth 24, (--) framebuffer bpp 32
+[    53.265] (II) AMDGPU(0): Pixel depth = 24 bits stored in 4 bytes (32 bpp pixmaps)
+[    53.265] (==) AMDGPU(0): Default visual is TrueColor
+[    53.265] (II) Applying OutputClass "AMDgpu" options to /dev/dri/card1
+[    53.265] (==) AMDGPU(0): RGB weight 888
+[    53.265] (II) AMDGPU(0): Using 8 bits per RGB (8 bit DAC)
+[    53.265] (--) AMDGPU(0): Chipset: "AMD Radeon Graphics" (ChipID = 0x1636)
+[    53.265] (II) Loading sub module "fb"
+[    53.265] (II) LoadModule: "fb"
+[    53.265] (II) Module "fb" already built-in
+[    53.265] (II) Loading sub module "dri2"
+[    53.265] (II) LoadModule: "dri2"
+[    53.265] (II) Module "dri2" already built-in
+[    53.978] (II) Loading sub module "glamoregl"
+[    53.978] (II) LoadModule: "glamoregl"
+[    53.978] (II) Loading /usr/lib64/xorg/modules/libglamoregl.so
+[    53.989] (II) Module glamoregl: vendor="X.Org Foundation"
+[    53.989] 	compiled for 1.21.1.8, module version = 1.0.1
+[    53.989] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    54.005] (II) AMDGPU(0): glamor X acceleration enabled on AMD Radeon Graphics (renoir, LLVM 16.0.6, DRM 3.52, 6.3.12-gentoo-dist)
+[    54.005] (II) AMDGPU(0): glamor detected, initialising EGL layer.
+[    54.005] (==) AMDGPU(0): TearFree property default: auto
+[    54.005] (==) AMDGPU(0): VariableRefresh: disabled
+[    54.005] (==) AMDGPU(0): AsyncFlipSecondaries: disabled
+[    54.005] (II) AMDGPU(0): KMS Pageflipping: enabled
+[    54.007] (II) AMDGPU(0): Output eDP has no monitor section
+[    54.007] (II) AMDGPU(0): Output HDMI-A-0 has no monitor section
+[    54.016] (II) AMDGPU(0): EDID for output eDP
+[    54.016] (II) AMDGPU(0): Manufacturer: NCP  Model: 4d  Serial#: 0
+[    54.016] (II) AMDGPU(0): Year: 2019  Week: 51
+[    54.016] (II) AMDGPU(0): EDID Version: 1.4
+[    54.016] (II) AMDGPU(0): Digital Display Input
+[    54.016] (II) AMDGPU(0): 8 bits per channel
+[    54.016] (II) AMDGPU(0): Digital interface is DisplayPort
+[    54.016] (II) AMDGPU(0): Max Image Size [cm]: horiz.: 34  vert.: 19
+[    54.016] (II) AMDGPU(0): Gamma: 2.20
+[    54.016] (II) AMDGPU(0): No DPMS capabilities specified
+[    54.016] (II) AMDGPU(0): Supported color encodings: RGB 4:4:4 
+[    54.016] (II) AMDGPU(0): First detailed timing is preferred mode
+[    54.016] (II) AMDGPU(0): Preferred mode is native pixel format and refresh rate
+[    54.016] (II) AMDGPU(0): Display is continuous-frequency
+[    54.016] (II) AMDGPU(0): redX: 0.595 redY: 0.361   greenX: 0.346 greenY: 0.555
+[    54.016] (II) AMDGPU(0): blueX: 0.157 blueY: 0.106   whiteX: 0.312 whiteY: 0.328
+[    54.016] (II) AMDGPU(0): Manufacturer's mask: 0
+[    54.016] (II) AMDGPU(0): Supported detailed timing:
+[    54.016] (II) AMDGPU(0): clock: 354.7 MHz   Image Size:  344 x 194 mm
+[    54.016] (II) AMDGPU(0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2180 h_border: 0
+[    54.016] (II) AMDGPU(0): v_active: 1080  v_sync: 1083  v_sync_end 1088 v_blanking: 1130 v_border: 0
+[    54.016] (II) AMDGPU(0): Supported detailed timing:
+[    54.016] (II) AMDGPU(0): clock: 147.8 MHz   Image Size:  344 x 194 mm
+[    54.016] (II) AMDGPU(0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2180 h_border: 0
+[    54.016] (II) AMDGPU(0): v_active: 1080  v_sync: 1083  v_sync_end 1088 v_blanking: 1130 v_border: 0
+[    54.016] (II) AMDGPU(0): Ranges: V min: 48 V max: 144 Hz, H min: 154 H max: 154 kHz, PixClock max 355 MHz
+[    54.016] (II) AMDGPU(0):  LM156LF-2F01
+[    54.016] (II) AMDGPU(0): EDID (in hex):
+[    54.016] (II) AMDGPU(0): 	00ffffffffffff0038704d0000000000
+[    54.016] (II) AMDGPU(0): 	331d0104a5221378036850985c588e28
+[    54.016] (II) AMDGPU(0): 	1b505400000001010101010101010101
+[    54.016] (II) AMDGPU(0): 	010101010101918a8004713832403020
+[    54.016] (II) AMDGPU(0): 	350058c21000001abd39800471383240
+[    54.016] (II) AMDGPU(0): 	3020350058c21000001a000000fd0030
+[    54.016] (II) AMDGPU(0): 	909a9a23010a202020202020000000fe
+[    54.016] (II) AMDGPU(0): 	004c4d3135364c462d324630310a0049
+[    54.016] (II) AMDGPU(0): Printing probed modes for output eDP
+[    54.016] (II) AMDGPU(0): Modeline "1920x1080"x144.0  354.73  1920 1968 2000 2180  1080 1083 1088 1130 +hsync -vsync (162.7 kHz eP)
+[    54.016] (II) AMDGPU(0): Modeline "1920x1080"x60.0  147.81  1920 1968 2000 2180  1080 1083 1088 1130 +hsync -vsync (67.8 kHz e)
+[    54.016] (II) AMDGPU(0): EDID for output HDMI-A-0
+[    54.016] (II) AMDGPU(0): Output eDP connected
+[    54.016] (II) AMDGPU(0): Output HDMI-A-0 disconnected
+[    54.016] (II) AMDGPU(0): Using exact sizes for initial modes
+[    54.016] (II) AMDGPU(0): Output eDP using initial mode 1920x1080 +0+0
+[    54.016] (II) AMDGPU(0): mem size init: gart size :3d7d84800 vram size: s:1df68000 visible:1df68000
+[    54.016] (==) AMDGPU(0): DPI set to (96, 96)
+[    54.016] (==) AMDGPU(0): Using gamma correction (1.0, 1.0, 1.0)
+[    54.016] (II) Loading sub module "ramdac"
+[    54.016] (II) LoadModule: "ramdac"
+[    54.016] (II) Module "ramdac" already built-in
+[    54.016] (==) modeset(G0): Depth 24, (==) framebuffer bpp 32
+[    54.017] (==) modeset(G0): RGB weight 888
+[    54.017] (==) modeset(G0): Default visual is TrueColor
+[    54.017] (II) Loading sub module "glamoregl"
+[    54.017] (II) LoadModule: "glamoregl"
+[    54.017] (II) Loading /usr/lib64/xorg/modules/libglamoregl.so
+[    54.017] (II) Module glamoregl: vendor="X.Org Foundation"
+[    54.017] 	compiled for 1.21.1.8, module version = 1.0.1
+[    54.017] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    54.022] (II) modeset(G0): Refusing to try glamor on llvmpipe
+[    54.023] (II) modeset(G0): glamor initialization failed
+[    54.023] (II) modeset(G0): ShadowFB: preferred YES, enabled YES
+[    54.023] (II) modeset(G0): Double-buffered shadow updates: off
+[    54.073] (II) modeset(G0): Output DP-1-1 has no monitor section
+[    54.126] (II) modeset(G0): EDID for output DP-1-1
+[    54.126] (==) modeset(G0): Using gamma correction (1.0, 1.0, 1.0)
+[    54.126] (==) modeset(G0): DPI set to (96, 96)
+[    54.126] (II) Loading sub module "fb"
+[    54.126] (II) LoadModule: "fb"
+[    54.126] (II) Module "fb" already built-in
+[    54.126] (II) Loading sub module "shadow"
+[    54.126] (II) LoadModule: "shadow"
+[    54.126] (II) Loading /usr/lib64/xorg/modules/libshadow.so
+[    54.135] (II) Module shadow: vendor="X.Org Foundation"
+[    54.135] 	compiled for 1.21.1.8, module version = 1.1.0
+[    54.135] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    54.135] (II) UnloadModule: "radeon"
+[    54.135] (II) Unloading radeon
+[    54.135] (II) AMDGPU(0): [DRI2] Setup complete
+[    54.135] (II) AMDGPU(0): [DRI2]   DRI driver: radeonsi
+[    54.135] (II) AMDGPU(0): [DRI2]   VDPAU driver: radeonsi
+[    54.142] (II) AMDGPU(0): Front buffer pitch: 7680 bytes
+[    54.142] (II) AMDGPU(0): SYNC extension fences enabled
+[    54.142] (II) AMDGPU(0): Present extension enabled
+[    54.142] (==) AMDGPU(0): DRI3 enabled
+[    54.143] (==) AMDGPU(0): Backing store enabled
+[    54.143] (II) AMDGPU(0): Direct rendering enabled
+[    54.152] (II) AMDGPU(0): Use GLAMOR acceleration.
+[    54.152] (II) AMDGPU(0): Acceleration enabled
+[    54.152] (==) AMDGPU(0): DPMS enabled
+[    54.152] (==) AMDGPU(0): Silken mouse enabled
+[    54.152] (II) AMDGPU(0): Set up textured video (glamor)
+[    54.161] (WW) AMDGPU(0): Option "HotplugDriver" is not used
+[    54.161] (==) modeset(G0): Backing store enabled
+[    54.161] (==) modeset(G0): Silken mouse enabled
+[    54.161] (II) modeset(G0): Initializing kms color map for depth 24, 8 bpc.
+[    54.161] (==) modeset(G0): DPMS enabled
+[    54.161] (II) Initializing extension Generic Event Extension
+[    54.161] (II) Initializing extension SHAPE
+[    54.161] (II) Initializing extension MIT-SHM
+[    54.161] (II) Initializing extension XInputExtension
+[    54.161] (II) Initializing extension XTEST
+[    54.161] (II) Initializing extension BIG-REQUESTS
+[    54.161] (II) Initializing extension SYNC
+[    54.161] (II) Initializing extension XKEYBOARD
+[    54.161] (II) Initializing extension XC-MISC
+[    54.161] (II) Initializing extension XFIXES
+[    54.161] (II) Initializing extension RENDER
+[    54.161] (II) Initializing extension RANDR
+[    54.161] (II) Initializing extension COMPOSITE
+[    54.162] (II) Initializing extension DAMAGE
+[    54.162] (II) Initializing extension MIT-SCREEN-SAVER
+[    54.162] (II) Initializing extension DOUBLE-BUFFER
+[    54.162] (II) Initializing extension RECORD
+[    54.162] (II) Initializing extension DPMS
+[    54.162] (II) Initializing extension Present
+[    54.162] (II) Initializing extension DRI3
+[    54.162] (II) Initializing extension X-Resource
+[    54.162] (II) Initializing extension XVideo
+[    54.162] (II) Initializing extension XVideo-MotionCompensation
+[    54.162] (II) Initializing extension GLX
+[    54.165] (II) AIGLX: Loaded and initialized radeonsi
+[    54.165] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    54.165] (II) Initializing extension XFree86-VidModeExtension
+[    54.165] (II) Initializing extension XFree86-DGA
+[    54.165] (II) Initializing extension XFree86-DRI
+[    54.165] (II) Initializing extension DRI2
+[    54.165] (II) modeset(G0): Damage tracking initialized
+[    54.165] (II) AMDGPU(0): Setting screen physical size to 508 x 285
+[    54.237] (II) config/udev: Adding input device Asus Wireless Radio Control (/dev/input/event15)
+[    54.237] (**) Asus Wireless Radio Control: Applying InputClass "libinput keyboard catchall"
+[    54.237] (II) LoadModule: "libinput"
+[    54.237] (II) Loading /usr/lib64/xorg/modules/input/libinput_drv.so
+[    54.241] (II) Module libinput: vendor="X.Org Foundation"
+[    54.241] 	compiled for 1.21.1.8, module version = 1.3.0
+[    54.241] 	Module class: X.Org XInput Driver
+[    54.241] 	ABI class: X.Org XInput driver, version 24.4
+[    54.241] (II) Using input driver 'libinput' for 'Asus Wireless Radio Control'
+[    54.242] (II) systemd-logind: got fd for /dev/input/event15 13:79 fd 25 paused 0
+[    54.242] (**) Asus Wireless Radio Control: always reports core events
+[    54.242] (**) Option "Device" "/dev/input/event15"
+[    54.245] (II) event15 - Asus Wireless Radio Control: is tagged by udev as: Keyboard
+[    54.245] (II) event15 - Asus Wireless Radio Control: device is a keyboard
+[    54.245] (II) event15 - Asus Wireless Radio Control: device removed
+[    54.245] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ATK4002:00/input/input18/event15"
+[    54.245] (II) XINPUT: Adding extended input device "Asus Wireless Radio Control" (type: KEYBOARD, id 6)
+[    54.246] (II) event15 - Asus Wireless Radio Control: is tagged by udev as: Keyboard
+[    54.246] (II) event15 - Asus Wireless Radio Control: device is a keyboard
+[    54.246] (II) config/udev: Adding input device Video Bus (/dev/input/event4)
+[    54.246] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    54.246] (II) Using input driver 'libinput' for 'Video Bus'
+[    54.247] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 28 paused 0
+[    54.247] (**) Video Bus: always reports core events
+[    54.247] (**) Option "Device" "/dev/input/event4"
+[    54.247] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[    54.247] (II) event4  - Video Bus: device is a keyboard
+[    54.248] (II) event4  - Video Bus: device removed
+[    54.248] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:0d/LNXVIDEO:00/input/input6/event4"
+[    54.248] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    54.248] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[    54.248] (II) event4  - Video Bus: device is a keyboard
+[    54.248] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[    54.248] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    54.248] (II) Using input driver 'libinput' for 'Power Button'
+[    54.249] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 29 paused 0
+[    54.249] (**) Power Button: always reports core events
+[    54.249] (**) Option "Device" "/dev/input/event0"
+[    54.249] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    54.249] (II) event0  - Power Button: device is a keyboard
+[    54.249] (II) event0  - Power Button: device removed
+[    54.249] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[    54.249] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[    54.250] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    54.250] (II) event0  - Power Button: device is a keyboard
+[    54.250] (II) config/udev: Adding input device Lid Switch (/dev/input/event2)
+[    54.250] (II) No input driver specified, ignoring this device.
+[    54.250] (II) This device may have been added with another device file.
+[    54.250] (II) config/udev: Adding input device Sleep Button (/dev/input/event1)
+[    54.250] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[    54.250] (II) Using input driver 'libinput' for 'Sleep Button'
+[    54.251] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 30 paused 0
+[    54.251] (**) Sleep Button: always reports core events
+[    54.251] (**) Option "Device" "/dev/input/event1"
+[    54.251] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[    54.251] (II) event1  - Sleep Button: device is a keyboard
+[    54.251] (II) event1  - Sleep Button: device removed
+[    54.251] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input1/event1"
+[    54.251] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 9)
+[    54.252] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[    54.252] (II) event1  - Sleep Button: device is a keyboard
+[    54.252] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event19)
+[    54.252] (II) No input driver specified, ignoring this device.
+[    54.252] (II) This device may have been added with another device file.
+[    54.252] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event20)
+[    54.252] (II) No input driver specified, ignoring this device.
+[    54.252] (II) This device may have been added with another device file.
+[    54.253] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event21)
+[    54.253] (II) No input driver specified, ignoring this device.
+[    54.253] (II) This device may have been added with another device file.
+[    54.253] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event22)
+[    54.253] (II) No input driver specified, ignoring this device.
+[    54.253] (II) This device may have been added with another device file.
+[    54.253] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=3 (/dev/input/event18)
+[    54.253] (II) No input driver specified, ignoring this device.
+[    54.253] (II) This device may have been added with another device file.
+[    54.254] (II) config/udev: Adding input device CASUE USB KB (/dev/input/event7)
+[    54.254] (**) CASUE USB KB: Applying InputClass "libinput keyboard catchall"
+[    54.254] (II) Using input driver 'libinput' for 'CASUE USB KB'
+[    54.254] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 31 paused 0
+[    54.254] (**) CASUE USB KB: always reports core events
+[    54.254] (**) Option "Device" "/dev/input/event7"
+[    54.255] (II) event7  - CASUE USB KB: is tagged by udev as: Keyboard
+[    54.255] (II) event7  - CASUE USB KB: device is a keyboard
+[    54.255] (II) event7  - CASUE USB KB: device removed
+[    54.255] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.0/0003:2A7A:938F.0002/input/input9/event7"
+[    54.255] (II) XINPUT: Adding extended input device "CASUE USB KB" (type: KEYBOARD, id 10)
+[    54.256] (II) event7  - CASUE USB KB: is tagged by udev as: Keyboard
+[    54.256] (II) event7  - CASUE USB KB: device is a keyboard
+[    54.257] (II) config/udev: Adding input device CASUE USB KB Consumer Control (/dev/input/event8)
+[    54.257] (**) CASUE USB KB Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    54.257] (II) Using input driver 'libinput' for 'CASUE USB KB Consumer Control'
+[    54.257] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 32 paused 0
+[    54.257] (**) CASUE USB KB Consumer Control: always reports core events
+[    54.257] (**) Option "Device" "/dev/input/event8"
+[    54.258] (II) event8  - CASUE USB KB Consumer Control: is tagged by udev as: Keyboard
+[    54.258] (II) event8  - CASUE USB KB Consumer Control: device is a keyboard
+[    54.258] (II) event8  - CASUE USB KB Consumer Control: device removed
+[    54.258] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.1/0003:2A7A:938F.0003/input/input10/event8"
+[    54.258] (II) XINPUT: Adding extended input device "CASUE USB KB Consumer Control" (type: KEYBOARD, id 11)
+[    54.259] (II) event8  - CASUE USB KB Consumer Control: is tagged by udev as: Keyboard
+[    54.259] (II) event8  - CASUE USB KB Consumer Control: device is a keyboard
+[    54.260] (II) config/udev: Adding input device CASUE USB KB System Control (/dev/input/event9)
+[    54.260] (**) CASUE USB KB System Control: Applying InputClass "libinput keyboard catchall"
+[    54.260] (II) Using input driver 'libinput' for 'CASUE USB KB System Control'
+[    54.260] (II) systemd-logind: got fd for /dev/input/event9 13:73 fd 33 paused 0
+[    54.260] (**) CASUE USB KB System Control: always reports core events
+[    54.260] (**) Option "Device" "/dev/input/event9"
+[    54.261] (II) event9  - CASUE USB KB System Control: is tagged by udev as: Keyboard
+[    54.261] (II) event9  - CASUE USB KB System Control: device is a keyboard
+[    54.261] (II) event9  - CASUE USB KB System Control: device removed
+[    54.261] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.1/0003:2A7A:938F.0003/input/input11/event9"
+[    54.261] (II) XINPUT: Adding extended input device "CASUE USB KB System Control" (type: KEYBOARD, id 12)
+[    54.262] (II) event9  - CASUE USB KB System Control: is tagged by udev as: Keyboard
+[    54.262] (II) event9  - CASUE USB KB System Control: device is a keyboard
+[    54.263] (II) config/udev: Adding input device Compx 2.4G Receiver (/dev/input/event10)
+[    54.263] (**) Compx 2.4G Receiver: Applying InputClass "libinput keyboard catchall"
+[    54.263] (II) Using input driver 'libinput' for 'Compx 2.4G Receiver'
+[    54.263] (II) systemd-logind: got fd for /dev/input/event10 13:74 fd 34 paused 0
+[    54.263] (**) Compx 2.4G Receiver: always reports core events
+[    54.263] (**) Option "Device" "/dev/input/event10"
+[    54.264] (II) event10 - Compx 2.4G Receiver: is tagged by udev as: Keyboard
+[    54.264] (II) event10 - Compx 2.4G Receiver: device is a keyboard
+[    54.264] (II) event10 - Compx 2.4G Receiver: device removed
+[    54.264] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.2/3-1.2:1.0/0003:25A7:FA61.0004/input/input12/event10"
+[    54.264] (II) XINPUT: Adding extended input device "Compx 2.4G Receiver" (type: KEYBOARD, id 13)
+[    54.265] (II) event10 - Compx 2.4G Receiver: is tagged by udev as: Keyboard
+[    54.265] (II) event10 - Compx 2.4G Receiver: device is a keyboard
+[    54.266] (II) config/udev: Adding input device Compx 2.4G Receiver Mouse (/dev/input/event11)
+[    54.266] (**) Compx 2.4G Receiver Mouse: Applying InputClass "libinput pointer catchall"
+[    54.266] (II) Using input driver 'libinput' for 'Compx 2.4G Receiver Mouse'
+[    54.266] (II) systemd-logind: got fd for /dev/input/event11 13:75 fd 35 paused 0
+[    54.266] (**) Compx 2.4G Receiver Mouse: always reports core events
+[    54.266] (**) Option "Device" "/dev/input/event11"
+[    54.267] (II) event11 - Compx 2.4G Receiver Mouse: is tagged by udev as: Mouse
+[    54.267] (II) event11 - Compx 2.4G Receiver Mouse: device is a pointer
+[    54.267] (II) event11 - Compx 2.4G Receiver Mouse: device removed
+[    54.267] (II) libinput: Compx 2.4G Receiver Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    54.267] (II) libinput: Compx 2.4G Receiver Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    54.267] (II) libinput: Compx 2.4G Receiver Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    54.267] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.2/3-1.2:1.1/0003:25A7:FA61.0005/input/input13/event11"
+[    54.267] (II) XINPUT: Adding extended input device "Compx 2.4G Receiver Mouse" (type: MOUSE, id 14)
+[    54.267] (**) Option "AccelerationScheme" "none"
+[    54.267] (**) Compx 2.4G Receiver Mouse: (accel) selected scheme none/0
+[    54.267] (**) Compx 2.4G Receiver Mouse: (accel) acceleration factor: 2.000
+[    54.268] (**) Compx 2.4G Receiver Mouse: (accel) acceleration threshold: 4
+[    54.268] (II) event11 - Compx 2.4G Receiver Mouse: is tagged by udev as: Mouse
+[    54.268] (II) event11 - Compx 2.4G Receiver Mouse: device is a pointer
+[    54.269] (II) config/udev: Adding input device Compx 2.4G Receiver Mouse (/dev/input/mouse2)
+[    54.269] (II) No input driver specified, ignoring this device.
+[    54.269] (II) This device may have been added with another device file.
+[    54.269] (II) config/udev: Adding input device Compx 2.4G Receiver (/dev/input/event12)
+[    54.269] (II) No input driver specified, ignoring this device.
+[    54.269] (II) This device may have been added with another device file.
+[    54.270] (II) config/udev: Adding input device Compx 2.4G Receiver Consumer Control (/dev/input/event13)
+[    54.270] (**) Compx 2.4G Receiver Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    54.270] (II) Using input driver 'libinput' for 'Compx 2.4G Receiver Consumer Control'
+[    54.270] (II) systemd-logind: got fd for /dev/input/event13 13:77 fd 36 paused 0
+[    54.270] (**) Compx 2.4G Receiver Consumer Control: always reports core events
+[    54.270] (**) Option "Device" "/dev/input/event13"
+[    54.271] (II) event13 - Compx 2.4G Receiver Consumer Control: is tagged by udev as: Keyboard
+[    54.271] (II) event13 - Compx 2.4G Receiver Consumer Control: device is a keyboard
+[    54.271] (II) event13 - Compx 2.4G Receiver Consumer Control: device removed
+[    54.271] (II) libinput: Compx 2.4G Receiver Consumer Control: needs a virtual subdevice
+[    54.271] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.2/3-1.2:1.1/0003:25A7:FA61.0005/input/input15/event13"
+[    54.271] (II) XINPUT: Adding extended input device "Compx 2.4G Receiver Consumer Control" (type: MOUSE, id 15)
+[    54.271] (**) Option "AccelerationScheme" "none"
+[    54.271] (**) Compx 2.4G Receiver Consumer Control: (accel) selected scheme none/0
+[    54.271] (**) Compx 2.4G Receiver Consumer Control: (accel) acceleration factor: 2.000
+[    54.271] (**) Compx 2.4G Receiver Consumer Control: (accel) acceleration threshold: 4
+[    54.272] (II) event13 - Compx 2.4G Receiver Consumer Control: is tagged by udev as: Keyboard
+[    54.272] (II) event13 - Compx 2.4G Receiver Consumer Control: device is a keyboard
+[    54.273] (II) config/udev: Adding input device Compx 2.4G Receiver System Control (/dev/input/event14)
+[    54.273] (**) Compx 2.4G Receiver System Control: Applying InputClass "libinput keyboard catchall"
+[    54.273] (II) Using input driver 'libinput' for 'Compx 2.4G Receiver System Control'
+[    54.273] (II) systemd-logind: got fd for /dev/input/event14 13:78 fd 37 paused 0
+[    54.273] (**) Compx 2.4G Receiver System Control: always reports core events
+[    54.273] (**) Option "Device" "/dev/input/event14"
+[    54.274] (II) event14 - Compx 2.4G Receiver System Control: is tagged by udev as: Keyboard
+[    54.274] (II) event14 - Compx 2.4G Receiver System Control: device is a keyboard
+[    54.274] (II) event14 - Compx 2.4G Receiver System Control: device removed
+[    54.274] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.2/3-1.2:1.1/0003:25A7:FA61.0005/input/input16/event14"
+[    54.274] (II) XINPUT: Adding extended input device "Compx 2.4G Receiver System Control" (type: KEYBOARD, id 16)
+[    54.275] (II) event14 - Compx 2.4G Receiver System Control: is tagged by udev as: Keyboard
+[    54.275] (II) event14 - Compx 2.4G Receiver System Control: device is a keyboard
+[    54.276] (II) config/udev: Adding input device HD-Audio Generic Headphone (/dev/input/event23)
+[    54.276] (II) No input driver specified, ignoring this device.
+[    54.276] (II) This device may have been added with another device file.
+[    54.276] (II) config/udev: Adding input device ELAN1203:00 04F3:307A Mouse (/dev/input/event5)
+[    54.276] (**) ELAN1203:00 04F3:307A Mouse: Applying InputClass "libinput pointer catchall"
+[    54.276] (II) Using input driver 'libinput' for 'ELAN1203:00 04F3:307A Mouse'
+[    54.276] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 38 paused 0
+[    54.276] (**) ELAN1203:00 04F3:307A Mouse: always reports core events
+[    54.276] (**) Option "Device" "/dev/input/event5"
+[    54.277] (II) event5  - ELAN1203:00 04F3:307A Mouse: is tagged by udev as: Mouse Pointingstick
+[    54.277] (II) event5  - ELAN1203:00 04F3:307A Mouse: device is a pointer
+[    54.278] (II) event5  - ELAN1203:00 04F3:307A Mouse: device removed
+[    54.278] (II) libinput: ELAN1203:00 04F3:307A Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    54.278] (II) libinput: ELAN1203:00 04F3:307A Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    54.278] (II) libinput: ELAN1203:00 04F3:307A Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    54.278] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:03/i2c-0/i2c-ELAN1203:00/0018:04F3:307A.0001/input/input7/event5"
+[    54.278] (II) XINPUT: Adding extended input device "ELAN1203:00 04F3:307A Mouse" (type: MOUSE, id 17)
+[    54.278] (**) Option "AccelerationScheme" "none"
+[    54.278] (**) ELAN1203:00 04F3:307A Mouse: (accel) selected scheme none/0
+[    54.278] (**) ELAN1203:00 04F3:307A Mouse: (accel) acceleration factor: 2.000
+[    54.278] (**) ELAN1203:00 04F3:307A Mouse: (accel) acceleration threshold: 4
+[    54.278] (II) event5  - ELAN1203:00 04F3:307A Mouse: is tagged by udev as: Mouse Pointingstick
+[    54.278] (II) event5  - ELAN1203:00 04F3:307A Mouse: device is a pointer
+[    54.279] (II) config/udev: Adding input device ELAN1203:00 04F3:307A Mouse (/dev/input/mouse0)
+[    54.279] (II) No input driver specified, ignoring this device.
+[    54.279] (II) This device may have been added with another device file.
+[    54.280] (II) config/udev: Adding input device ELAN1203:00 04F3:307A Touchpad (/dev/input/event6)
+[    54.280] (**) ELAN1203:00 04F3:307A Touchpad: Applying InputClass "libinput touchpad catchall"
+[    54.280] (**) ELAN1203:00 04F3:307A Touchpad: Applying InputClass "touchpad catchall"
+[    54.280] (**) ELAN1203:00 04F3:307A Touchpad: Applying InputClass "Default clickpad buttons"
+[    54.280] (II) LoadModule: "synaptics"
+[    54.280] (II) Loading /usr/lib64/xorg/modules/input/synaptics_drv.so
+[    54.281] (II) Module synaptics: vendor="X.Org Foundation"
+[    54.281] 	compiled for 1.21.1.8, module version = 1.9.2
+[    54.281] 	Module class: X.Org XInput Driver
+[    54.281] 	ABI class: X.Org XInput driver, version 24.4
+[    54.281] (II) Using input driver 'synaptics' for 'ELAN1203:00 04F3:307A Touchpad'
+[    54.281] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 39 paused 0
+[    54.281] (**) ELAN1203:00 04F3:307A Touchpad: always reports core events
+[    54.281] (**) Option "Device" "/dev/input/event6"
+[    54.281] (--) synaptics: ELAN1203:00 04F3:307A Touchpad: x-axis range 0 - 3234 (res 32)
+[    54.281] (--) synaptics: ELAN1203:00 04F3:307A Touchpad: y-axis range 0 - 1661 (res 32)
+[    54.281] (II) synaptics: ELAN1203:00 04F3:307A Touchpad: device does not report pressure, will use touch data.
+[    54.281] (II) synaptics: ELAN1203:00 04F3:307A Touchpad: device does not report finger width.
+[    54.281] (--) synaptics: ELAN1203:00 04F3:307A Touchpad: buttons: left right double triple
+[    54.281] (--) synaptics: ELAN1203:00 04F3:307A Touchpad: Vendor 0x4f3 Product 0x307a
+[    54.281] (--) synaptics: ELAN1203:00 04F3:307A Touchpad: invalid pressure range.  defaulting to 0 - 255
+[    54.281] (--) synaptics: ELAN1203:00 04F3:307A Touchpad: invalid finger width range.  defaulting to 0 - 15
+[    54.281] (--) synaptics: ELAN1203:00 04F3:307A Touchpad: touchpad found
+[    54.281] (**) ELAN1203:00 04F3:307A Touchpad: always reports core events
+[    54.281] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:03/i2c-0/i2c-ELAN1203:00/0018:04F3:307A.0001/input/input8/event6"
+[    54.281] (II) XINPUT: Adding extended input device "ELAN1203:00 04F3:307A Touchpad" (type: TOUCHPAD, id 18)
+[    54.281] (**) synaptics: ELAN1203:00 04F3:307A Touchpad: (accel) MinSpeed is now constant deceleration 2.5
+[    54.282] (**) synaptics: ELAN1203:00 04F3:307A Touchpad: (accel) MaxSpeed is now 1.75
+[    54.282] (**) synaptics: ELAN1203:00 04F3:307A Touchpad: (accel) AccelFactor is now 0.055
+[    54.282] (**) ELAN1203:00 04F3:307A Touchpad: (accel) keeping acceleration scheme 1
+[    54.282] (**) ELAN1203:00 04F3:307A Touchpad: (accel) acceleration profile 1
+[    54.282] (**) ELAN1203:00 04F3:307A Touchpad: (accel) acceleration factor: 2.000
+[    54.282] (**) ELAN1203:00 04F3:307A Touchpad: (accel) acceleration threshold: 4
+[    54.282] (--) synaptics: ELAN1203:00 04F3:307A Touchpad: touchpad found
+[    54.282] (II) config/udev: Adding input device ELAN1203:00 04F3:307A Touchpad (/dev/input/mouse1)
+[    54.282] (**) ELAN1203:00 04F3:307A Touchpad: Ignoring device from InputClass "touchpad ignore duplicates"
+[    54.282] (II) config/udev: Adding input device Asus WMI hotkeys (/dev/input/event17)
+[    54.282] (**) Asus WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[    54.282] (II) Using input driver 'libinput' for 'Asus WMI hotkeys'
+[    54.283] (II) systemd-logind: got fd for /dev/input/event17 13:81 fd 40 paused 0
+[    54.283] (**) Asus WMI hotkeys: always reports core events
+[    54.283] (**) Option "Device" "/dev/input/event17"
+[    54.283] (II) event17 - Asus WMI hotkeys: is tagged by udev as: Keyboard
+[    54.283] (II) event17 - Asus WMI hotkeys: device is a keyboard
+[    54.283] (II) event17 - Asus WMI hotkeys: device removed
+[    54.283] (**) Option "config_info" "udev:/sys/devices/platform/asus-nb-wmi/input/input20/event17"
+[    54.283] (II) XINPUT: Adding extended input device "Asus WMI hotkeys" (type: KEYBOARD, id 19)
+[    54.284] (II) event17 - Asus WMI hotkeys: is tagged by udev as: Keyboard
+[    54.284] (II) event17 - Asus WMI hotkeys: device is a keyboard
+[    54.284] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event3)
+[    54.284] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[    54.284] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[    54.284] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 41 paused 0
+[    54.284] (**) AT Translated Set 2 keyboard: always reports core events
+[    54.284] (**) Option "Device" "/dev/input/event3"
+[    54.285] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    54.285] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[    54.286] (II) event3  - AT Translated Set 2 keyboard: device removed
+[    54.286] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input3/event3"
+[    54.286] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 20)
+[    54.286] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    54.286] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[    54.287] (II) config/udev: Adding input device PC Speaker (/dev/input/event16)
+[    54.287] (II) No input driver specified, ignoring this device.
+[    54.287] (II) This device may have been added with another device file.
+[    54.291] (**) Compx 2.4G Receiver Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    54.291] (II) Using input driver 'libinput' for 'Compx 2.4G Receiver Consumer Control'
+[    54.291] (II) systemd-logind: returning pre-existing fd for /dev/input/event13 13:77
+[    54.291] (**) Compx 2.4G Receiver Consumer Control: always reports core events
+[    54.291] (**) Option "Device" "/dev/input/event13"
+[    54.291] (II) libinput: Compx 2.4G Receiver Consumer Control: is a virtual subdevice
+[    54.291] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.2/3-1.2:1.1/0003:25A7:FA61.0005/input/input15/event13"
+[    54.291] (II) XINPUT: Adding extended input device "Compx 2.4G Receiver Consumer Control" (type: KEYBOARD, id 21)
+[    54.321] (II) AMDGPU(0): EDID vendor "NCP", prod id 77
+[    54.321] (II) AMDGPU(0): Using EDID range info for horizontal sync
+[    54.321] (II) AMDGPU(0): Using EDID range info for vertical refresh
+[    54.321] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[    54.321] (II) AMDGPU(0): Modeline "1920x1080"x0.0  354.73  1920 1968 2000 2180  1080 1083 1088 1130 +hsync -vsync (162.7 kHz eP)
+[    54.321] (II) AMDGPU(0): Modeline "1920x1080"x0.0  147.81  1920 1968 2000 2180  1080 1083 1088 1130 +hsync -vsync (67.8 kHz e)
+[    54.323] (II) AMDGPU(0): EDID vendor "NCP", prod id 77
+[    54.323] (II) AMDGPU(0): Using hsync ranges from config file
+[    54.323] (II) AMDGPU(0): Using vrefresh ranges from config file
+[    54.323] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[    54.323] (II) AMDGPU(0): Modeline "1920x1080"x0.0  354.73  1920 1968 2000 2180  1080 1083 1088 1130 +hsync -vsync (162.7 kHz eP)
+[    54.323] (II) AMDGPU(0): Modeline "1920x1080"x0.0  147.81  1920 1968 2000 2180  1080 1083 1088 1130 +hsync -vsync (67.8 kHz e)
+[    54.698] (II) AMDGPU(0): EDID vendor "NCP", prod id 77
+[    54.698] (II) AMDGPU(0): Using hsync ranges from config file
+[    54.698] (II) AMDGPU(0): Using vrefresh ranges from config file
+[    54.698] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[    54.698] (II) AMDGPU(0): Modeline "1920x1080"x0.0  354.73  1920 1968 2000 2180  1080 1083 1088 1130 +hsync -vsync (162.7 kHz eP)
+[    54.698] (II) AMDGPU(0): Modeline "1920x1080"x0.0  147.81  1920 1968 2000 2180  1080 1083 1088 1130 +hsync -vsync (67.8 kHz e)
+[    54.700] (II) AMDGPU(0): EDID vendor "NCP", prod id 77
+[    54.700] (II) AMDGPU(0): Using hsync ranges from config file
+[    54.700] (II) AMDGPU(0): Using vrefresh ranges from config file
+[    54.700] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[    54.700] (II) AMDGPU(0): Modeline "1920x1080"x0.0  354.73  1920 1968 2000 2180  1080 1083 1088 1130 +hsync -vsync (162.7 kHz eP)
+[    54.700] (II) AMDGPU(0): Modeline "1920x1080"x0.0  147.81  1920 1968 2000 2180  1080 1083 1088 1130 +hsync -vsync (67.8 kHz e)
+[    54.756] (II) AMDGPU(0): EDID vendor "NCP", prod id 77
+[    54.756] (II) AMDGPU(0): Using hsync ranges from config file
+[    54.756] (II) AMDGPU(0): Using vrefresh ranges from config file
+[    54.756] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[    54.756] (II) AMDGPU(0): Modeline "1920x1080"x0.0  354.73  1920 1968 2000 2180  1080 1083 1088 1130 +hsync -vsync (162.7 kHz eP)
+[    54.756] (II) AMDGPU(0): Modeline "1920x1080"x0.0  147.81  1920 1968 2000 2180  1080 1083 1088 1130 +hsync -vsync (67.8 kHz e)
+[    54.758] (II) AMDGPU(0): EDID vendor "NCP", prod id 77
+[    54.758] (II) AMDGPU(0): Using hsync ranges from config file
+[    54.758] (II) AMDGPU(0): Using vrefresh ranges from config file
+[    54.758] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[    54.758] (II) AMDGPU(0): Modeline "1920x1080"x0.0  354.73  1920 1968 2000 2180  1080 1083 1088 1130 +hsync -vsync (162.7 kHz eP)
+[    54.758] (II) AMDGPU(0): Modeline "1920x1080"x0.0  147.81  1920 1968 2000 2180  1080 1083 1088 1130 +hsync -vsync (67.8 kHz e)
+[   464.010] (II) event7  - CASUE USB KB: device removed
+[   464.083] (II) event8  - CASUE USB KB Consumer Control: device removed
+[   464.126] (II) event9  - CASUE USB KB System Control: device removed
+[   580.473] (II) config/udev: removing device CASUE USB KB
+[   580.473] (**) Option "fd" "31"
+[   580.473] (II) UnloadModule: "libinput"
+[   580.473] (II) systemd-logind: releasing fd for 13:71
+[   580.503] (II) config/udev: removing device CASUE USB KB Consumer Control
+[   580.503] (**) Option "fd" "32"
+[   580.503] (II) UnloadModule: "libinput"
+[   580.503] (II) systemd-logind: releasing fd for 13:72
+[   580.504] (EE) systemd-logind: failed to release device: Device not taken
+[   580.550] (II) config/udev: removing device CASUE USB KB System Control
+[   580.550] (**) Option "fd" "33"
+[   580.550] (II) UnloadModule: "libinput"
+[   580.550] (II) systemd-logind: releasing fd for 13:73
+[   580.551] (EE) systemd-logind: failed to release device: Device not taken
+[   581.029] (II) config/udev: Adding input device CASUE USB KB (/dev/input/event7)
+[   581.029] (**) CASUE USB KB: Applying InputClass "libinput keyboard catchall"
+[   581.029] (II) Using input driver 'libinput' for 'CASUE USB KB'
+[   581.030] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 32 paused 0
+[   581.030] (**) CASUE USB KB: always reports core events
+[   581.030] (**) Option "Device" "/dev/input/event7"
+[   581.033] (II) event7  - CASUE USB KB: is tagged by udev as: Keyboard
+[   581.033] (II) event7  - CASUE USB KB: device is a keyboard
+[   581.033] (II) event7  - CASUE USB KB: device removed
+[   581.033] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.0/0003:2A7A:938F.000D/input/input37/event7"
+[   581.033] (II) XINPUT: Adding extended input device "CASUE USB KB" (type: KEYBOARD, id 10)
+[   581.035] (II) event7  - CASUE USB KB: is tagged by udev as: Keyboard
+[   581.036] (II) event7  - CASUE USB KB: device is a keyboard
+[   581.037] (II) config/udev: Adding input device CASUE USB KB System Control (/dev/input/event9)
+[   581.037] (**) CASUE USB KB System Control: Applying InputClass "libinput keyboard catchall"
+[   581.037] (II) Using input driver 'libinput' for 'CASUE USB KB System Control'
+[   581.038] (II) systemd-logind: got fd for /dev/input/event9 13:73 fd 33 paused 0
+[   581.038] (**) CASUE USB KB System Control: always reports core events
+[   581.038] (**) Option "Device" "/dev/input/event9"
+[   581.040] (II) event9  - CASUE USB KB System Control: is tagged by udev as: Keyboard
+[   581.041] (II) event9  - CASUE USB KB System Control: device is a keyboard
+[   581.041] (II) event9  - CASUE USB KB System Control: device removed
+[   581.041] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.1/0003:2A7A:938F.000E/input/input39/event9"
+[   581.041] (II) XINPUT: Adding extended input device "CASUE USB KB System Control" (type: KEYBOARD, id 11)
+[   581.044] (II) event9  - CASUE USB KB System Control: is tagged by udev as: Keyboard
+[   581.044] (II) event9  - CASUE USB KB System Control: device is a keyboard
+[   581.046] (II) config/udev: Adding input device CASUE USB KB Consumer Control (/dev/input/event8)
+[   581.046] (**) CASUE USB KB Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   581.046] (II) Using input driver 'libinput' for 'CASUE USB KB Consumer Control'
+[   581.047] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 61 paused 0
+[   581.047] (**) CASUE USB KB Consumer Control: always reports core events
+[   581.047] (**) Option "Device" "/dev/input/event8"
+[   581.049] (II) event8  - CASUE USB KB Consumer Control: is tagged by udev as: Keyboard
+[   581.049] (II) event8  - CASUE USB KB Consumer Control: device is a keyboard
+[   581.050] (II) event8  - CASUE USB KB Consumer Control: device removed
+[   581.050] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.1/0003:2A7A:938F.000E/input/input38/event8"
+[   581.050] (II) XINPUT: Adding extended input device "CASUE USB KB Consumer Control" (type: KEYBOARD, id 12)
+[   581.053] (II) event8  - CASUE USB KB Consumer Control: is tagged by udev as: Keyboard
+[   581.053] (II) event8  - CASUE USB KB Consumer Control: device is a keyboard
+[   586.707] (II) event7  - CASUE USB KB: device removed
+[   586.708] (II) config/udev: removing device CASUE USB KB
+[   586.709] (**) Option "fd" "32"
+[   586.709] (II) UnloadModule: "libinput"
+[   586.709] (II) systemd-logind: releasing fd for 13:71
+[   586.813] (II) event8  - CASUE USB KB Consumer Control: device removed
+[   586.815] (II) config/udev: removing device CASUE USB KB Consumer Control
+[   586.815] (**) Option "fd" "61"
+[   586.815] (II) UnloadModule: "libinput"
+[   586.815] (II) systemd-logind: releasing fd for 13:72
+[   586.863] (II) event9  - CASUE USB KB System Control: device removed
+[   586.865] (II) config/udev: removing device CASUE USB KB System Control
+[   586.865] (**) Option "fd" "33"
+[   586.865] (II) UnloadModule: "libinput"
+[   586.865] (II) systemd-logind: releasing fd for 13:73
+[   587.730] (II) config/udev: Adding input device CASUE USB KB System Control (/dev/input/event9)
+[   587.730] (**) CASUE USB KB System Control: Applying InputClass "libinput keyboard catchall"
+[   587.730] (II) Using input driver 'libinput' for 'CASUE USB KB System Control'
+[   587.731] (II) systemd-logind: got fd for /dev/input/event9 13:73 fd 32 paused 0
+[   587.731] (**) CASUE USB KB System Control: always reports core events
+[   587.731] (**) Option "Device" "/dev/input/event9"
+[   587.732] (II) event9  - CASUE USB KB System Control: is tagged by udev as: Keyboard
+[   587.732] (II) event9  - CASUE USB KB System Control: device is a keyboard
+[   587.732] (II) event9  - CASUE USB KB System Control: device removed
+[   587.732] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.1/0003:2A7A:938F.0010/input/input42/event9"
+[   587.732] (II) XINPUT: Adding extended input device "CASUE USB KB System Control" (type: KEYBOARD, id 10)
+[   587.733] (II) event9  - CASUE USB KB System Control: is tagged by udev as: Keyboard
+[   587.733] (II) event9  - CASUE USB KB System Control: device is a keyboard
+[   587.749] (II) config/udev: Adding input device CASUE USB KB (/dev/input/event7)
+[   587.749] (**) CASUE USB KB: Applying InputClass "libinput keyboard catchall"
+[   587.749] (II) Using input driver 'libinput' for 'CASUE USB KB'
+[   587.750] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 33 paused 0
+[   587.750] (**) CASUE USB KB: always reports core events
+[   587.750] (**) Option "Device" "/dev/input/event7"
+[   587.752] (II) event7  - CASUE USB KB: is tagged by udev as: Keyboard
+[   587.752] (II) event7  - CASUE USB KB: device is a keyboard
+[   587.753] (II) event7  - CASUE USB KB: device removed
+[   587.753] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.0/0003:2A7A:938F.000F/input/input40/event7"
+[   587.753] (II) XINPUT: Adding extended input device "CASUE USB KB" (type: KEYBOARD, id 11)
+[   587.755] (II) event7  - CASUE USB KB: is tagged by udev as: Keyboard
+[   587.755] (II) event7  - CASUE USB KB: device is a keyboard
+[   587.767] (II) config/udev: Adding input device CASUE USB KB Consumer Control (/dev/input/event8)
+[   587.767] (**) CASUE USB KB Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   587.767] (II) Using input driver 'libinput' for 'CASUE USB KB Consumer Control'
+[   587.768] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 61 paused 0
+[   587.768] (**) CASUE USB KB Consumer Control: always reports core events
+[   587.768] (**) Option "Device" "/dev/input/event8"
+[   587.770] (II) event8  - CASUE USB KB Consumer Control: is tagged by udev as: Keyboard
+[   587.770] (II) event8  - CASUE USB KB Consumer Control: device is a keyboard
+[   587.771] (II) event8  - CASUE USB KB Consumer Control: device removed
+[   587.771] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.1/0003:2A7A:938F.0010/input/input41/event8"
+[   587.771] (II) XINPUT: Adding extended input device "CASUE USB KB Consumer Control" (type: KEYBOARD, id 12)
+[   587.773] (II) event8  - CASUE USB KB Consumer Control: is tagged by udev as: Keyboard
+[   587.773] (II) event8  - CASUE USB KB Consumer Control: device is a keyboard
+[   594.747] (II) event7  - CASUE USB KB: device removed
+[   594.827] (II) event8  - CASUE USB KB Consumer Control: device removed
+[   594.873] (II) event9  - CASUE USB KB System Control: device removed
+[   595.016] (II) config/udev: removing device CASUE USB KB
+[   595.016] (**) Option "fd" "33"
+[   595.016] (II) UnloadModule: "libinput"
+[   595.016] (II) systemd-logind: releasing fd for 13:71
+[   595.037] (II) config/udev: removing device CASUE USB KB Consumer Control
+[   595.037] (**) Option "fd" "61"
+[   595.037] (II) UnloadModule: "libinput"
+[   595.037] (II) systemd-logind: releasing fd for 13:72
+[   595.037] (EE) systemd-logind: failed to release device: Device not taken
+[   595.083] (II) config/udev: removing device CASUE USB KB System Control
+[   595.083] (**) Option "fd" "32"
+[   595.084] (II) UnloadModule: "libinput"
+[   595.084] (II) systemd-logind: releasing fd for 13:73
+[   595.084] (EE) systemd-logind: failed to release device: Device not taken
+[   595.853] (II) config/udev: Adding input device CASUE USB KB System Control (/dev/input/event9)
+[   595.860] (**) CASUE USB KB System Control: Applying InputClass "libinput keyboard catchall"
+[   595.860] (II) Using input driver 'libinput' for 'CASUE USB KB System Control'
+[   595.861] (II) systemd-logind: got fd for /dev/input/event9 13:73 fd 32 paused 0
+[   595.861] (**) CASUE USB KB System Control: always reports core events
+[   595.861] (**) Option "Device" "/dev/input/event9"
+[   595.862] (II) event9  - CASUE USB KB System Control: is tagged by udev as: Keyboard
+[   595.862] (II) event9  - CASUE USB KB System Control: device is a keyboard
+[   595.862] (II) event9  - CASUE USB KB System Control: device removed
+[   595.862] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.1/0003:2A7A:938F.0012/input/input45/event9"
+[   595.862] (II) XINPUT: Adding extended input device "CASUE USB KB System Control" (type: KEYBOARD, id 10)
+[   595.863] (II) event9  - CASUE USB KB System Control: is tagged by udev as: Keyboard
+[   595.863] (II) event9  - CASUE USB KB System Control: device is a keyboard
+[   595.864] (II) config/udev: Adding input device CASUE USB KB Consumer Control (/dev/input/event8)
+[   595.864] (**) CASUE USB KB Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   595.864] (II) Using input driver 'libinput' for 'CASUE USB KB Consumer Control'
+[   595.865] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 33 paused 0
+[   595.865] (**) CASUE USB KB Consumer Control: always reports core events
+[   595.865] (**) Option "Device" "/dev/input/event8"
+[   595.865] (II) event8  - CASUE USB KB Consumer Control: is tagged by udev as: Keyboard
+[   595.865] (II) event8  - CASUE USB KB Consumer Control: device is a keyboard
+[   595.866] (II) event8  - CASUE USB KB Consumer Control: device removed
+[   595.866] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.1/0003:2A7A:938F.0012/input/input44/event8"
+[   595.866] (II) XINPUT: Adding extended input device "CASUE USB KB Consumer Control" (type: KEYBOARD, id 11)
+[   595.867] (II) event8  - CASUE USB KB Consumer Control: is tagged by udev as: Keyboard
+[   595.867] (II) event8  - CASUE USB KB Consumer Control: device is a keyboard
+[   595.867] (II) config/udev: Adding input device CASUE USB KB (/dev/input/event7)
+[   595.867] (**) CASUE USB KB: Applying InputClass "libinput keyboard catchall"
+[   595.867] (II) Using input driver 'libinput' for 'CASUE USB KB'
+[   595.868] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 61 paused 0
+[   595.868] (**) CASUE USB KB: always reports core events
+[   595.868] (**) Option "Device" "/dev/input/event7"
+[   595.869] (II) event7  - CASUE USB KB: is tagged by udev as: Keyboard
+[   595.869] (II) event7  - CASUE USB KB: device is a keyboard
+[   595.869] (II) event7  - CASUE USB KB: device removed
+[   595.869] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.0/0003:2A7A:938F.0011/input/input43/event7"
+[   595.869] (II) XINPUT: Adding extended input device "CASUE USB KB" (type: KEYBOARD, id 12)
+[   595.870] (II) event7  - CASUE USB KB: is tagged by udev as: Keyboard
+[   595.870] (II) event7  - CASUE USB KB: device is a keyboard
+[   612.013] (II) event7  - CASUE USB KB: device removed
+[   612.015] (II) config/udev: removing device CASUE USB KB
+[   612.015] (**) Option "fd" "61"
+[   612.015] (II) UnloadModule: "libinput"
+[   612.015] (II) systemd-logind: releasing fd for 13:71
+[   612.123] (II) event8  - CASUE USB KB Consumer Control: device removed
+[   612.125] (II) config/udev: removing device CASUE USB KB Consumer Control
+[   612.125] (**) Option "fd" "33"
+[   612.125] (II) UnloadModule: "libinput"
+[   612.125] (II) systemd-logind: releasing fd for 13:72
+[   612.167] (II) event9  - CASUE USB KB System Control: device removed
+[   612.168] (II) config/udev: removing device CASUE USB KB System Control
+[   612.168] (**) Option "fd" "32"
+[   612.169] (II) UnloadModule: "libinput"
+[   612.169] (II) systemd-logind: releasing fd for 13:73
+[   613.037] (II) config/udev: Adding input device CASUE USB KB (/dev/input/event7)
+[   613.037] (**) CASUE USB KB: Applying InputClass "libinput keyboard catchall"
+[   613.037] (II) Using input driver 'libinput' for 'CASUE USB KB'
+[   613.038] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 32 paused 0
+[   613.038] (**) CASUE USB KB: always reports core events
+[   613.038] (**) Option "Device" "/dev/input/event7"
+[   613.040] (II) event7  - CASUE USB KB: is tagged by udev as: Keyboard
+[   613.040] (II) event7  - CASUE USB KB: device is a keyboard
+[   613.041] (II) event7  - CASUE USB KB: device removed
+[   613.041] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.0/0003:2A7A:938F.0013/input/input46/event7"
+[   613.041] (II) XINPUT: Adding extended input device "CASUE USB KB" (type: KEYBOARD, id 10)
+[   613.043] (II) event7  - CASUE USB KB: is tagged by udev as: Keyboard
+[   613.043] (II) event7  - CASUE USB KB: device is a keyboard
+[   613.045] (II) config/udev: Adding input device CASUE USB KB System Control (/dev/input/event9)
+[   613.045] (**) CASUE USB KB System Control: Applying InputClass "libinput keyboard catchall"
+[   613.045] (II) Using input driver 'libinput' for 'CASUE USB KB System Control'
+[   613.046] (II) systemd-logind: got fd for /dev/input/event9 13:73 fd 33 paused 0
+[   613.046] (**) CASUE USB KB System Control: always reports core events
+[   613.046] (**) Option "Device" "/dev/input/event9"
+[   613.048] (II) event9  - CASUE USB KB System Control: is tagged by udev as: Keyboard
+[   613.048] (II) event9  - CASUE USB KB System Control: device is a keyboard
+[   613.049] (II) event9  - CASUE USB KB System Control: device removed
+[   613.049] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.1/0003:2A7A:938F.0014/input/input48/event9"
+[   613.049] (II) XINPUT: Adding extended input device "CASUE USB KB System Control" (type: KEYBOARD, id 11)
+[   613.051] (II) event9  - CASUE USB KB System Control: is tagged by udev as: Keyboard
+[   613.051] (II) event9  - CASUE USB KB System Control: device is a keyboard
+[   613.053] (II) config/udev: Adding input device CASUE USB KB Consumer Control (/dev/input/event8)
+[   613.053] (**) CASUE USB KB Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   613.053] (II) Using input driver 'libinput' for 'CASUE USB KB Consumer Control'
+[   613.054] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 61 paused 0
+[   613.054] (**) CASUE USB KB Consumer Control: always reports core events
+[   613.054] (**) Option "Device" "/dev/input/event8"
+[   613.056] (II) event8  - CASUE USB KB Consumer Control: is tagged by udev as: Keyboard
+[   613.056] (II) event8  - CASUE USB KB Consumer Control: device is a keyboard
+[   613.056] (II) event8  - CASUE USB KB Consumer Control: device removed
+[   613.056] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.1/0003:2A7A:938F.0014/input/input47/event8"
+[   613.056] (II) XINPUT: Adding extended input device "CASUE USB KB Consumer Control" (type: KEYBOARD, id 12)
+[   613.059] (II) event8  - CASUE USB KB Consumer Control: is tagged by udev as: Keyboard
+[   613.059] (II) event8  - CASUE USB KB Consumer Control: device is a keyboard
+[   616.223] (II) event7  - CASUE USB KB: device removed
+[   616.290] (II) event8  - CASUE USB KB Consumer Control: device removed
+[   616.330] (II) event9  - CASUE USB KB System Control: device removed
+[   616.453] (II) config/udev: removing device CASUE USB KB System Control
+[   616.453] (**) Option "fd" "33"
+[   616.454] (II) UnloadModule: "libinput"
+[   616.454] (II) systemd-logind: releasing fd for 13:73
+[   616.477] (II) config/udev: removing device CASUE USB KB Consumer Control
+[   616.477] (**) Option "fd" "61"
+[   616.477] (II) UnloadModule: "libinput"
+[   616.477] (II) systemd-logind: releasing fd for 13:72
+[   616.477] (EE) systemd-logind: failed to release device: Device not taken
+[   616.517] (II) config/udev: removing device CASUE USB KB
+[   616.517] (**) Option "fd" "32"
+[   616.517] (II) UnloadModule: "libinput"
+[   616.517] (II) systemd-logind: releasing fd for 13:71
+[   616.517] (EE) systemd-logind: failed to release device: Device not taken
+[   617.301] (II) config/udev: Adding input device CASUE USB KB Consumer Control (/dev/input/event8)
+[   617.301] (**) CASUE USB KB Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   617.301] (II) Using input driver 'libinput' for 'CASUE USB KB Consumer Control'
+[   617.301] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 32 paused 0
+[   617.301] (**) CASUE USB KB Consumer Control: always reports core events
+[   617.301] (**) Option "Device" "/dev/input/event8"
+[   617.302] (II) event8  - CASUE USB KB Consumer Control: is tagged by udev as: Keyboard
+[   617.302] (II) event8  - CASUE USB KB Consumer Control: device is a keyboard
+[   617.303] (II) event8  - CASUE USB KB Consumer Control: device removed
+[   617.303] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.1/0003:2A7A:938F.0016/input/input50/event8"
+[   617.303] (II) XINPUT: Adding extended input device "CASUE USB KB Consumer Control" (type: KEYBOARD, id 10)
+[   617.304] (II) event8  - CASUE USB KB Consumer Control: is tagged by udev as: Keyboard
+[   617.304] (II) event8  - CASUE USB KB Consumer Control: device is a keyboard
+[   617.323] (II) config/udev: Adding input device CASUE USB KB (/dev/input/event7)
+[   617.323] (**) CASUE USB KB: Applying InputClass "libinput keyboard catchall"
+[   617.323] (II) Using input driver 'libinput' for 'CASUE USB KB'
+[   617.323] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 33 paused 0
+[   617.323] (**) CASUE USB KB: always reports core events
+[   617.323] (**) Option "Device" "/dev/input/event7"
+[   617.324] (II) event7  - CASUE USB KB: is tagged by udev as: Keyboard
+[   617.324] (II) event7  - CASUE USB KB: device is a keyboard
+[   617.324] (II) event7  - CASUE USB KB: device removed
+[   617.324] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.0/0003:2A7A:938F.0015/input/input49/event7"
+[   617.324] (II) XINPUT: Adding extended input device "CASUE USB KB" (type: KEYBOARD, id 11)
+[   617.325] (II) event7  - CASUE USB KB: is tagged by udev as: Keyboard
+[   617.325] (II) event7  - CASUE USB KB: device is a keyboard
+[   617.326] (II) config/udev: Adding input device CASUE USB KB System Control (/dev/input/event9)
+[   617.326] (**) CASUE USB KB System Control: Applying InputClass "libinput keyboard catchall"
+[   617.326] (II) Using input driver 'libinput' for 'CASUE USB KB System Control'
+[   617.327] (II) systemd-logind: got fd for /dev/input/event9 13:73 fd 61 paused 0
+[   617.327] (**) CASUE USB KB System Control: always reports core events
+[   617.327] (**) Option "Device" "/dev/input/event9"
+[   617.327] (II) event9  - CASUE USB KB System Control: is tagged by udev as: Keyboard
+[   617.328] (II) event9  - CASUE USB KB System Control: device is a keyboard
+[   617.328] (II) event9  - CASUE USB KB System Control: device removed
+[   617.328] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:05:00.4/usb3/3-1/3-1.1/3-1.1:1.1/0003:2A7A:938F.0016/input/input51/event9"
+[   617.328] (II) XINPUT: Adding extended input device "CASUE USB KB System Control" (type: KEYBOARD, id 12)
+[   617.329] (II) event9  - CASUE USB KB System Control: is tagged by udev as: Keyboard
+[   617.329] (II) event9  - CASUE USB KB System Control: device is a keyboard

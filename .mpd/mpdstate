@@ -1,0 +1,49 @@
+sw_volume: 94
+audio_device_state:1:default
+audio_device_state:1:my_fifo
+state: pause
+current: 16
+time: 8.810000
+random: 0
+repeat: 1
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Cesar Vargas - Himnos/01 - Adoradle.mp3
+1:Cesar Vargas - Himnos/02 - Dulce comunión.mp3
+2:Cesar Vargas - Himnos/03 - Cerca de Ti Señor.mp3
+3:Cesar Vargas - Himnos/04 - El tiene toda potestad.mp3
+4:Cesar Vargas - Himnos/05 - Te siente casi resuelto ya.mp3
+5:Cesar Vargas - Himnos/06 - El viene en gloria.mp3
+6:Cesar Vargas - Himnos/07 - Yo me rindo a Ti.mp3
+7:Cesar Vargas - Himnos/08 - Sembrare la simiente.mp3
+8:Cesar Vargas - Himnos/09 - Oh Cristo Amado.mp3
+9:Cesar Vargas - Himnos/10 - Dulces melodias.mp3
+10:Cesar Vargas - Himnos/11 - Cariñoso Salvador.mp3
+11:Cesar Vargas - Himnos/12 - Roca Eterna.mp3
+12:Cesar Vargas - Himnos/13 - Dulce oración.mp3
+13:Cesar Vargas - Himnos/14 - Oh que amigo nos es Cristo.mp3
+14:Paul Wilbur - Por Siempre Fiel/01 A Donde IrВ.mp3
+15:Paul Wilbur - Por Siempre Fiel/02 Rey de Gloria.mp3
+16:Paul Wilbur - Por Siempre Fiel/03 Lechu Neranena L_adonai.mp3
+17:Paul Wilbur - Por Siempre Fiel/04 En la Sombra de El Shaddai (feat. Lucia Parker).mp3
+18:Paul Wilbur - Por Siempre Fiel/05 Bendito Aquel que Viene.mp3
+19:Paul Wilbur - Por Siempre Fiel/06 Por Siempre Fiel.mp3
+20:Paul Wilbur - Por Siempre Fiel/07 Clama el Nombre.mp3
+21:Paul Wilbur - Por Siempre Fiel/08 Grande es Tu Fidelidad.mp3
+22:Paul Wilbur - Por Siempre Fiel/09 Tuyo es el Poder.mp3
+23:Paul Wilbur - Por Siempre Fiel/10 Adonai Elohai.mp3
+24:Rene Gonzalez - Paz en la tierra/01 - Paz En La Tierra.mp3
+25:Rene Gonzalez - Paz en la tierra/02 - Carpintero.mp3
+26:Rene Gonzalez - Paz en la tierra/03 - Fe, Justicia y Paz.mp3
+27:Rene Gonzalez - Paz en la tierra/04 - Que Harias Tu.mp3
+28:Rene Gonzalez - Paz en la tierra/05 - Rey De Mi Vida.mp3
+29:Rene Gonzalez - Paz en la tierra/06 - Vendra.mp3
+30:Rene Gonzalez - Paz en la tierra/07 - De Que Nos Vale.mp3
+31:Rene Gonzalez - Paz en la tierra/08 - Si Confias.mp3
+32:Rene Gonzalez - Paz en la tierra/09 - Toma Mi Vida.mp3
+33:Rene Gonzalez - Paz en la tierra/10 - El Vencedor.mp3
+playlist_end

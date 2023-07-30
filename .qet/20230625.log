@@ -1,0 +1,32 @@
+17:33:35.737 Info: Start-up 
+17:33:36.727 Info: debugging enabled: false 
+17:33:36.727 Info: Qt library version: 5.15.10 
+17:33:36.727 Info: Qt library location default prefix: "/usr" 
+17:33:36.727 Info: Qt library location documentation: "/usr/share/qt5-doc" 
+17:33:36.727 Info: Qt library location headers: "/usr/include/qt5" 
+17:33:36.728 Info: Qt library location libraries: "/usr/lib64" 
+17:33:36.728 Info: Qt library location executables: "/usr/lib64/qt5/libexec" 
+17:33:36.728 Info: Qt library location Qt binaries: "/usr/lib64/qt5/bin" 
+17:33:36.728 Info: Qt library location Qt plugins: "/usr/lib64/qt5/plugins" 
+17:33:36.728 Info: Qt library location installed QML extensions: "/usr/lib64/qt5/imports" 
+17:33:36.728 Info: Qt library location installed QML extensions: "/usr/lib64/qt5/qml" 
+17:33:36.728 Info: Qt library location dependent Qt data: "/usr/lib64/qt5" 
+17:33:36.728 Info: Qt library location independent Qt data: "/usr/share/qt5" 
+17:33:36.728 Info: Qt library location translation: "/usr/share/qt5/translations" 
+17:33:36.728 Info: Qt library location examples: "/usr/share/qt5/examples" 
+17:33:36.728 Info: Qt library location Qt testcases: "/usr/share/qt5/tests" 
+17:33:36.728 Info: Qt library location Qt settings: "/etc/xdg" 
+17:33:36.728 Info: "QElectroTech V 0.80" 
+17:33:36.728 Info: "Compilation: GCC 13.1.1 20230527" 
+17:33:36.728 Info: "Built with Qt 5.15.10 - Date : Jun 24 2023 : 21:37:24" 
+17:33:36.728 Info: "Run with Qt 5.15.10 using 12 thread(s)" 
+17:33:36.728 Info: "CPU : model name\t: AMD Ryzen 5 4600H with Radeon Graphics\n" 
+17:33:36.728 Info: "RAM Total : 31503 MB" 
+17:33:36.728 Info: "RAM Available : 30468 MB" 
+17:33:36.728 Info: "GPU :  NVIDIA Corporation GA107M [GeForce RTX 3050 Mobile] (rev a1)\n Advanced Micro Devices, Inc. [AMD/ATI] Renoir (rev c7)\n" 
+17:33:36.728 Info: "GPU RAM : @ToDo" 
+17:33:36.728 Info: "OS : linux  - x86_64 - Version : Gentoo Linux - Kernel : 6.3.9-gentoo-dist" 
+17:33:36.728 Info: *** Qt screens *** 
+17:33:36.728 Info: "( 1 : 1920 x 1080 )" 
+17:33:36.998 Info: Elements collection reload 
+17:33:37.462 Info: Elements collection finished to be loaded 

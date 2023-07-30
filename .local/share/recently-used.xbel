@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="mtp://HUAWEI_NAM-LX9_EJMVB21B02001458/Almacenamiento%20interno%20compartido" added="2023-06-25T17:51:16.416633Z" modified="2023-07-30T11:31:43.022936Z" visited="2023-06-25T17:51:16.416637Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-07-30T11:31:43.022931Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="mtp://HUAWEI_NAM-LX9_EJMVB21B02001458/Almacenamiento%20interno%20compartido/Download" added="2023-07-30T11:31:47.339110Z" modified="2023-07-30T11:31:47.339126Z" visited="2023-07-30T11:31:47.339114Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-07-30T11:31:47.339119Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="mtp://HUAWEI_NAM-LX9_EJMVB21B02001458/Almacenamiento%20interno%20compartido/Download/Browser" added="2023-07-30T11:31:50.447844Z" modified="2023-07-30T11:31:50.447861Z" visited="2023-07-30T11:31:50.447848Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-07-30T11:31:50.447853Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/marlon" added="2023-07-30T11:32:11.468110Z" modified="2023-07-30T11:33:39.959100Z" visited="2023-07-30T11:32:11.468114Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-07-30T11:33:39.959093Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/marlon/Downloads" added="2023-07-30T11:32:17.417764Z" modified="2023-07-30T11:32:17.417793Z" visited="2023-07-30T11:32:17.417768Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-07-30T11:32:17.417772Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/marlon/Music" added="2023-07-30T11:33:34.546134Z" modified="2023-07-30T11:33:34.546143Z" visited="2023-07-30T11:33:34.546136Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-07-30T11:33:34.546139Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

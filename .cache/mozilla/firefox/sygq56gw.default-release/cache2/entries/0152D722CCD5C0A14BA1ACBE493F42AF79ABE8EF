@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Neovim - Gentoo Wiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"6c941cea099e4be5d5fa6164","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Neovim","wgTitle":"Neovim","wgCurRevisionId":1225393,"wgRevisionId":1225393,"wgArticleId":303804,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Vi","Text-based user interfaces"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Neovim","wgRelevantArticleId":303804,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgULSCurrentAutonym":"English","wgPageFormsTargetName":
+null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":!1,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"srfFilteredConfig":null,"wgULSPosition":"personal","wgULSisCompactLinksEnabled":!0,"wgEditSubmitButtonLabelPublish":!1};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","jquery.makeCollapsible.styles":
+"ready","mediawiki.toc.styles":"ready","ext.smw.style":"ready","ext.smw.tooltip.styles":"ready","ext.uls.pt":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.srf.styles":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.tyrian.styles":"ready","skins.tyrian.icons":"ready"};RLPAGEMODULES=["ext.gentooPackages","ext.smw.style","ext.smw.tooltips","ext.cite.ux-enhancements","smw.entityexaminer","site","mediawiki.page.startup","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","ext.uls.compactlinks","ext.uls.interface","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.pt%7Cext.visualEditor.desktopArticleTarget.noscript%7Cjquery.makeCollapsible.styles%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.tyrian.icons%2Cstyles&amp;only=styles&amp;skin=tyrian"/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=ext.smw.style%7Cext.smw.tooltip.styles&amp;only=styles&amp;skin=tyrian"/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=ext.srf.styles&amp;only=styles&amp;skin=tyrian"/>
+<script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=tyrian"></script>
+<link rel="stylesheet" href="https://assets.gentoo.org/tyrian/bootstrap.min.css"/><link rel="stylesheet" href="https://assets.gentoo.org/tyrian/tyrian.min.css"/><style>#mw-indicator-mw-helplink {display:none;}</style>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=tyrian"/>
+<meta name="generator" content="MediaWiki 1.35.9"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#54487a"/>
+<link rel="alternate" type="application/rdf+xml" title="Neovim" href="/index.php?title=Special:ExportRDF/Neovim&amp;xmlmime=rdf"/>
+<link rel="shortcut icon" href="https://www.gentoo.org/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Gentoo Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//wiki.gentoo.org/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Neovim rootpage-Neovim skin-tyrian action-view">	<div class="mw-jump sr-only">
+		Jump to:		<a href="#top">content</a>
+	</div>
+	<header>
+		<div class="site-title">
+			<div class="container">
+				<div class="row">
+					<div class="site-title-buttons">
+						<div class="btn-group btn-group-sm">
+							<a href="https://get.gentoo.org/" role="button" class="btn get-gentoo"><span class="fa fa-fw fa-download"></span> <strong>Get Gentoo!</strong></a>
+							<div class="btn-group btn-group-sm">
+								<a class="btn gentoo-org-sites dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+									<span class="fa fa-fw fa-map-o"></span> <span class="hidden-xs">gentoo.org sites</span> <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a href="https://www.gentoo.org/" title="Main Gentoo website"><span class="fa fa-home fa-fw"></span> gentoo.org</a></li>
+									<li><a href="https://wiki.gentoo.org/" title="Find and contribute documentation"><span class="fa fa-file-text-o fa-fw"></span> Wiki</a></li>
+									<li><a href="https://bugs.gentoo.org/" title="Report issues and find common issues"><span class="fa fa-bug fa-fw"></span> Bugs</a></li>
+									<li><a href="https://forums.gentoo.org/" title="Discuss with the community"><span class="fa fa-comments-o fa-fw"></span> Forums</a></li>
+									<li><a href="https://packages.gentoo.org/" title="Find software for your Gentoo"><span class="fa fa-hdd-o fa-fw"></span> Packages</a></li>
+									<li class="divider"></li>
+									<li><a href="https://planet.gentoo.org/" title="Find out what's going on in the developer community"><span class="fa fa-rss fa-fw"></span> Planet</a></li>
+									<li><a href="https://archives.gentoo.org/" title="Read up on past discussions"><span class="fa fa-archive fa-fw"></span> Archives</a></li>
+									<li><a href="https://gitweb.gentoo.org/" title="Browse our source code in Gitweb"><span class="fa fa-code fa-fw"></span> Gitweb</a></li>
+									<li class="divider"></li>
+									<li><a href="https://infra-status.gentoo.org/" title="Get updates on the services provided by Gentoo"><span class="fa fa-server fa-fw"></span> Infra Status</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="logo">
+						<a href="/" title="Back to the homepage" class="site-logo"><object data="https://assets.gentoo.org/tyrian/site-logo.svg" type="image/svg+xml">
+							<img src="https://assets.gentoo.org/tyrian/site-logo.png" alt="Gentoo Linux Logo">
+						</object></a>
+						<span class="site-label">Wiki</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="tyrian-navbar" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse navbar-main-collapse">
+						<ul class="nav navbar-nav">
+							<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-help"><a href="/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>			<li class="dropdown">
+				<a href="/wiki/Gentoo_Wiki:Menu-Gentoo" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gentoo <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu"><li id="n-Gentoo-Projects"><a href="/wiki/Project:Gentoo">Gentoo Projects</a></li>				</ul>
+			</li>			<li class="dropdown">
+				<a href="/wiki/Gentoo_Wiki:Menu-Documentation" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu"><li id="n-Gentoo-Handbook"><a href="/wiki/Handbook:Main_Page">Gentoo Handbook</a></li><li id="n-Gentoo-FAQ"><a href="/wiki/FAQ">Gentoo FAQ</a></li><li id="n-Featured-Documents"><a href="/wiki/Project:Documentation/Overview">Featured Documents</a></li><li role="presentation" class="divider"></li><li role="presentation" class="dropdown-header">Topics</li><li id="n-Core-system"><a href="/wiki/Category:Core_system">Core system</a></li><li id="n-Hardware"><a href="/wiki/Category:Hardware">Hardware</a></li><li id="n-Software"><a href="/wiki/Category:Software">Software</a></li><li id="n-Desktop"><a href="/wiki/Category:Desktop">Desktop</a></li><li id="n-Server-.26-Security"><a href="/wiki/Category:Server_and_Security">Server &amp; Security</a></li><li id="n-Project-.26-Community"><a href="/wiki/Category:Project_and_Community">Project &amp; Community</a></li>				</ul>
+			</li>						</ul>
+						<ul class="nav navbar-nav navbar-right hidden-xs">
+									<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-cog"></i> Tools <span class="caret"></span></a>
+			<ul class="dropdown-menu" role="menu">
+				<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Neovim" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Neovim" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Neovim&amp;oldid=1225393" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Neovim&amp;action=info" title="More information about this page">Page information</a></li><li id="t-smwbrowselink"><a href="/wiki/Special:Browse/:Neovim" rel="search">Browse properties</a></li>			</ul>
+		</li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+				<span class="fa fa-user" aria-label="Personal tools"></span>
+				User				<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li id="pt-uls" class="active"><a href="#" class="uls-trigger">English</a></li><li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=Neovim" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Neovim" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>			</ul>
+		</li>
+								</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<nav class="navbar navbar-grey navbar-stick" id="wiki-actions" role="navigation">
+			<div class="container"><div class="row">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gw-toolbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="gw-toolbar">
+					<ul class="nav navbar-nav">
+					<li id="ca-nstab-main" class="selected active"><a href="/wiki/Neovim" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk"><a href="/wiki/Talk:Neovim" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>					</ul>
+							<form action="/index.php" id="searchform" class="navbar-form navbar-right" role="search">
+			<input type='hidden' name="title" value="Special:Search"/>
+
+				<div class="input-group">
+					<input type="search" name="search" placeholder="Search" title="Search Gentoo Wiki [f]" accesskey="f" id="searchInput" class="form-control"/>					<div class="input-group-btn"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton btn btn-default"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton btn btn-default"/></div>
+				</div>
+		</form>
+						<ul class="nav navbar-nav navbar-right hidden-xs">
+					<li id="ca-viewsource"><a href="/index.php?title=Neovim&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">more <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+					<li id="ca-history"><a href="/index.php?title=Neovim&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>							</ul>
+						</li>
+					</ul>
+				</div>
+			</div></div>
+		</nav>
+		</header>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="content" class="mw-body" role="main">
+						<a id="top"></a>
+						
+						<h1 id="firstHeading" class="first-header" lang="en">
+							<span dir="auto">Neovim</span>
+						</h1>
+
+						<div id="bodyContent" class="mw-body-content">
+							<div id="siteSub">From Gentoo Wiki</div>
+							<div id="contentSub">
+															</div>
+												                <div id="jump-to-nav"></div>
+					                <a class="mw-jump-link" href="#mw-head">Jump to:navigation</a>
+					                <a class="mw-jump-link" href="#searchInput">Jump to:search</a>
+
+							<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="infobox-stack" class="list-group" style="width: 25em; float: right; clear: right; font-size: 90%; margin-left: 1em;">
+<div class="list-group-item text-center" style="padding-top: 3px; padding-bottom: 3px; background-color: #463C65; color: white;"><b>Resources</b></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><span class="fa fa-home fa-fw fa-2x"></span></span><span><a rel="nofollow" class="external text" href="https://neovim.io">Home</a></span></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><span class="fa fa-file-text fa-fw fa-2x"></span></span><span><a rel="nofollow" class="external text" href="https://neovim.io/doc/general/">Official documentation</a></span></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><span class="fa fa-hdd-o fa-fw fa-2x"></span></span><span><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/app-editors/neovim">Package information</a></span></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><span class="fa fa-wikipedia-w fa-fw fa-2x"></span></span><span><a href="https://en.wikipedia.org/wiki/Neovim" class="extiw" title="wikipedia:Neovim">Wikipedia</a></span></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><span class="fa fa-github fa-fw fa-2x"></span></span><span><a rel="nofollow" class="external text" href="https://github.com/neovim/neovim">GitHub</a></span></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><span class="fa fa-comments-o fa-fw fa-2x"></span></span><span><span style="font-family: monospace; font-size: 95%;"><a rel="nofollow" class="external text" href="ircs://irc.libera.chat/#neovim">#neovim</a></span> (<span style="font-family: monospace; font-size: 95%;"><a rel="nofollow" class="external text" href="https://web.libera.chat/#neovim">webchat</a></span>)</span></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><img alt="Ohloh Logo" src="/images/thumb/c/c1/Ohloh-logo.png/30px-Ohloh-logo.png" decoding="async" width="30" height="30" srcset="/images/c/c1/Ohloh-logo.png 1.5x" /></span><span><a rel="nofollow" class="external text" href="https://www.openhub.net/p/neovim">Open Hub</a></span></div>
+</div>
+<p><b>Neovim</b> is a hyperextensible <a href="/wiki/Vim" title="Vim">Vim</a>-based <a href="/wiki/Text_editor" title="Text editor">text editor</a>.
+</p>
+<div class="alert alert-success gw-box" style="padding-top: 8px; padding-bottom: 8px; background-color: #f5f5f5; border-color: #b8adde; color: #4d4370&#32;;"><strong><i class="fa fa-search-plus"></i> See also</strong><br />The <a href="/wiki/Vim" title="Vim">Vim</a> article provides general information on vi-like editors. See the <a href="/wiki/Vim/Guide" title="Vim/Guide">Vim guide</a> for an introductory tutorial on vi-like editor usage. See the <a href="/wiki/Text_editor" title="Text editor">text editor</a> article for general information on installing and configuring text editors in Gentoo.</div>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Installation"><span class="tocnumber">1</span> <span class="toctext">Installation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#USE_flags"><span class="tocnumber">1.1</span> <span class="toctext">USE flags</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Emerge"><span class="tocnumber">1.2</span> <span class="toctext">Emerge</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Additional_software"><span class="tocnumber">1.3</span> <span class="toctext">Additional software</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Plugin_manager"><span class="tocnumber">1.3.1</span> <span class="toctext">Plugin manager</span></a>
+<ul>
+<li class="toclevel-4 tocsection-6"><a href="#Vim_plug"><span class="tocnumber">1.3.1.1</span> <span class="toctext">Vim plug</span></a>
+<ul>
+<li class="toclevel-5 tocsection-7"><a href="#Install"><span class="tocnumber">1.3.1.1.1</span> <span class="toctext">Install</span></a></li>
+<li class="toclevel-5 tocsection-8"><a href="#Configuration"><span class="tocnumber">1.3.1.1.2</span> <span class="toctext">Configuration</span></a></li>
+</ul>
+</li>
+<li class="toclevel-4 tocsection-9"><a href="#Vim_Pathogen"><span class="tocnumber">1.3.1.2</span> <span class="toctext">Vim Pathogen</span></a>
+<ul>
+<li class="toclevel-5 tocsection-10"><a href="#Install_2"><span class="tocnumber">1.3.1.2.1</span> <span class="toctext">Install</span></a></li>
+<li class="toclevel-5 tocsection-11"><a href="#Configuration_2"><span class="tocnumber">1.3.1.2.2</span> <span class="toctext">Configuration</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Configuration_3"><span class="tocnumber">2</span> <span class="toctext">Configuration</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#Environment_variables"><span class="tocnumber">2.1</span> <span class="toctext">Environment variables</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Files"><span class="tocnumber">2.2</span> <span class="toctext">Files</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Usage"><span class="tocnumber">3</span> <span class="toctext">Usage</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="#Invocation"><span class="tocnumber">3.1</span> <span class="toctext">Invocation</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Tutorial"><span class="tocnumber">3.2</span> <span class="toctext">Tutorial</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#Removal"><span class="tocnumber">4</span> <span class="toctext">Removal</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="#Unmerge"><span class="tocnumber">4.1</span> <span class="toctext">Unmerge</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#Issues"><span class="tocnumber">5</span> <span class="toctext">Issues</span></a>
+<ul>
+<li class="toclevel-2 tocsection-21"><a href="#No_colors_when_running_through_screen.2Ftmux"><span class="tocnumber">5.1</span> <span class="toctext">No colors when running through screen/tmux</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Needs_Python"><span class="tocnumber">5.2</span> <span class="toctext">Needs Python</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#No_syntax_highlighting_on_Gentoo_configuration_files"><span class="tocnumber">5.3</span> <span class="toctext">No syntax highlighting on Gentoo configuration files</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-24"><a href="#Want_to_contribute"><span class="tocnumber">6</span> <span class="toctext">Want to contribute</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Installation">Installation</span></h2>
+<h3><span class="mw-headline" id="USE_flags">USE flags</span></h3>
+<p class="mw-empty-elt">      </p><div class="panel panel-default gp-panel">
+        <div class="panel-heading gp-panel-heading">
+          <h3 class="panel-title">
+            <span class="text-muted">USE flags for</span>
+            <a href="https://packages.gentoo.org/packages/app-editors/neovim">app-editors/neovim</a>
+            <small><span class="fa fa-external-link-square"></span></small>
+            <small class="gp-pkg-desc">Vim-fork focused on extensibility and agility</small>
+          </h3>
+        </div>
+        <div class="table-responsive gp-useflag-table-container">
+                <table class="table gp-useflag-table">        <tbody><tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/lto">lto</a></code>
+          </td>
+          <td>
+            Build with Link Time Optimization (LTO)
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/nvimpager">nvimpager</a></code>
+          </td>
+          <td>
+            Install nvimpager symlink to less.sh macro
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/test">test</a></code>
+          </td>
+          <td>
+            Enable dependencies and/or preparations necessary to run tests (usually controlled by FEATURES=test but can be toggled independently)
+          </td>
+        </tr>      </tbody></table>
+        </div>
+        <div class="panel-footer gp-panel-footer">
+          <small class="pull-right">
+            Data provided by the <a href="https://packages.gentoo.org">Gentoo Package Database</a>
+            &#183;
+            Last update: 2023-05-31 05:50
+          </small>
+          <small>
+            <a href="/wiki/Handbook:AMD64/Working/USE">More information about USE flags</a>
+          </small>
+        </div>
+      </div>
+<p class="mw-empty-elt"></p>
+<h3><span class="mw-headline" id="Emerge">Emerge</span></h3>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>emerge --ask app-editors/neovim</code></div></div> 
+<h3><span class="mw-headline" id="Additional_software">Additional software</span></h3>
+<h4><span class="mw-headline" id="Plugin_manager">Plugin manager</span></h4>
+<p>A plugin manager allows installation of plugins to Neovim editor to make it function according to user preference.
+</p>
+<h5><span class="mw-headline" id="Vim_plug">Vim plug</span></h5>
+<p>This is a plugin manager made both for Vim and Neovim. Here is the GitHub page: <a rel="nofollow" class="external text" href="https://github.com/junegunn/vim-plug">vim-plug</a>. Read the GitHub page for any issues encountered.
+</p><p>Read more about it in <a rel="nofollow" class="external text" href="https://github.com/junegunn/vim-plug">github.com/junegunn/vim-plug</a>
+</p>
+<h6><span class="mw-headline" id="Install">Install</span></h6>
+<p>To install it for Neovim do the following:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'</code></div></div>
+<p>Or for flatpak:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>curl -fLo ~/.var/app/io.neovim.nvim/data/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</code></div></div>
+<h6><span class="mw-headline" id="Configuration">Configuration</span></h6>
+<p>To configure you must read the <a rel="nofollow" class="external text" href="https://github.com/junegunn/vim-plug/wiki/tutorial">vim-plug/wiki/tutorial</a>
+</p><p>Here is a sample config
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">$XDG_CONFIG_HOME/nvim/init.vim</code></strong><strong></strong></div><pre class="captioned">call plug#begin()
+
+Plug 'junegunn/vim-easy-align'
+
+" Any valid git URL is allowed
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
+" Multiple Plug commands can be written in a single line using | separators
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
+" Using a non-default branch
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
+" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+Plug 'fatih/vim-go', { 'tag': '*' }
+
+" Plugin options
+Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Unmanaged plugin (manually installed and updated)
+Plug '~/my-prototype-plugin'
+
+call plug#end()
+</pre>
+<h5><span class="mw-headline" id="Vim_Pathogen">Vim Pathogen</span></h5>
+<p>Read more about Vim Pathogen over at <a rel="nofollow" class="external text" href="https://github.com/tpope/vim-pathogen">github.com/tpope/vim-pathogen</a>
+</p>
+<h6><span class="mw-headline" id="Install_2">Install</span></h6>
+<p>To install it, you can do 
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>mkdir -p ~/.vim/autoload ~/.vim/bundle &amp;&amp; \
+curl -LSso ~/.vim/autoload/pathogen.vim <a rel="nofollow" class="external free" href="https://tpo.pe/pathogen.vim">https://tpo.pe/pathogen.vim</a></code></div></div>
+<h6><span class="mw-headline" id="Configuration_2">Configuration</span></h6>
+<p>To learn more about configuration for Vim Pathogen, read their <a rel="nofollow" class="external text" href="https://github.com/tpope/vim-pathogen/blob/master/README.markdown">github.com/tpope/vim-pathogen's README.md</a>
+</p><p>Here is a sample config given 
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">$XDG_CONFIG_HOME/nvim/init.vim</code></strong><strong></strong></div><pre class="captioned">execute pathogen#infect()
+syntax on
+filetype plugin indent on
+</pre>
+<p>This is a super minimal config, that can get you starting.
+</p>
+<h2><span class="mw-headline" id="Configuration_3">Configuration</span></h2>
+<h3><span class="mw-headline" id="Environment_variables">Environment variables</span></h3>
+<p>Important environment variables include:
+</p>
+<ul><li><var>VIMRUNTIME</var> - Used to locate runtime files (documentation, syntax highlighting, etc.).</li>
+<li><var>VIMINIT</var> - Ex commands to be executed at startup. Run <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">:help VIMINIT</span></li></ul>
+<p><br />
+A full list of environment variables can be found under the environment section of <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">man 1 nvim</span>.
+</p>
+<h3><span class="mw-headline" id="Files">Files</span></h3>
+<p>Neovim honors XDG base directories.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> Therefore the configuration directories are defined by <var>XDG_CONFIG_HOME</var> (defaults to <span style="font-family: monospace; font-size: 95%">~/.config</span>) or <var>XDG_CONFIG_DIRS</var> (defaults to <span style="font-family: monospace; font-size: 95%">/etc/xdg</span>) variables.
+</p>
+<ul><li><span style="font-family: monospace; font-size: 95%">$XDG_CONFIG_HOME/nvim</span> - User-local Neovim configuration directory</li>
+<li><span style="font-family: monospace; font-size: 95%">$XDG_CONFIG_HOME/nvim/init.vim</span> - User-local Neovim configuration file</li>
+<li><span style="font-family: monospace; font-size: 95%">$XDG_CONFIG_DIRS/nvim/sysinit.vim</span> - System-global Neovim configuration file</li></ul>
+<p><br />
+For example, customize Neovim for a specific user by editing the:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">$XDG_CONFIG_HOME/nvim/init.vim</code></strong><strong></strong></div><pre class="captioned">set number
+" sets the number on left-hand side
+set relativenumber
+" sets relative number on left-hand side
+set tabstop=4
+set shiftwidth=4
+set expandtab
+" sets the tab to be 4 spaces</pre>
+<p>This particular example activates line numbers on the left-hand side of the editor, sets relative numbers, and changes the tab width.
+</p>
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<h3><span class="mw-headline" id="Invocation">Invocation</span></h3>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>nvim --help</code></div><span class="mw-collapsible mw-collapsed"><pre>Usage:
+  nvim [options] [file ...]      Edit file(s)
+  nvim [options] -t &lt;tag&gt;        Edit file where tag is defined
+  nvim [options] -q [errorfile]  Edit file with first error
+
+Options:
+  --                    Only file names after this
+  +                     Start at end of file
+  --cmd &lt;cmd&gt;           Execute &lt;cmd&gt; before any config
+  +&lt;cmd&gt;, -c &lt;cmd&gt;      Execute &lt;cmd&gt; after config and first file
+
+  -b                    Binary mode
+  -d                    Diff mode
+  -e, -E                Ex mode
+  -es, -Es              Silent (batch) mode
+  -h, --help            Print this help message
+  -i &lt;shada&gt;            Use this shada file
+  -m                    Modifications (writing files) not allowed
+  -M                    Modifications in text not allowed
+  -n                    No swap file, use memory only
+  -o[N]                 Open N windows (default: one per file)
+  -O[N]                 Open N vertical windows (default: one per file)
+  -p[N]                 Open N tab pages (default: one per file)
+  -r, -L                List swap files
+  -r &lt;file&gt;             Recover edit state for this file
+  -R                    Read-only mode
+  -S &lt;session&gt;          Source &lt;session&gt; after loading the first file
+  -s &lt;scriptin&gt;         Read Normal mode commands from &lt;scriptin&gt;
+  -u &lt;config&gt;           Use this config file
+  -v, --version         Print version information
+  -V[N][file]           Verbose [level][file]
+
+  --api-info            Write msgpack-encoded API metadata to stdout
+  --embed               Use stdin/stdout as a msgpack-rpc channel
+  --headless            Don't start a user interface
+  --listen &lt;address&gt;    Serve RPC API from this address
+  --noplugin            Don't load plugins
+  --startuptime &lt;file&gt;  Write startup timing messages to &lt;file&gt;
+
+See ":help startup-options" for all options.
+</pre></span></div>
+<h3><span class="mw-headline" id="Tutorial">Tutorial</span></h3>
+<p>Neovim has a built-in tutorial. Learn basic nvim usage interactive with the <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">+Tutor</span>:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>nvim +Tutor</code></div></div>
+<h2><span class="mw-headline" id="Removal">Removal</span></h2>
+<h3><span class="mw-headline" id="Unmerge">Unmerge</span></h3>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>emerge --ask --depclean --verbose app-editors/neovim</code></div></div> 
+<h2><span class="mw-headline" id="Issues">Issues</span></h2>
+<h3><span id="No_colors_when_running_through_screen/tmux"></span><span class="mw-headline" id="No_colors_when_running_through_screen.2Ftmux">No colors when running through screen/tmux</span></h3>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>export TERM=screen-256color</code></div><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>screen</code></div></div>
+<p>See: <a rel="nofollow" class="external free" href="https://github.com/neovim/neovim/wiki/FAQ#home-or-some-other-special-key-doesnt-work">https://github.com/neovim/neovim/wiki/FAQ#home-or-some-other-special-key-doesnt-work</a>
+</p>
+<h3><span class="mw-headline" id="Needs_Python">Needs Python</span></h3>
+<p>This is an issue that occurs when a plugin (such as the <a rel="nofollow" class="external text" href="https://github.com/xuhdev/vim-latex-live-preview">vim-latex-live-preview</a>) requires <a href="/wiki/Python" title="Python">Python</a> to execute its function. To resolve this issue, try to build Neovim <a href="/wiki/Handbook:AMD64/Working/USE#Declaring_USE_flags_for_individual_packages" title="Handbook:AMD64/Working/USE">with the correct USE flag</a>, for example by adding a line to a <a href="/wiki//etc/portage/package.use" title="/etc/portage/package.use">package.use file</a>:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">/etc/portage/package.use/editors</code></strong><strong></strong></div><pre class="captioned">app-editors/neovim python</pre>
+<p>Then rebuild the package:
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>emerge --ask app-editors/neovim</code></div></div> 
+<h3><span class="mw-headline" id="No_syntax_highlighting_on_Gentoo_configuration_files">No syntax highlighting on Gentoo configuration files</span></h3>
+<p>Unfortunately, <a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/app-vim/gentoo-syntax">app-vim/gentoo-syntax</a> has no native support for Neovim yet.
+Thus, Gentoo configuration files (e.g. most files under <span style="font-family: monospace; font-size: 95%">/etc/portage</span>) don't have specialized syntax highlighting and the editor doesn't initialize the buffer for new Gentoo files (e.g. new ebuilds, new init scripts) with a skeleton.
+</p><p>Since Neovim is compatible with Vim configuration,
+the <span style="font-family: monospace; font-size: 95%">/usr/share/vim/vimfiles</span> directory, where the system wide installed Vim plugins reside,
+can be added to the Neovim runtime path in <span style="font-family: monospace; font-size: 95%">$XDG_CONFIG_HOME/nvim/init.vim</span>:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">$XDG_CONFIG_HOME/nvim/init.vim</code></strong><strong></strong></div><pre class="captioned">set rtp+=/usr/share/vim/vimfiles</pre>
+<p>However, this is just a workaround with the side effect that all other plugins which are installed for Vim system wide are now enabled in Neovim as well.
+</p>
+<h2><span class="mw-headline" id="Want_to_contribute">Want to contribute</span></h2>
+<p>Neovim is a community fork of Vim. Contribute here: <a rel="nofollow" class="external text" href="https://github.com/neovim/neovim">Github: Neovim</a>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="/wiki/Knowledge_Base:Edit_a_configuration_file" title="Knowledge Base:Edit a configuration file">Knowledge Base:Edit a configuration file</a></li>
+<li><a href="/wiki/Text_editor" title="Text editor">Text editor</a> â€” a program to create and edit text files.</li>
+<li><a href="/wiki/Vi" title="Vi">Vi</a> â€” a powerful "modal" <a href="/wiki/Text_editor" title="Text editor">text-based editor</a> with a long history in the Unix(like) operating system.</li>
+<li><a href="/wiki/Vim" title="Vim">Vim</a> â€” a text editor based on the <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator"><a href="/wiki/Vi" title="Vi">vi</a></span> text editor.</li>
+<li><a href="/wiki/Vim/Guide" title="Vim/Guide">Vim/Guide</a> â€” explain basic usage for users new to <a href="https://en.wikipedia.org/wiki/vi" class="extiw" title="wikipedia:vi">vi-like</a> text editors in general, and vim in particular.</li></ul>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">â†‘</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/neovim/neovim/pull/3470">XDG base directory specification support #3470 </a>, GitHub. Retrieved on December 31, 2021</span>
+</li>
+</ol></div></div>
+<!-- 
+NewPP limit report
+Cached time: 20230624074551
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+[SMW] Inâ€text annotation parser time: 0.006 seconds
+CPU time usage: 0.127 seconds
+Real time usage: 0.878 seconds
+Preprocessor visited node count: 2025/1000000
+Postâ€expand include size: 52653/2097152 bytes
+Template argument size: 14370/2097152 bytes
+Highest expansion depth: 20/40
+Expensive parser function count: 5/100
+Unstrip recursion depth: 0/20
+Unstrip postâ€expand size: 5341/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  825.549      1 -total
+ 83.89%  692.564      1 Template:USEflag
+  7.79%   64.289      5 Template:See_also
+  2.22%   18.308      1 Template:InfoBox_stack
+  1.20%    9.946      9 Template:GenericCmd
+  1.18%    9.714      2 Template:Emerge
+  1.04%    8.550      3 Template:RootCmd
+  0.86%    7.129      7 Template:InfoBox
+  0.78%    6.447      5 Template:FileBox
+  0.68%    5.639      8 Template:Path
+-->
+
+<!-- Saved in parser cache with key gentoo?hwiki:pcache:idhash:303804-0!dateformat=default and timestamp 20230624074550 and revision id 1225393
+ -->
+</div></div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.gentoo.org/index.php?title=Neovim&amp;oldid=1225393">https://wiki.gentoo.org/index.php?title=Neovim&amp;oldid=1225393</a>"</div>
+<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/Category:Vi" title="Category:Vi">Vi</a></li><li><a href="/wiki/Category:Text-based_user_interfaces" title="Category:Text-based user interfaces">Text-based user interfaces</a></li></ul></div></div>						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-offset-2 col-md-7">
+											<div class="spacer"></div>
+						<ul id="f-list">
+							<li id="lastmod>"> This page was last edited on 27 April 2023, at 13:36.</li><li id="privacy>"><a href="/wiki/Gentoo_Wiki:Privacy_policy" class="mw-redirect" title="Gentoo Wiki:Privacy policy">Privacy policy</a></li><li id="about>"><a href="/wiki/Gentoo_Wiki:About" title="Gentoo Wiki:About">About Gentoo Wiki</a></li><li id="disclaimer>"><a href="/wiki/Gentoo_Wiki:General_disclaimer" title="Gentoo Wiki:General disclaimer">Disclaimers</a></li>						</ul>
+									</div>
+				<div class="col-xs-12 col-md-3">
+					<!-- No questions or comments, the Wiki has enough information on how to contact us. -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3 col-md-2">
+					<ul class="footerlinks three-icons">
+						<li><a href="https://twitter.com/gentoo" title="@Gentoo on Twitter"><span class="fa fa-twitter fa-fw"></span></a></li>
+						<li><a href="https://www.facebook.com/gentoo.org" title="Gentoo on Facebook"><span class="fa fa-facebook fa-fw"></span></a></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="col-xs-9 col-md-9">
+					<strong>&copy; 2001&ndash;2023 Gentoo Authors</strong><br />
+					<small>
+						Gentoo is a trademark of the Gentoo Foundation, Inc.
+						The contents of this document, unless otherwise expressly stated, are licensed under the
+						<a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC-BY-SA-4.0</a> license.
+						The <a href="https://www.gentoo.org/inside-gentoo/foundation/name-logo-guidelines.html">Gentoo Name and Logo Usage Guidelines</a> apply.
+					</small>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+<script>
+function defer(method) {
+    if (window.jQuery) {
+        method();
+    } else {
+        setTimeout(function() { defer(method) }, 50);
+    }
+}
+defer(function() { mw.loader.load( 'https://assets.gentoo.org/tyrian/bootstrap.min.js'); });
+</script>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0.006},"limitreport":{"cputime":"0.127","walltime":"0.878","ppvisitednodes":{"value":2025,"limit":1000000},"postexpandincludesize":{"value":52653,"limit":2097152},"templateargumentsize":{"value":14370,"limit":2097152},"expansiondepth":{"value":20,"limit":40},"expensivefunctioncount":{"value":5,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":5341,"limit":5000000},"timingprofile":["100.00%  825.549      1 -total"," 83.89%  692.564      1 Template:USEflag","  7.79%   64.289      5 Template:See_also","  2.22%   18.308      1 Template:InfoBox_stack","  1.20%    9.946      9 Template:GenericCmd","  1.18%    9.714      2 Template:Emerge","  1.04%    8.550      3 Template:RootCmd","  0.86%    7.129      7 Template:InfoBox","  0.78%    6.447      5 Template:FileBox","  0.68%    5.639      8 Template:Path"]},"cachereport":{"timestamp":"20230624074551","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":86});});</script></body></html>êäæèÎ      d—¡Êd—¡ÊE¹«Íd—¡Ê   L    O^partitionKey=%28https%2Cgentoo.org%29,:https://wiki.gentoo.org/wiki/Neovim necko:classified 1 strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br request-Accept-Language en-US,en;q=0.5 response-head HTTP/2 200 OK
+server: nginx
+date: Sun, 25 Jun 2023 02:09:13 GMT
+content-type: text/html; charset=UTF-8
+x-content-type-options: nosniff
+content-language: en
+vary: Accept-Encoding, Accept-Language, Cookie, Authorization
+expires: Sun, 25 Jun 2023 02:09:13 GMT
+cache-control: private, must-revalidate, max-age=0
+last-modified: Sun, 25 Jun 2023 02:09:13 GMT
+x-request-id: 6c941cea099e4be5d5fa6164
+x-clacks-overhead: Terry Pratchett, Noirin Trouble Pluinceid, Dan Kaminsky
+permissions-policy: interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000
+X-Firefox-Spdy: h2
+ original-response-headers server: nginx
+date: Sun, 25 Jun 2023 02:09:13 GMT
+content-type: text/html; charset=UTF-8
+x-content-type-options: nosniff
+content-language: en
+vary: Accept-Encoding, Accept-Language, Cookie, Authorization
+expires: Sun, 25 Jun 2023 02:09:13 GMT
+cache-control: private, must-revalidate, max-age=0
+last-modified: Sun, 25 Jun 2023 02:09:13 GMT
+x-request-id: 6c941cea099e4be5d5fa6164
+x-clacks-overhead: Terry Pratchett, Noirin Trouble Pluinceid, Dan Kaminsky
+permissions-policy: interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0 net-response-time-onstart 749 net-response-time-onstop 915   ´Ã

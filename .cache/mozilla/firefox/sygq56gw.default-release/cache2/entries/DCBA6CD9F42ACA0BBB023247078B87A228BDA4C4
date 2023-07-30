@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ALSA - Gentoo Wiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"b7bf8b218016e6417607d6f0","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ALSA","wgTitle":"ALSA","wgCurRevisionId":1222824,"wgRevisionId":1222824,"wgArticleId":1148,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Sound devices"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ALSA","wgRelevantArticleId":1148,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgULSCurrentAutonym":"English","wgPageFormsTargetName":null,
+"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":!1,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"srfFilteredConfig":null,"wgULSPosition":"personal","wgULSisCompactLinksEnabled":!0,"wgEditSubmitButtonLabelPublish":!1,"wgTranslatePageTranslation":"source"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.translate":"ready",
+"ext.translate.tag.languages":"ready","ext.pygments":"ready","jquery.makeCollapsible.styles":"ready","mediawiki.toc.styles":"ready","ext.smw.style":"ready","ext.smw.tooltip.styles":"ready","ext.uls.pt":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.srf.styles":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.tyrian.styles":"ready","skins.tyrian.icons":"ready"};RLPAGEMODULES=["ext.gentooPackages","ext.smw.style","ext.smw.tooltips","smw.entityexaminer","site","mediawiki.page.startup","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","ext.uls.compactlinks","ext.uls.interface","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=ext.pygments%2Ctranslate%7Cext.translate.tag.languages%7Cext.uls.pt%7Cext.visualEditor.desktopArticleTarget.noscript%7Cjquery.makeCollapsible.styles%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.tyrian.icons%2Cstyles&amp;only=styles&amp;skin=tyrian"/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=ext.smw.style%7Cext.smw.tooltip.styles&amp;only=styles&amp;skin=tyrian"/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=ext.srf.styles&amp;only=styles&amp;skin=tyrian"/>
+<script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=tyrian"></script>
+<link rel="stylesheet" href="https://assets.gentoo.org/tyrian/bootstrap.min.css"/><link rel="stylesheet" href="https://assets.gentoo.org/tyrian/tyrian.min.css"/><style>#mw-indicator-mw-helplink {display:none;}</style>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=tyrian"/>
+<meta name="generator" content="MediaWiki 1.35.9"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#54487a"/>
+<link rel="alternate" type="application/rdf+xml" title="ALSA" href="/index.php?title=Special:ExportRDF/ALSA&amp;xmlmime=rdf"/>
+<link rel="shortcut icon" href="https://www.gentoo.org/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Gentoo Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//wiki.gentoo.org/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ALSA rootpage-ALSA skin-tyrian action-view">	<div class="mw-jump sr-only">
+		Jump to:		<a href="#top">content</a>
+	</div>
+	<header>
+		<div class="site-title">
+			<div class="container">
+				<div class="row">
+					<div class="site-title-buttons">
+						<div class="btn-group btn-group-sm">
+							<a href="https://get.gentoo.org/" role="button" class="btn get-gentoo"><span class="fa fa-fw fa-download"></span> <strong>Get Gentoo!</strong></a>
+							<div class="btn-group btn-group-sm">
+								<a class="btn gentoo-org-sites dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+									<span class="fa fa-fw fa-map-o"></span> <span class="hidden-xs">gentoo.org sites</span> <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a href="https://www.gentoo.org/" title="Main Gentoo website"><span class="fa fa-home fa-fw"></span> gentoo.org</a></li>
+									<li><a href="https://wiki.gentoo.org/" title="Find and contribute documentation"><span class="fa fa-file-text-o fa-fw"></span> Wiki</a></li>
+									<li><a href="https://bugs.gentoo.org/" title="Report issues and find common issues"><span class="fa fa-bug fa-fw"></span> Bugs</a></li>
+									<li><a href="https://forums.gentoo.org/" title="Discuss with the community"><span class="fa fa-comments-o fa-fw"></span> Forums</a></li>
+									<li><a href="https://packages.gentoo.org/" title="Find software for your Gentoo"><span class="fa fa-hdd-o fa-fw"></span> Packages</a></li>
+									<li class="divider"></li>
+									<li><a href="https://planet.gentoo.org/" title="Find out what's going on in the developer community"><span class="fa fa-rss fa-fw"></span> Planet</a></li>
+									<li><a href="https://archives.gentoo.org/" title="Read up on past discussions"><span class="fa fa-archive fa-fw"></span> Archives</a></li>
+									<li><a href="https://gitweb.gentoo.org/" title="Browse our source code in Gitweb"><span class="fa fa-code fa-fw"></span> Gitweb</a></li>
+									<li class="divider"></li>
+									<li><a href="https://infra-status.gentoo.org/" title="Get updates on the services provided by Gentoo"><span class="fa fa-server fa-fw"></span> Infra Status</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="logo">
+						<a href="/" title="Back to the homepage" class="site-logo"><object data="https://assets.gentoo.org/tyrian/site-logo.svg" type="image/svg+xml">
+							<img src="https://assets.gentoo.org/tyrian/site-logo.png" alt="Gentoo Linux Logo">
+						</object></a>
+						<span class="site-label">Wiki</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="tyrian-navbar" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse navbar-main-collapse">
+						<ul class="nav navbar-nav">
+							<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-help"><a href="/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>			<li class="dropdown">
+				<a href="/wiki/Gentoo_Wiki:Menu-Gentoo" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gentoo <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu"><li id="n-Gentoo-Projects"><a href="/wiki/Project:Gentoo">Gentoo Projects</a></li>				</ul>
+			</li>			<li class="dropdown">
+				<a href="/wiki/Gentoo_Wiki:Menu-Documentation" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu"><li id="n-Gentoo-Handbook"><a href="/wiki/Handbook:Main_Page">Gentoo Handbook</a></li><li id="n-Gentoo-FAQ"><a href="/wiki/FAQ">Gentoo FAQ</a></li><li id="n-Featured-Documents"><a href="/wiki/Project:Documentation/Overview">Featured Documents</a></li><li role="presentation" class="divider"></li><li role="presentation" class="dropdown-header">Topics</li><li id="n-Core-system"><a href="/wiki/Category:Core_system">Core system</a></li><li id="n-Hardware"><a href="/wiki/Category:Hardware">Hardware</a></li><li id="n-Software"><a href="/wiki/Category:Software">Software</a></li><li id="n-Desktop"><a href="/wiki/Category:Desktop">Desktop</a></li><li id="n-Server-.26-Security"><a href="/wiki/Category:Server_and_Security">Server &amp; Security</a></li><li id="n-Project-.26-Community"><a href="/wiki/Category:Project_and_Community">Project &amp; Community</a></li>				</ul>
+			</li>						</ul>
+						<ul class="nav navbar-nav navbar-right hidden-xs">
+									<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-cog"></i> Tools <span class="caret"></span></a>
+			<ul class="dropdown-menu" role="menu">
+				<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/ALSA" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/ALSA" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=ALSA&amp;oldid=1222824" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=ALSA&amp;action=info" title="More information about this page">Page information</a></li><li id="t-smwbrowselink"><a href="/wiki/Special:Browse/:ALSA" rel="search">Browse properties</a></li>			</ul>
+		</li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+				<span class="fa fa-user" aria-label="Personal tools"></span>
+				User				<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li id="pt-uls" class="active"><a href="#" class="uls-trigger">English</a></li><li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=ALSA" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=ALSA" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>			</ul>
+		</li>
+								</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<nav class="navbar navbar-grey navbar-stick" id="wiki-actions" role="navigation">
+			<div class="container"><div class="row">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gw-toolbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="gw-toolbar">
+					<ul class="nav navbar-nav">
+					<li id="ca-nstab-main" class="selected active"><a href="/wiki/ALSA" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk"><a href="/wiki/Talk:ALSA" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>					</ul>
+							<form action="/index.php" id="searchform" class="navbar-form navbar-right" role="search">
+			<input type='hidden' name="title" value="Special:Search"/>
+
+				<div class="input-group">
+					<input type="search" name="search" placeholder="Search" title="Search Gentoo Wiki [f]" accesskey="f" id="searchInput" class="form-control"/>					<div class="input-group-btn"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton btn btn-default"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton btn btn-default"/></div>
+				</div>
+		</form>
+						<ul class="nav navbar-nav navbar-right hidden-xs">
+					<li id="ca-viewsource"><a href="/index.php?title=ALSA&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">more <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+					<li id="ca-history"><a href="/index.php?title=ALSA&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>							</ul>
+						</li>
+					</ul>
+				</div>
+			</div></div>
+		</nav>
+		</header>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="content" class="mw-body" role="main">
+						<a id="top"></a>
+						
+						<h1 id="firstHeading" class="first-header" lang="en">
+							<span dir="auto">ALSA</span>
+						</h1>
+
+						<div id="bodyContent" class="mw-body-content">
+							<div id="siteSub">From Gentoo Wiki</div>
+							<div id="contentSub">
+															</div>
+												                <div id="jump-to-nav"></div>
+					                <a class="mw-jump-link" href="#mw-head">Jump to:navigation</a>
+					                <a class="mw-jump-link" href="#searchInput">Jump to:search</a>
+
+							<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="mw-pt-languages noprint" lang="en" dir="ltr"><div class="mw-pt-languages-label">Other languages:</div><ul class="mw-pt-languages-list"><li><a href="/wiki/ALSA/de" class="mw-pt-progress mw-pt-progress--low" title="ALSA/de (27% translated)" lang="de" dir="ltr">Deutsch</a></li>
+<li><span class="mw-pt-languages-ui mw-pt-languages-selected mw-pt-progress mw-pt-progress--complete" lang="en" dir="ltr">English</span></li>
+<li><a href="/wiki/ALSA/sv" class="mw-pt-progress mw-pt-progress--low" title="ALSA/sv (20% translated)" lang="sv" dir="ltr">svenska</a></li>
+<li><a href="/wiki/ALSA/ru" class="mw-pt-progress mw-pt-progress--complete" title="ALSA/ru (100% translated)" lang="ru" dir="ltr">русский</a></li>
+<li><a href="/wiki/ALSA/ta" class="mw-pt-progress mw-pt-progress--med" title="ALSA/ta (57% translated)" lang="ta" dir="ltr">தமிழ்</a></li>
+<li><a href="/wiki/ALSA/zh-cn" class="mw-pt-progress mw-pt-progress--med" title="ALSA/zh-cn (46% translated)" lang="zh-Hans-CN" dir="ltr">中文（中国大陆）‎</a></li>
+<li><a href="/wiki/ALSA/ja" class="mw-pt-progress mw-pt-progress--high" title="ALSA/ja (69% translated)" lang="ja" dir="ltr">日本語</a></li></ul></div>
+<div id="infobox-stack" class="list-group" style="width: 25em; float: right; clear: right; font-size: 90%; margin-left: 1em;">
+<div class="list-group-item text-center" style="padding-top: 3px; padding-bottom: 3px; background-color: #463C65; color: white;"><b>Resources</b></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><span class="fa fa-home fa-fw fa-2x"></span></span><span><a rel="nofollow" class="external text" href="https://www.alsa-project.org/wiki/Main_Page">Home</a></span></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><a href="/wiki/Project:ALSA" title="Project:ALSA"><img alt="Gentoo peach graphic" src="/images/thumb/a/ad/Gentoo-logo-peach.svg/25px-Gentoo-logo-peach.svg.png" decoding="async" width="25" height="26" srcset="/images/thumb/a/ad/Gentoo-logo-peach.svg/38px-Gentoo-logo-peach.svg.png 1.5x, /images/thumb/a/ad/Gentoo-logo-peach.svg/50px-Gentoo-logo-peach.svg.png 2x" /></a></span><span><a href="/wiki/Project:ALSA" title="Project:ALSA">Project</a></span></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><span class="fa fa-hdd-o fa-fw fa-2x"></span></span><span><a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-libs/alsa-lib">Package information</a></span></div>
+<div id="infobox" class="list-group-item" style="display: flex; align-items: center; padding: 5px; min-height: 3em;"><span style="display: inline-block; width: 3em; overflow: hidden; text-align: center;"><span class="fa fa-wikipedia-w fa-fw fa-2x"></span></span><span><a href="https://en.wikipedia.org/wiki/Advanced_Linux_Sound_Architecture" class="extiw" title="wikipedia:Advanced Linux Sound Architecture">Wikipedia</a></span></div>
+</div>
+<p><br />
+This article describes the setup of a sound card with <i>ALSA</i> (<b>A</b>dvanced <b>L</b>inux <b>S</b>ound <b>A</b>rchitecture).
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Installation"><span class="tocnumber">1</span> <span class="toctext">Installation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Hardware_detection"><span class="tocnumber">1.1</span> <span class="toctext">Hardware detection</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Kernel"><span class="tocnumber">1.2</span> <span class="toctext">Kernel</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Software"><span class="tocnumber">1.3</span> <span class="toctext">Software</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Configuration"><span class="tocnumber">2</span> <span class="toctext">Configuration</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Files"><span class="tocnumber">2.1</span> <span class="toctext">Files</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#.7E.2F.asoundrc"><span class="tocnumber">2.1.1</span> <span class="toctext">~/.asoundrc</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#S.2FPDIF_or_HDMI_.asoundrc"><span class="tocnumber">2.2</span> <span class="toctext">S/PDIF or HDMI .asoundrc</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Background"><span class="tocnumber">2.2.1</span> <span class="toctext">Background</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Preference_for_connections_versus_media_types"><span class="tocnumber">2.2.2</span> <span class="toctext">Preference for connections versus media types</span></a>
+<ul>
+<li class="toclevel-4 tocsection-11"><a href="#Basic_analog"><span class="tocnumber">2.2.2.1</span> <span class="toctext">Basic analog</span></a></li>
+<li class="toclevel-4 tocsection-12"><a href="#S.2FPDIF"><span class="tocnumber">2.2.2.2</span> <span class="toctext">S/PDIF</span></a>
+<ul>
+<li class="toclevel-5 tocsection-13"><a href="#S.2FPDIF_digital_coaxial"><span class="tocnumber">2.2.2.2.1</span> <span class="toctext">S/PDIF digital coaxial</span></a></li>
+<li class="toclevel-5 tocsection-14"><a href="#S.2FPDIF_optical_.28TOSLINK.29"><span class="tocnumber">2.2.2.2.2</span> <span class="toctext">S/PDIF optical (TOSLINK)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-4 tocsection-15"><a href="#HDMI"><span class="tocnumber">2.2.2.3</span> <span class="toctext">HDMI</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-16"><a href="#Configuration_2"><span class="tocnumber">2.2.3</span> <span class="toctext">Configuration</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-17"><a href="#A.2F52.2C_AC3.2C_Dolby.2C_DTS"><span class="tocnumber">2.3</span> <span class="toctext">A/52, AC3, Dolby, DTS</span></a>
+<ul>
+<li class="toclevel-3 tocsection-18"><a href="#Decode_or_playback"><span class="tocnumber">2.3.1</span> <span class="toctext">Decode or playback</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#Encode_to_A.2F52"><span class="tocnumber">2.3.2</span> <span class="toctext">Encode to A/52</span></a>
+<ul>
+<li class="toclevel-4 tocsection-20"><a href="#Upmix_two_channel_audio_to_a_A.2F52_multi-channel_audio_stream"><span class="tocnumber">2.3.2.1</span> <span class="toctext">Upmix two channel audio to a A/52 multi-channel audio stream</span></a></li>
+<li class="toclevel-4 tocsection-21"><a href="#Encode_PCM_5.1_24-bit_audio_into_a_A.2F52_16-bit_audio_stream_.28for_streaming_via_S.2FPDIF.29"><span class="tocnumber">2.3.2.2</span> <span class="toctext">Encode PCM 5.1 24-bit audio into a A/52 16-bit audio stream (for streaming via S/PDIF)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-22"><a href="#Clone_audio_for_2_or_more_devices"><span class="tocnumber">2.4</span> <span class="toctext">Clone audio for 2 or more devices</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#JACK_audio_connection_kit"><span class="tocnumber">2.5</span> <span class="toctext">JACK audio connection kit</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Permissions"><span class="tocnumber">2.6</span> <span class="toctext">Permissions</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Service"><span class="tocnumber">2.7</span> <span class="toctext">Service</span></a>
+<ul>
+<li class="toclevel-3 tocsection-26"><a href="#OpenRC"><span class="tocnumber">2.7.1</span> <span class="toctext">OpenRC</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="#systemd"><span class="tocnumber">2.7.2</span> <span class="toctext">systemd</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-28"><a href="#Mixer"><span class="tocnumber">2.8</span> <span class="toctext">Mixer</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-29"><a href="#Usage"><span class="tocnumber">3</span> <span class="toctext">Usage</span></a>
+<ul>
+<li class="toclevel-2 tocsection-30"><a href="#Test_speakers"><span class="tocnumber">3.1</span> <span class="toctext">Test speakers</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#Test_microphone"><span class="tocnumber">3.2</span> <span class="toctext">Test microphone</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-32"><a href="#Tips"><span class="tocnumber">4</span> <span class="toctext">Tips</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="#Troubleshooting"><span class="tocnumber">5</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class="toclevel-2 tocsection-34"><a href="#Firefox.2C_Chromium.2C_and_YouTube_have_no_audio_with_custom_.asoundrc_but_other_apps_do"><span class="tocnumber">5.1</span> <span class="toctext">Firefox, Chromium, and YouTube have no audio with custom .asoundrc but other apps do</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="#Sound_card_only_available_for_one_application"><span class="tocnumber">5.2</span> <span class="toctext">Sound card only available for one application</span></a></li>
+<li class="toclevel-2 tocsection-36"><a href="#Missing_dialogue_.28sounds.29_with_4.0_speakers"><span class="tocnumber">5.3</span> <span class="toctext">Missing dialogue (sounds) with 4.0 speakers</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="#HDMI.2FSPDIF_5.1_and_7.1_speaker_testing"><span class="tocnumber">5.4</span> <span class="toctext">HDMI/SPDIF 5.1 and 7.1 speaker testing</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="#APlay_SPDIF.2FHDMI_output_has_incorrect_speaker_channels"><span class="tocnumber">5.5</span> <span class="toctext">APlay SPDIF/HDMI output has incorrect speaker channels</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="#Weak_center_channel_on_PCM_5.1_live_music"><span class="tocnumber">5.6</span> <span class="toctext">Weak center channel on PCM 5.1 live music</span></a></li>
+<li class="toclevel-2 tocsection-40"><a href="#Need_to_view_more_detailed_information_per_ALSA_stream.3F"><span class="tocnumber">5.7</span> <span class="toctext">Need to view more detailed information per ALSA stream?</span></a></li>
+<li class="toclevel-2 tocsection-41"><a href="#HTML5_does_not_play_in_a_browser"><span class="tocnumber">5.8</span> <span class="toctext">HTML5 does not play in a browser</span></a>
+<ul>
+<li class="toclevel-3 tocsection-42"><a href="#HTML5_does_not_play_in_the_Firefox_browser"><span class="tocnumber">5.8.1</span> <span class="toctext">HTML5 does not play in the Firefox browser</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-43"><a href="#Laptops_with_HDMI_audio_output"><span class="tocnumber">5.9</span> <span class="toctext">Laptops with HDMI audio output</span></a></li>
+<li class="toclevel-2 tocsection-44"><a href="#IPC_semaphore_-_function_not_implemented"><span class="tocnumber">5.10</span> <span class="toctext">IPC semaphore - function not implemented</span></a></li>
+<li class="toclevel-2 tocsection-45"><a href="#Headphones_jack_not_working"><span class="tocnumber">5.11</span> <span class="toctext">Headphones jack not working</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-46"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-47"><a href="#External_resources"><span class="tocnumber">7</span> <span class="toctext">External resources</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Installation">Installation</span></h2>
+<h3><span class="mw-headline" id="Hardware_detection">Hardware detection</span></h3>
+<p>To choose the right driver, first detect the used audio controller. Use <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator"><a href="/wiki/Hardware_detection" title="Hardware detection">lspci</a></span> for this task:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>lspci | grep -i audio</code></div></div>
+<p>With the controller name determined, the needed driver can be found in the <a rel="nofollow" class="external text" href="https://www.alsa-project.org/wiki/SoundCard-Matrix">ALSA sound card matrix</a>.
+</p>
+<h3><span class="mw-headline" id="Kernel">Kernel</span></h3>
+<p>Activate the following kernel options:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #4E9A06">KERNEL</span> <strong></strong></div><pre class="captioned">Device Drivers ---&gt;
+    &lt;*&gt; Sound card support
+        &lt;*&gt; Advanced Linux Sound Architecture ---&gt;
+            [*] PCI sound devices  ---&gt;
+                Select the driver for your audio controller.
+                HD-Audio  ---&gt;
+                   Select a codec or enable all and let the generic parse choose the right one:
+                   [*] Build Realtek HD-audio codec support
+                   [*] ...
+                   [*] Build Silicon Labs 3054 HD-modem codec support
+                   [*] Enable generic HD-audio codec parser
+            [*] USB sound devices  ---&gt;
+                Must have as some cards are presented as USB devices.
+                [*] USB Audio/MIDI driver
+General setup ---&gt;
+    [*] System V IPC</pre>
+<p>The <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">lsmod</span> command can be helpful.
+</p><p>If the system has more than 8 sound outputs (Each HDMI output on a GPU will count as one), the max number of sound cards will need to be increased:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #4E9A06">KERNEL</span> <strong></strong></div><pre class="captioned">Device Drivers ---&gt;
+    &lt;*&gt; Sound card support
+        &lt;*&gt; Advanced Linux Sound Architecture ---&gt;
+            [*] Dynamic device file minor numbers
+            (32) Max number of sound cards</pre>
+<h3><span class="mw-headline" id="Software">Software</span></h3>
+<p>Portage knows the global USE flag <code>alsa</code> for enabling support for ALSA in other packages. Enabling this USE flag will pull in <a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-libs/alsa-lib">media-libs/alsa-lib</a> automatically (default in <b><span style="font-family: monospace; font-size: 95%; color: #54487a">x86</span></b> and <b><span style="font-family: monospace; font-size: 95%; color: #54487a">amd64</span></b> desktop profiles):
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>euse -E alsa</code></div></div>
+<p>The <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">euse</span> command is part of <a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/app-portage/gentoolkit">app-portage/gentoolkit</a>.
+</p><p class="mw-empty-elt">      </p><div class="panel panel-default gp-panel">
+        <div class="panel-heading gp-panel-heading">
+          <h3 class="panel-title">
+            <span class="text-muted">USE flags for</span>
+            <a href="https://packages.gentoo.org/packages/media-libs/alsa-lib">media-libs/alsa-lib</a>
+            <small><span class="fa fa-external-link-square"></span></small>
+            <small class="gp-pkg-desc">Advanced Linux Sound Architecture Library</small>
+          </h3>
+        </div>
+        <div class="table-responsive gp-useflag-table-container">
+                <table class="table gp-useflag-table">        <tbody><tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/alisp">alisp</a></code>
+          </td>
+          <td>
+            Enable support for ALISP (ALSA LISP) interpreter for advanced features.
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/debug">debug</a></code>
+          </td>
+          <td>
+            Enable extra debug codepaths, like asserts and extra output. If you want to get meaningful backtraces see https://wiki.gentoo.org/wiki/Project:Quality_Assurance/Backtraces
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/doc">doc</a></code>
+          </td>
+          <td>
+            Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
+          </td>
+        </tr>        <tr>
+          <td>
+            <code><a href="https://packages.gentoo.org/useflags/python">python</a></code>
+          </td>
+          <td>
+            Add optional support/bindings for the Python language
+          </td>
+        </tr>      </tbody></table>
+        </div>
+        <div class="panel-footer gp-panel-footer">
+          <small class="pull-right">
+            Data provided by the <a href="https://packages.gentoo.org">Gentoo Package Database</a>
+            &#183;
+            Last update: 2023-05-05 04:11
+          </small>
+          <small>
+            <a href="/wiki/Handbook:AMD64/Working/USE">More information about USE flags</a>
+          </small>
+        </div>
+      </div>
+<p class="mw-empty-elt"></p><p>After setting this be sure to update the system so the changes take effect:
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>emerge --ask&#160;--changed-use --deep @world</code></div></div> 
+<p>The <a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/alsa-utils">media-sound/alsa-utils</a> package provides some tools for troubleshooting and testing the sound system. It is a good idea to merge the package if it is not already installed:
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>emerge --ask media-sound/alsa-utils</code></div></div> 
+<h2><span class="mw-headline" id="Configuration">Configuration</span></h2>
+<h3><span class="mw-headline" id="Files">Files</span></h3>
+<ul><li><span style="font-family: monospace; font-size: 95%">/etc/asound.conf</span> - Global (system wide) configuration file.</li>
+<li><span style="font-family: monospace; font-size: 95%">~/.asoundrc</span> - Local (per user) configuration file.</li></ul>
+<h4><span id="~/.asoundrc"></span><span class="mw-headline" id=".7E.2F.asoundrc">~/.asoundrc</span></h4>
+<p>This file can be optionally used so that on a per-user basis, ALSA defaults can be overridden. If the system has special hardware it is likely the card 0 and device 0 (the defaults) are not going to work.
+</p><p>One of the simplest changes is card and device. This is the case for me with an HDMI coming from an Nvidia card connected to an onboard Realtek ALC88* audio device.
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">~/.asoundrc</code></strong><strong></strong></div><pre class="captioned">defaults.pcm.!card 1
+defaults.pcm.!device 7</pre>
+<p>If you can't seem to find the card number assigned to the device that is the sound card you intend to use, don't panic — the card number is internally a name, which you can use. If your card is listed like this...
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>aplay -L</code></div><pre>front:CARD=Generic,DEV=0
+HD-Audio Generic, ALC282 Analog
+Front speakers</pre></div> 
+<p>... then it means the <span style="font-family: monospace; font-size: 95%">~/.asoundrc</span> file should be like this:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">~/.asoundrc</code></strong><strong></strong></div><pre class="captioned">defaults.pcm.!card Generic
+defaults.pcm.!device 0
+defaults.ctl.!card Generic</pre>
+<div class="alert alert-danger gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-exclamation-triangle"></i> Warning</strong><br />These settings disable all software mixing. To output everything at 96kHz, add <code>defaults.pcm.dmix.rate 96000</code> to the <span style="font-family: monospace; font-size: 95%">~/.asoundrc</span> file.</div>
+<p>When multiple sound cards are in use, the device numbers could be reordered across boots, such that using a name is advantageous.
+</p><p>If the correct name is unclear, a list of valid names can be easily obtained with:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>cat /sys/class/sound/card*/id</code></div></div>
+<p>Here is output from a developer's system that has multiple sound cards:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>cat /sys/class/sound/card*/id</code></div><pre>Q1U
+HDMI
+PCH
+C930e</pre></div>
+<p>Here we have the Q1U microphone as Q1U, the builtin HDMI as HDMI, the analog audio jacks as PCH and a webcam's builtin microphone as C930e. Any of these are valid names for the card.
+</p>
+<div class="alert alert-danger gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-exclamation-triangle"></i> Warning</strong><br />Specifying numbers instead of names when multiple sound cards are used can result in device reordering across boots, which will prevent sound from working properly until the configuration file is edited to use the new number.</div>
+<h3><span id="S/PDIF_or_HDMI_.asoundrc"></span><span class="mw-headline" id="S.2FPDIF_or_HDMI_.asoundrc">S/PDIF or HDMI .asoundrc</span></h3>
+<h4><span class="mw-headline" id="Background">Background</span></h4>
+<p>Most sound cards allow passing through audio to an external consumer receiver or DAC using S/PDIF digital coaxial or optical cables. Doing so, preserves sound quality and compressed Dolby/DTS encoded material. Uncompressed Dolby/DTS or Bluray material require a HDMI connection. The more common mono or analog stereo cables cannot carry Dolby/DTS signals.
+</p><p>With a default installed ALSA installation, it is possible for a S/PDIF or HDMI connection to work out of the box (no <span style="font-family: monospace; font-size: 95%">.asoundrc</span> file alterations). While only some applications, such as the web browser's Adobe Flash plugin will fail playing sound. As such, the below <span style="font-family: monospace; font-size: 95%">.asoundrc</span> is usually required for most S/PDIF and HDMI connections. Also, any media applications open will need to be restarted for the <span style="font-family: monospace; font-size: 95%">.asoundrc</span> files to take affect (i.e. web browsers using the Adobe Flash plugin).
+</p>
+<h4><span class="mw-headline" id="Preference_for_connections_versus_media_types">Preference for connections versus media types</span></h4>
+<h5><span class="mw-headline" id="Basic_analog">Basic analog</span></h5>
+<p>Basic analog (i.e. RCA) connections - Basic user. Quality depends on sound card DAC. Look for a sound card with a high SNR db level.
+</p>
+<h5><span id="S/PDIF"></span><span class="mw-headline" id="S.2FPDIF">S/PDIF</span></h5>
+<p>S/PDIF provides good quality audio for music, videos, and DVD quality movies containing Dobly/DTS compressed signals. Most sound cards and motherboards, these days, provide some sort of S/PDIF port. Nowadays, it is more common to see S/PDIF Toslink ports on motherboards. Many computer games provide compressed Dolby/DTS signals.
+</p>
+<h6><span id="S/PDIF_digital_coaxial"></span><span class="mw-headline" id="S.2FPDIF_digital_coaxial">S/PDIF digital coaxial</span></h6>
+<p>S/PDIF digital coaxial may have problems with voltage cross talk, but is more common as it only requires a simple mini jack or RCA coaxial cable.
+</p>
+<h6><span id="S/PDIF_optical_(TOSLINK)"></span><span class="mw-headline" id="S.2FPDIF_optical_.28TOSLINK.29">S/PDIF optical (TOSLINK)</span></h6>
+<p><a href="https://en.wikipedia.org/wiki/S/PDIF" class="extiw" title="wikipedia:S/PDIF">S/PDIF</a> (<a href="https://en.wikipedia.org/wiki/TOSLINK" class="extiw" title="wikipedia:TOSLINK">TOSLINK</a>) optical cable completely avoids possible electrical cross talk or interference among cables since it is fiber optic, however it is susceptible to signal degradation if the cable is bent too much. Audiophiles tend to favor this type of cable.
+</p>
+<h5><span class="mw-headline" id="HDMI">HDMI</span></h5>
+<p><a href="https://en.wikipedia.org/wiki/HDMI" class="extiw" title="wikipedia:HDMI">HDMI</a> (High-Definition Multimedia Interface) cable can carry compressed Dolby/DTS and uncompressed (i.e. <a href="/wiki/Blu-ray" title="Blu-ray">Blu-ray</a>) Dolby/DTS signals. The audio market has favored this connection, but still preserves S/PDIF connections. One concern being, HDMI cables are copper wire, still susceptible to electrical cross talk or interference, similar to S/PDIF Digital Coaxial connections.
+</p><p>HDMI optical cables are produced, but they are generally too expensive for the consumer market. If audiophiles have S/PDIF Optical ports, they will use the S/PDIF connections for other media such as music and DVD movies, while only using HDMI when needed for processing uncompressed Dolby/DTS encoded material such as Blu-ray media. Again, the basic user will likely just use HDMI, avoiding the fuss of changing configuration files.
+</p>
+<h4><span class="mw-headline" id="Configuration_2">Configuration</span></h4>
+<p>Find the digital output device:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>aplay --list-devices</code></div></div>
+<p>Adjust the below file to use the card/device number.
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">~/.asoundrc</code></strong><strong></strong></div><pre class="captioned">pcm.!spdif {
+    type hw
+    card 0
+    device 1
+}
+
+pcm.!default {
+    type plug
+    slave {
+        pcm "spdif"
+    }
+}
+
+# Share a single card with multiple applications 
+#pcm.!default {
+#    type plug
+#    slave.pcm "dmix:CARD=0,DEVICE=1,RATE=48000"
+#}</pre>
+<div class="alert alert-info gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-sticky-note-o fa-rotate-180"></i> Note</strong><br />The above will not allow sound to be played from more than one sound application, or more than two sounds played at once through one sound card.  In order to perform this task, the sounds are remixed with a slight degradation with sound quality.  Most people listening to music, prefer not to allow this due to interruptions and decreased sound quality.  However, for those that desire this, the above commented section of code will achieve this.</div>
+<div class="alert alert-info gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-sticky-note-o fa-rotate-180"></i> Note</strong><br />When playing sound files using <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">aplay</span>, the beginning of the playback will be clipped because the digital S/PDIF or HDMI connection is not held open and needs to be started each time a sound file is played.  Notice Microsoft Windows both, holds open the receiver or DAC and remixes media on playback.</div>
+<h3><span id="A/52,_AC3,_Dolby,_DTS"></span><span class="mw-headline" id="A.2F52.2C_AC3.2C_Dolby.2C_DTS">A/52, AC3, Dolby, DTS</span></h3>
+<p>Sound cards providing S/PDIF output can pass through lossy compressed multichannel audio.  To my ears, the high bit rate compressed media has little loss in comparison to two channel CD or DVD audio.  I surmise this is because we now have multichannels feeding multiple speakers.  Hence, the more hardware, the equivelant or better sounding?
+</p><p>If a sound card states it has S/PDIF, it will likely pass through Dolby or DTS even though it does not specifically show a Dolby or DTS icon or listed within its features.  This is because, when they do list Dolby or DTS, it is because they're providing software for upmixing, or providing the decoded signal through analog output.
+</p><p>HDMI will pass through uncompressed multichannel audio, but a video feed is interleaved as required by the HDMI specification. In comparison to DVD video and audio, I see and hear very little quality difference, if any! About the only thing I noticed between S/PDIF Toslink and HDMI, HDMI seems to amplify the signal by a few watts or 5db. (I conclude this is because of the higher bit rate?)
+</p><p>As such, S/PDIF is still quite popular, even today.
+</p>
+<div class="alert alert-info gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-sticky-note-o fa-rotate-180"></i> Note</strong><br />A S/PDIF or HDMI connection is required for passing through advanced encodings. Analog connections (RCA and minijacks) do not support any advanced encoding.</div>
+<p>Decoding or encoding to Dolby or DTS requires a license.  If you have already purchased a sound card with this multichannel support, then you likely already have a license. See <a rel="nofollow" class="external text" href="https://www.alsa-project.org/main/index.php/A52_plugin">this article</a> for more information.
+</p><p>ALSA <a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-plugins/alsa-plugins">media-plugins/alsa-plugins</a> package requires recompilation to include the ffmpeg USE Flag with the A/52 (pcm.a52encode) plugin.
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>USE="ffmpeg" emerge -q media-plugins/alsa-plugins</code></div></div>
+<h4><span class="mw-headline" id="Decode_or_playback">Decode or playback</span></h4>
+<p>Recompile <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">mplayer</span> or another other favorite software player to include the ALSA libraries.
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>USE="a52 dts" emerge -q  media-video/mplayer</code></div></div>
+<p>Add the multichannel codecs to <span style="font-family: monospace; font-size: 95%">mplayer.conf</span>, so media attempting to be played has first been provided the option of hardware passthrough rather then down mixing.
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">/etc/mplayer/mplayer.conf</code></strong><strong></strong></div><pre class="captioned">ac=hwac3,hwdts,hwmpa,spdifac3,spdifeac3,spdifaac,spdifdts,spdifmpa,spdifthd,dts,ffaac,</pre>
+<p>You should now be able to pass through (and enjoy) almost any Dolby or DTS signal through S/PDIF to the receiver.
+</p>
+<h4><span id="Encode_to_A/52"></span><span class="mw-headline" id="Encode_to_A.2F52">Encode to A/52</span></h4>
+<h5><span id="Upmix_two_channel_audio_to_a_A/52_multi-channel_audio_stream"></span><span class="mw-headline" id="Upmix_two_channel_audio_to_a_A.2F52_multi-channel_audio_stream">Upmix two channel audio to a A/52 multi-channel audio stream</span></h5>
+<p>To simulate A/52 encoded audio from normal one or two channel audio streams or files, ALSA can upmix using its A/52 plugin.  (A/52 is also known as AC-3 or Dolby Digital encoding.)
+</p><p>A/52 upmixing preferred when playing computer games or watching video without Dolby/DTS encoded material, such as older Movies.  Many sound card manufacturers provide their applications with a feature for software upmixing to Dolby Digital, and recommend enabling this upmixing when listening to such media, except for Music.
+</p><p>Upmixing to A/52 is frowned upon by audiophiles.  As such, it is a user's preference to upmix all the sounds to A/52 before sending the stream to the consumer stereo receiver or DAC.  Matter of fact, audiophiles prefer simple stereo, and further state stereo is still better quality than Dolby/DTS material or other audio encoded with gimmicks.  Also, the consumer stereo or DAC likely possibly includes a feature for upmixing audio into five channel audio.
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">~/.asoundrc</code></strong><strong></strong></div><pre class="captioned">pcm.!default {
+    type plug:surroundaudio
+}
+
+ctl.!default {
+    type plug:surroundaudio
+}
+
+pcm.a52encode {
+    type a52
+    format S16_LE
+    channels 6
+    rate 48000
+    bitrate 448
+}
+
+pcm.surroundaudio a52encode
+
+ctl.surroundaudio {
+    type hw
+    card 0
+    device 1
+}</pre>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>speaker-test -Dsurroundaudio -c 6</code></div></div>
+<h5><span id="Encode_PCM_5.1_24-bit_audio_into_a_A/52_16-bit_audio_stream_(for_streaming_via_S/PDIF)"></span><span class="mw-headline" id="Encode_PCM_5.1_24-bit_audio_into_a_A.2F52_16-bit_audio_stream_.28for_streaming_via_S.2FPDIF.29">Encode PCM 5.1 24-bit audio into a A/52 16-bit audio stream (for streaming via S/PDIF)</span></h5>
+<p>Also known as, encoding PCM 5.1 audio stream into a compressed Dolby Digital stream for playing over S/PDIF. No real need to use this if you're using HDMI, as HDMI can handle the bandwidth of a PCM 5.1 audio stream. S/PDIF Toslink has also supposedly been upgrade to do so also, but most hardware has yet to be upgraded to the new specifications, and some doubt it will ever happen.
+</p><p>For some reason, the previous <span style="font-family: monospace; font-size: 95%">.asoundrc</span> section previously mentioned doesn't work with PCM 5.1 streams. Another issue I run into with 24 bit PCM 5.1 audio streams, they require downmixing from S24_LE to S16_LE bit format.  Reason being, 24 bit is a common format for most media, however receivers can sometimes only decode 16 or 32 bit audio.  Also, the S/PDIF can only handle 16 bit audio when encoding to multi-channel formats such as A/52, for the time being until S/PDIF TosLink hardware specifications are upgraded.
+</p><p>The following <span style="font-family: monospace; font-size: 95%">.asoundrc</span> excerpt will encode a PCM 5.1 24 bit stream into a 16 bit A/52 stream, for streaming over S/PDIF.
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">~/.asoundrc</code></strong><strong></strong></div><pre class="captioned">#####
+# Description: This will make it possible to use a52 with PulseAudio out of 
+#         the box. It may be useful for other use cases. Just include 
+#         this in the ~/.asoundrc file.
+
+pcm.a52 {
+    @args [ CARD ]
+    @args.CARD {
+        type string
+        default 0
+    }
+    type plug
+    slave {
+        pcm {
+            type a52
+            card $CARD
+            bitrate 640 # Default 448
+        }
+        # Convert to S16 bit format, per SPDIF spec
+        format S16_LE # Required for current S/PDIF spec
+    }
+}</pre>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>aplay -D pcm.a52 /home/me/Music/Led_Zeppelin/Celegration_Day/PCM51-24bit/*.wav</code></div></div>
+<h3><span class="mw-headline" id="Clone_audio_for_2_or_more_devices">Clone audio for 2 or more devices</span></h3>
+<p>Sometimes you need to clone audio (example using 2 cloned screens with different inputs (first screen HDMI and second screen DVI + Analog audio)).
+This is a simple script that you can use as global or local configuration for clone 2 (or more) channels.
+You must adjust to your system the lines below commented lines.
+More information of the author of the script and forum discussion <a rel="nofollow" class="external text" href="https://forums.gentoo.org/viewtopic-t-902670-start-0.html">here.</a>
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">/etc/asound.conf</code></strong><strong></strong></div><pre class="captioned">ctl.!default {
+    type hw
+    # Set your default card
+    card 0
+}
+
+pcm.!default both
+
+pcm.both {
+    type softvol
+    slave {
+        pcm {
+            type plug
+            slave {
+                pcm {
+                    type route
+                    slave {
+                        pcm {
+                        type multi
+                        slaves.a.pcm {
+                            type dmix
+                            ipc_key 2589455
+                            ipc_perm 0666
+                            slave {
+                                pcm {
+                                    # Add the default card - change to suit your sound card #1
+                                    type hw
+                                    card 0
+                                    device 0
+                                }
+                                buffer_size 4096
+                                channels 2
+                            }
+                        }
+                        slaves.b.pcm {
+                            type dmix
+                            ipc_key 4855689
+                            ipc_perm 0666
+                            slave {
+                                pcm {
+                                    # Add the slave sound card - change to suit your sound card #2
+                                    type hw
+                                    card 1
+                                    device 7
+                                }
+                                buffer_size 4096
+                                channels 2
+                            }
+                        }
+                        slaves.a.channels 2
+                        slaves.b.channels 2
+                        bindings.0.slave a
+                        bindings.0.channel 0
+                        bindings.1.slave a
+                        bindings.1.channel 1
+                        bindings.2.slave b
+                        bindings.2.channel 0
+                        bindings.3.slave b
+                        bindings.3.channel 1
+                    }
+                }
+                ttable.0.0 1
+                ttable.1.1 1
+                ttable.0.2 1
+                ttable.1.3 1
+            }
+        }
+    }
+}
+control {
+    # Define volume control name
+    name PCM
+    # Set to the Default card
+    card 0
+}</pre>
+<h3><span class="mw-headline" id="JACK_audio_connection_kit">JACK audio connection kit</span></h3>
+<p>Jack provides an additional layer, to the already low latency ALSA drivers and applications, and further it guarantees a constant sound latency and synchronous operation of all its clients. Jack can only use one sound card at a time, and will provide separated outputs and inputs for each audio channel of the sound card. Jack further provides the ability to view, manipulate or pipe audio streams, both hardware and software streams, in a similar manner we use cables to interface different audio equipment. As example, <a rel="nofollow" class="external text" href="http://jamin.sourceforge.net">JAMin</a> can intercept an audio stream before exporting the stream to another audio application and/or through analog or S/PDIF outputs.  The Jack user owned daemon, is usually started using <a rel="nofollow" class="external text" href="https://qjackctl.sourceforge.io/">qjackctl</a>. The qjackctl utility provides many other functions including audio stream connections.
+</p><p>What Jack does not do, is handle A/52 encoded (AC-3 or Dolby/DTS) material on input; it is just a sound server that deal with separated channels of audio streams. And it has the capability to connect simultaneously and synchronously any output stream on any input, and any input to any output stream, that on any hardware and software audio component, and with a constant latency. This make JACK an outstanding tool for audio production and creation. The <a rel="nofollow" class="external text" href="https://sonosaurus.com/ac3jack/">ac3jack</a> tool can be used for encoding multiple separated audio channels to AC-3 streams.
+</p><p>When playing an A/52 encoded media, the player will request as many outputs from JACK than audio channels in the media. This will fail if your sound card doesn't have the requested amount of audio outputs, but will be fine otherwise. As example, you can use <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">mplayer</span> as usual, and configure it to output a 5.1 stream on a 7.1 output configuration, or a 7.1 stream on a 2 channels stereo output.
+</p><p>One solution is to configure your kernel and ALSA according to Jack installation instructions for providing low latency audio. Since ALSA is said to be already very efficient and low latency, providing very good quality playback with no additional mixing when stated within its <span style="font-family: monospace; font-size: 95%">.asoundrc</span> file, unlike MS Windows, Jack probably isn't needed for most. The main audience of JACK is audio producers and musicians (in studio, live performances, DJ, ...). (The ac3jack package is currently hosted by the pro-audio overlay available with layman.)
+</p><p>It is possible to interconnect JACK and ALSA. At that time of writing, the best solution is via the snd-loopback module and zita-*2* bridge. For that, see <a rel="nofollow" class="external text" href="https://web.archive.org/web/20220314041206/https://proaudio.tuxfamily.org/wiki/index.php?title=DAW_Digital_Audio_Workstation#Using_an_ALSA_Loopback_device_and_zita-ajbridge">Using an ALSA Loopback device and zita-ajbridge</a> on the ProAudio Gentoo overlay wiki. 
+</p><p>Using zita-ajbridge, it is also possible to add additional real sound cards into JACK. (Example needed)
+</p><p>Those who want to try JACK must know one thing: if you are happy with pulseaudio, you don't need to setup a realtime kernel for JACK. You will need rt operations only if you want to make a Digital Audio Workstation (DAW) with your computer, which necessitate something pulseaudio is not able to achieve: constant sound latencies as low or lower than 20 msec (pulseaudio is not able to provide constant sound latency at all), and synchronous operations. But if you want to make a DAW, JACK is definitely the way to go, and you will never look back.
+</p><p>Hopefully this small brief section about Jack will give some quick insight about Jack's features, while reserving the details of Jack to a Wiki page specifically focused on Jack.
+</p><p>In the meantime, you can take a look at the <a rel="nofollow" class="external text" href="https://web.archive.org/web/20220325210326/https://proaudio.tuxfamily.org/wiki/index.php?title=Main_Page">Pro-Audio Gentoo Overlay Wiki</a>.
+</p>
+<h3><span class="mw-headline" id="Permissions">Permissions</span></h3>
+<p>If the <code>acl</code> USE flag enabled globally and a login daemon (e.g. systemd-logind or elogind) is being used (i.e the system is using a <i>desktop</i> <a href="/wiki/Profile_(Portage)" title="Profile (Portage)">profile</a>) permissions to sound cards will be handled automatically. Permissions can be checked using <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">getfacl</span>:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>getfacl /dev/snd/controlC0 | grep larry</code></div><code>user:<b>larry</b>:rw-</code></div>
+<p>A broader solution is to add the user you want to be able to access the sound card to the <i>audio</i> group:
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>gpasswd -a larry audio</code></div></div>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>grep audio /etc/group</code></div><code><b>audio</b>::18:larry</code></div>
+<div class="alert alert-danger gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-exclamation-triangle"></i> Warning</strong><br />You should logout and login again to make <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">alsamixer</span> work, otherwise running the <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">alsamixer</span> command will give you the error "cannot open mixer: No such file or directory"</div>
+<h3><span class="mw-headline" id="Service">Service</span></h3>
+<h4><span class="mw-headline" id="OpenRC">OpenRC</span></h4>
+<p>If using OpenRC start ALSA now using the <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">service</span> command:
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>rc-service alsasound start</code></div></div>
+<p>To have start ALSA at boot time, add it the boot runlevel using <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">rc-update</span>:
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>rc-update add alsasound boot</code></div></div>
+<h4><span class="mw-headline" id="systemd">systemd</span></h4>
+<p>If using systemd, ALSA state will be preserved and restored automatically across system restarts.
+</p><p>The status of ALSA can be checked using the <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">systemctl</span> command:
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>systemctl status alsa-restore</code></div></div>
+<h3><span class="mw-headline" id="Mixer">Mixer</span></h3>
+<p>If you can't hear anything, the output channels may be muted. Unmute the channels with the desktop environment's mixer or with <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">alsamixer</span> by selecting the appropriate channels and pressing the <kbd style="color: black; font-size: small; border: 0.2em solid; border-color: #DDD #BBB #BBB #DDD; padding: 0 0.4em; background: #EEE; white-space: nowrap;">M</kbd> key to mute or unmute:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>alsamixer</code></div></div>
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<h3><span class="mw-headline" id="Test_speakers">Test speakers</span></h3>
+<p>If everything above is perfect, it should now be able to test the sound card and the speakers. The <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">speaker-test</span> command-line tool from package <a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/media-sound/alsa-utils">media-sound/alsa-utils</a> (this should already be installed as per the previous recommendation).
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>speaker-test -t wav -c 2</code></div></div>
+<p>For configurations using a 5.1 surround sound system:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>speaker-test -t wav -c 6 -D surround51</code></div></div>
+<p>Press <kbd style="color: black; font-size: small; border: 0.2em solid; border-color: #DDD #BBB #BBB #DDD; padding: 0 0.4em; background: #EEE; white-space: nowrap;">Ctrl</kbd>+<kbd style="color: black; font-size: small; border: 0.2em solid; border-color: #DDD #BBB #BBB #DDD; padding: 0 0.4em; background: #EEE; white-space: nowrap;">C</kbd> to interrupt the test.
+</p>
+<h3><span class="mw-headline" id="Test_microphone">Test microphone</span></h3>
+<p>If needed, select the audio device if no default one is provided and add the <code>--device=hw:0,0</code> to the incantation of <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">arecord</span>, substituting the CardNumber,DeviceNumber in the integer fields.
+</p><p>The following will list possible devices.
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>arecord --list-devices</code></div></div>
+<div class="alert alert-info gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-sticky-note-o fa-rotate-180"></i> Note</strong><br />You may also need to unmute the line or microphone channel. Open <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">alsamixer</span> and first select the sound card (i.e. <kbd style="color: black; font-size: small; border: 0.2em solid; border-color: #DDD #BBB #BBB #DDD; padding: 0 0.4em; background: #EEE; white-space: nowrap;">F6</kbd>), then press <kbd style="color: black; font-size: small; border: 0.2em solid; border-color: #DDD #BBB #BBB #DDD; padding: 0 0.4em; background: #EEE; white-space: nowrap;">F4</kbd> to show the Capture Channels, "left/right cursor keys" to select the "Mic" channel and press <kbd style="color: black; font-size: small; border: 0.2em solid; border-color: #DDD #BBB #BBB #DDD; padding: 0 0.4em; background: #EEE; white-space: nowrap;">Space</kbd> to toggle CAPTURE the channel.</div>
+<p>The following will record indefinitely until <kbd style="color: black; font-size: small; border: 0.2em solid; border-color: #DDD #BBB #BBB #DDD; padding: 0 0.4em; background: #EEE; white-space: nowrap;">CTRL</kbd>+<kbd style="color: black; font-size: small; border: 0.2em solid; border-color: #DDD #BBB #BBB #DDD; padding: 0 0.4em; background: #EEE; white-space: nowrap;">C</kbd> is depressed and provide a default 8000 Hz mono quality recording:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>arecord /tmp/test.wav</code></div></div>
+<p>The following will provide will record for two seconds (--duration=2) using DAT 48000 Hz quality (<code>--format=dat</code>) and display the curses vumeter in stereo (<code>--vumeter=stereo</code>) and save to <span style="font-family: monospace; font-size: 95%">/tmp/test.wav</span>. 
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>arecord --channels=1 --duration=2 --format=dat --vumeter=stereo /tmp/test.wav</code></div></div>
+<p>Or optionally:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">~/.bashrc</code></strong><strong></strong></div><pre class="captioned"><div class="mw-highlight mw-highlight-lang-bash mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Simple convenience wrapper to record then play back a temporary sound file.</span>
+<span class="c1"># Usage: arecord-mic duration</span>
+<span class="k">function</span><span class="w"> </span>arecord-mic<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="o">[[</span><span class="w"> </span><span class="nv">$1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span>*<span class="o">[</span>!<span class="o">[</span>:digit:<span class="o">]]</span>*<span class="w"> </span><span class="o">]]</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">return</span>
+<span class="w">    </span><span class="nb">typeset</span><span class="w"> </span>tmpFile
+<span class="w">    </span><span class="nv">tmpFile</span><span class="o">=</span><span class="k">$(</span>mktemp<span class="w"> </span>--suffix<span class="w"> </span>.wav<span class="k">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">return</span>
+
+<span class="nb">typeset</span><span class="w"> </span>-a<span class="w"> </span><span class="nv">arecordOpts</span><span class="o">=(</span>
+<span class="w">        </span>-c<span class="w"> </span><span class="m">1</span><span class="w">          </span><span class="c1"># number of channels</span>
+<span class="w">        </span>-D<span class="w"> </span>plughw:0,0<span class="w"> </span><span class="c1"># device name</span>
+<span class="w">        </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w">       </span><span class="c1"># duration</span>
+<span class="w">        </span>-f<span class="w"> </span>S32_LE<span class="w">     </span><span class="c1"># format</span>
+<span class="w">        </span>-r<span class="w"> </span><span class="m">48000</span><span class="w">      </span><span class="c1"># sample rate</span>
+<span class="w">        </span>-V<span class="w"> </span>mono<span class="w">       </span><span class="c1"># VU meter type</span>
+<span class="w">    </span><span class="o">)</span>
+
+arecord<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">arecordOpts</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>--<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$tmpFile</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>aplay<span class="w"> </span>--<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$tmpFile</span><span class="s2">&quot;</span>
+<span class="w">    </span>rm<span class="w"> </span>-f<span class="w"> </span>--<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$tmpFile</span><span class="s2">&quot;</span>
+<span class="o">}</span>
+</pre></div></pre>
+<p>Notice, <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">arecord</span> cannot record in S24_LE, and is only capable of recording using S16_LE or S32_LE formats.  For the human ear, any audio resolutions greater than 24 bit (S24_LE) or 48000Hz are said to be indistinguishable to differentiate using the human ear.  Reference Sampling (signal processing) Wikipedia, Audio sampling.  Users should also specify channels=1, as all recordings are performed in mono/monaural when typically using the Microphone Input unless recordings are using the stereo Line Input. In order to further encourage <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">arecord</span> to record monaural or only one channel, using the device=plughw:0,0 is further specified.  (Alleviates a common problem, microphone/mic playback only occurs on the right or left channels.)
+</p><p>Use <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">mplayer</span> or <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">aplay</span> to playback the saved file. I usually record in "dat" or atleast "cd" quality formats.  DAT is best when benchmarking.
+</p>
+<h2><span class="mw-headline" id="Tips">Tips</span></h2>
+<p>Try one of the many configuration options in <a rel="nofollow" class="external text" href="https://gist.github.com/thanley11/100754cc911442901867">PaulBredbury's asoundrc file</a>.
+</p>
+<h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<h3><span id="Firefox,_Chromium,_and_YouTube_have_no_audio_with_custom_.asoundrc_but_other_apps_do"></span><span class="mw-headline" id="Firefox.2C_Chromium.2C_and_YouTube_have_no_audio_with_custom_.asoundrc_but_other_apps_do">Firefox, Chromium, and YouTube have no audio with custom .asoundrc but other apps do</span></h3>
+<p>Browsers are sometimes picky about <span style="font-family: monospace; font-size: 95%">~/.asoundrc</span> settings. If you're specifying the default audio device (likely given that most computers nowadays have an HDMI A/V output and the analog and HDMI audio outputs are viewed as two separate sound cards), try doing this specifically as follows:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">~/.asoundrc</code></strong><strong></strong></div><pre class="captioned">defaults.pcm.card &lt;number of your default sound card&gt;
+defaults.ctl.card &lt;default sound card&gt;</pre>
+<div class="alert alert-info gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-sticky-note-o fa-rotate-180"></i> Note</strong><br />Since version 52, Firefox has made PulseAudio a hard requirement and dropped support for direct output to ALSA. To enable sound in these versions of Firefox enable the <code>pulseaudio</code> USE flag. See <a rel="nofollow" class="external text" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1345661">PulseAudio requirement breaks Firefox on ALSA-only systems</a>. This limitation does not affect Firefox (version 52 only) built from sources (<a rel="nofollow" class="external text" href="https://packages.gentoo.org/packages/www-client/firefox">www-client/firefox</a>).
+Chromium is also not immune to problem. Both browsers either depend on pulseaudio to set up correct sample rate or in absence of pulseaudio set sample rate to 48000 as defacto standard in sound card world. So if you have 96000 hz sample rate, downgrade it to 48000 and sound will work once again.</div>
+<h3><span class="mw-headline" id="Sound_card_only_available_for_one_application">Sound card only available for one application</span></h3>
+<p>Sometimes one app essentially takes over all sound devices. This might even be for performance reasons.
+</p><p>Force the use of dmix instead of direct audio output (which is what most things use by default, such as Adobe Flash [which really means the browser] and Wine).
+</p><p>If the device is card 1 and device 7 (which is the case for Nvidia HDMI for me):
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">~/.asoundrc</code></strong><strong></strong></div><pre class="captioned">pcm.dmixed {
+    type asym
+    playback.pcm {
+        type dmix
+        ipc_key 5678293
+        ipc_perm 0660
+        ipc_gid audio
+
+        slave {
+            channels 2 # Make 6 or 5.1 channel
+            pcm {
+                format S16_LE # S32_LE
+                rate 48000 # Can also be 44100
+                type hw
+                card 1 # Your card
+                device 7 # Your device
+                subdevice 0 # Important?
+            }
+
+            period_size 1024
+            buffer_size 8192
+        }
+
+        bindings {
+            0 0
+            1 1
+# Uncomment below if using 6 channel
+#           2 2
+#           3 3
+#           4 4
+#           5 5
+        }
+    }
+    capture.pcm "hw:0"
+}
+
+pcm.!default {
+    type plug
+    slave.pcm "dmixed"
+}</pre>
+<p>Use of <span style="font-family: monospace; font-size: 95%">~/.asoundrc</span> is immediate and as long as you are not forcing the use of specific devices in any applications, they either will require a restart or will begin working immediately. One of the best tests is to run Chrome, go to YouTube, open a terminal, run mplayer with an audio or video file and see that you do not get an error about audio (such an error might be 'Device or resource busy').
+</p>
+<h3><span id="Missing_dialogue_(sounds)_with_4.0_speakers"></span><span class="mw-headline" id="Missing_dialogue_.28sounds.29_with_4.0_speakers">Missing dialogue (sounds) with 4.0 speakers</span></h3>
+<p>If you're using a 4.0 sound card (like an old SB Live!) or 4.0 speakers in general, you may notice that in some games or movies the dialogues are very quiet or even missing. This is because most of those applications/movies support only either 2.0 (stereo) or 5.1 output. In order to achieve surround sound, the 5.1 audio track is used but the two excessive channels are discarded — the center channel (which usually carries dialogues) and subwoofer channel.
+</p><p>The above issue can be circumvented through creating a virtual device which will downmix 5.1 to 4.0, mixing the center and subwoofer channels with other audio channels.
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">~/.asoundrc</code></strong><strong></strong></div><pre class="captioned">pcm.downmix {
+    type route
+
+    slave {
+        # The sound card output to be used
+        pcm surround40
+        # Real number of output channels
+        channels 4
+    }
+
+# ttable.A.B G
+# where A - input channel
+#       B - output channel
+#       G - volume gain (1.0 = original)
+
+# Copy channels 0-3
+    ttable.0.0 1
+    ttable.1.1 1
+    ttable.2.2 1
+    ttable.3.3 1
+
+# Mix channel 4 (center) into front speakers, and a bit (0.3) into rear ones
+    ttable.4.0 1.0
+    ttable.4.1 1.0
+    ttable.4.2 0.3
+    ttable.4.3 0.3
+
+# Mix channel 5 (subwoofer) mostly (0.6) into rear speakers, and a bit (0.3) into front ones
+    ttable.5.0 0.3
+    ttable.5.1 0.3
+    ttable.5.2 0.6
+    ttable.5.3 0.6
+}
+
+ctl.downmix {
+    type hw
+    card 0
+}</pre>
+<h3><span id="HDMI/SPDIF_5.1_and_7.1_speaker_testing"></span><span class="mw-headline" id="HDMI.2FSPDIF_5.1_and_7.1_speaker_testing">HDMI/SPDIF 5.1 and 7.1 speaker testing</span></h3>
+<p>It is stated ALSA's speaker-test utility will not test more then two channel audio over HDMI or SPDIF.  For this, you need to use mplayer, as quoted from ALSA's documentation.
+</p><p>Download either a <a rel="nofollow" class="external text" href="https://github.com/sfiera/flac-test-files/raw/master/surround51.flac">5.1 channel (FLAC)</a> or <a rel="nofollow" class="external text" href="https://github.com/sfiera/flac-test-files/raw/master/surround71.flac">7.1 channel (FLAC)</a> speaker test file:
+</p><p>Play the provided sound file; specifying the HDMI or SPDIF device, PCM file, and number of channels which will likely be either 6 (for 5.1 surround) or 8 (for 7.1 channel surround).
+</p><p>For testing 5.1 channel with <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator"><a href="/wiki/Mplayer" class="mw-redirect" title="Mplayer">mplayer</a></span>:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>mplayer -channels 6 "/path/to/downloaded/flac_file.flac" -channels 6</code></div></div>
+<p>For testing 7.1 channel:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>mplayer -channels 8 "/path/to/downloaded/flac_file.flac" -channels 8</code></div></div>
+<div class="alert alert-info gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-sticky-note-o fa-rotate-180"></i> Note</strong><br />To test <span style="font-family: monospace; font-size: 95%; font-weight: bold;" class="tripleclick-separator">mplayer</span> with a none default device, pass the additional option <code>-ao alsa:device=hw=0.7</code> where the <code>hw=</code> value is aligned with the appropriate device.</div>
+<p>Alternatively testing with <a href="/wiki/VLC_media_player" class="mw-redirect" title="VLC media player">VLC media player</a>:
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>cvlc /path/to/downloaded/flac_file.flac</code></div></div>
+<h3><span id="APlay_SPDIF/HDMI_output_has_incorrect_speaker_channels"></span><span class="mw-headline" id="APlay_SPDIF.2FHDMI_output_has_incorrect_speaker_channels">APlay SPDIF/HDMI output has incorrect speaker channels</span></h3>
+<p>Now that you know how to use MPlayer to play a speaker test PCM WAV file per "HDMI/SPDIF 5.1 and 7.1 Speaker Testing" above, you now find APlay doesn't output to the speaker channels properly when using SPDIF/HDMI.  With HDMI, this is likely caused by the snd_hda_intel HDMI audio module/driver which is used by other manufacturers such as NVidia HDMI aside from just Intel's HDMI hardware. As to why MPlayer does use the correct channels, MPlayer is usually under constant development and manually corrects this issue?
+</p><p>Another problem this solution pertains to, trying to play a 24-bit PCM 2.0 or PCM5.1 WAV files and finding APlay constantly refuses to play the stream, due to incorrect bit rate, etc.
+</p><p>To correct this for ALSA (APlay) with minimal alterations to the PCM streams, we'll need to remap the speaker channels within a <span style="font-family: monospace; font-size: 95%">${HOME}/.asoundrc</span> file.  Add the following to the bottom of your <span style="font-family: monospace; font-size: 95%">${HOME}/.asoundrc</span> file.  Also note, the below configuration is for both 5.1 and 7.1 audio, or you could further map/copy the two extra channels to your 5.1 channels incase you do not want to omit the audio from a 7.1 stream.
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">.asoundrc</code></strong><strong></strong></div><pre class="captioned">pcm.myHDMI {
+    type plug
+    slave {
+        pcm "hw:1,7"
+        format S32_LE
+        channels 6
+    }
+    ttable {
+        0.0= 1
+        1.1= 1
+        2.4= 1
+        3.5= 1
+        4.2= 1
+        5.3= 1
+        6.6= 1
+        7.7= 1
+    }
+}</pre>
+<p>It seems that most HDMI to Stereo Receiver connections only stream 16 and 32 bit formats, skipping 24 bit.  The above configuration up-mixes any PCM stream to 32 bit when using the pcm.myHDMI profile, as it is quite common to see PCM 2.0 and 5.1 24 bit audio files.  It just doesn't seem right to down-mix everything to 16 bit, or use Float as the latter uses more processing power.  (Users can also set an alias within their bashrc file for 16 bit or 24 bit incantations as well.)
+</p><p>Test the speaker routing using a surround test PCM file.  (See the above previously mentioned "8 Channel Speaker Test".)
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>aplay -D my.HDMI 8Channel.wav</code></div></div>
+<h3><span class="mw-headline" id="Weak_center_channel_on_PCM_5.1_live_music">Weak center channel on PCM 5.1 live music</span></h3>
+<p>If you have a multi-channel sound track or music with an apparently weak center channel, and the sound track is a live recording; it is possible to map the center channel to the rear channels.  Note, the rear channels on live recordings usually contain only the audiance screaming with very little music.
+</p><p>The following incantation of mplayer specifies; your HDMI device of hw:1.7, your PCM 5.1 file, number of channels, the format (not needed if your receiver can natively handle 24 bit and in my case I need to upmix as my Yamaha HDMI receiver can only natively handle 16 or 32 bit audio), and then the mapping.  Mapping as follows; specify this is a 6 channel audio stream, with 6 mappings immediately following, copy left front channel to left speaker, copy right channel to right speaker, copy center channel to left rear speaker, copy center channel to right rear speaker, copy center channel to center speaker, and finally copy the subwoofer channel to the subwoofer speaker.
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>mplayer -ao alsa:device=hw=1.7  Music/MyAlbum/PCM51-24bit/01.MyMusic.wav -channels 6 -format s32le -af channels=6:6:0:0:1:1:4:2:4:3:4:4:5:5</code></div></div>
+<p>See MPlayer's Channel manipulation.
+</p>
+<h3><span id="Need_to_view_more_detailed_information_per_ALSA_stream?"></span><span class="mw-headline" id="Need_to_view_more_detailed_information_per_ALSA_stream.3F">Need to view more detailed information per ALSA stream?</span></h3>
+<p>If you need to look at an in-depth illustration of how your program is connecting to ALSA, use the <span style="font-family: monospace; font-size: 95%">/proc</span> interface. You will need to substitute your relevant card/device details into the command below.
+</p><p>You should see a dump of information regarding the program and useful things like its sample rate(rate) and PID(owner_pid).
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>cat /proc/asound/card2/pcm0p/sub0/*</code></div><span class="mw-collapsible mw-collapsed"><pre>access: RW_INTERLEAVED
+format: S16_LE
+subformat: STD
+channels: 2
+rate: 44100 (44100/1)
+period_size: 5513
+buffer_size: 22050
+card: 2
+device: 0
+subdevice: 0
+stream: PLAYBACK
+id: USB Audio
+name: USB Audio
+subname: subdevice #0
+class: 0
+subclass: 0
+subdevices_count: 1
+subdevices_avail: 0
+state: RUNNING
+owner_pid   : 934
+trigger_time: 86393.193574796
+tstamp      : 86540.250594985
+delay       : 17714
+avail       : 4602
+avail_max   : 7379
+-----
+hw_ptr      : 6485052
+appl_ptr    : 6502500
+tstamp_mode: NONE
+period_step: 1
+avail_min: 5513
+start_threshold: 2147483647
+stop_threshold: 22050
+silence_threshold: 0
+silence_size: 0
+boundary: 6206523236469964800
+</pre></span></div>
+<h3><span class="mw-headline" id="HTML5_does_not_play_in_a_browser">HTML5 does not play in a browser</span></h3>
+<p>If there is no sound in any browser used (Firefox, SeaMonkey, Otter Browser, etc.) and ALSA generally works, there is a workaround that might solve this particular issue: try removing the <span style="font-family: monospace; font-size: 95%">/etc/asound.conf</span> file.
+</p>
+<div class="cmd-box"><div><code style="color: #ef2929; font-weight: bold;">root <span style="color:royalblue;">#</span></code><span class="tripleclick-separator"></span><code>mv /etc/asound.conf /etc/asound.conf.old</code></div></div>
+<p>Restart the browser and test the sound output for HTML5. It might just work now after applying this workaround.
+</p>
+<h4><span class="mw-headline" id="HTML5_does_not_play_in_the_Firefox_browser">HTML5 does not play in the Firefox browser</span></h4>
+<p>Some system motherboards (i.e. Asus Z87-EXPERT) cause Card 0 to be a MID device instead of a PCM device. The same driver module snd_hda_intel is used for both the MID and PCM cards on this motherboard. For some reason Firefox HTML 5 requires Card 0 of the snd_hda_intel no matter how you change it with asoundrc.  You can make flash work using the asoundrc file, but HTML 5 audio is silent.  
+</p><p>You must remap the PCM device in Linux as card 0 and remove the changes to asoundrc that were added to make Flash work.  This wiki page indicates that you should compile the snd_hda_intel driver into the kernel.  Using this configuration you must remap the card 0 and card 1 devices using boot parameters instead of a <span style="font-family: monospace; font-size: 95%">/etc/modprobe.d/alsa.conf</span> file. For example the following kernel command line option will swap the MID and PCM card indicies so that the default card 0 is the PCM card:
+</p><p><code>snd-hda-intel.index=1,0</code>
+</p>
+<div class="alert alert-info gw-box" style="padding-top: 8px; padding-bottom: 8px;"><strong><i class="fa fa-sticky-note-o fa-rotate-180"></i> Note</strong><br />The module is named snd_hda_intel, but the boot parameter name is snd-hda-intel.</div>
+<h3><span class="mw-headline" id="Laptops_with_HDMI_audio_output">Laptops with HDMI audio output</span></h3>
+<p>Some laptops with an HDMI audio output will map /proc/asound/card0 as HDMI and therefore makes it default output device for applications as stated above in the Firefox section. Another way to remap is to add these two lines to <span style="font-family: monospace; font-size: 95%">/etc/modprobe.d/alsa.conf</span>
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">/etc/modprobe.d/alsa.conf</code></strong><strong></strong></div><pre class="captioned"># Set this to the correct number of cards.
+options snd cards_limit=2
+options snd-hda-intel index=1,0</pre>
+<p>Verify the order change by checking this command
+</p>
+<div class="cmd-box"><div><code style="color: #4E9A06; font-weight: bold;">user <span style="color:royalblue;">$</span></code><span class="tripleclick-separator"></span><code>cat /proc/asound/cards</code></div><pre> 0 [PCH            ]: HDA-Intel - HDA Intel PCH
+                      HDA Intel PCH at 0xf2534000 irq 45
+ 1 [HDMI           ]: HDA-Intel - HDA Intel HDMI
+                      HDA Intel HDMI at 0xf2530000 irq 46</pre></div>
+<p>This method only works if snd-hda-intel is compiled as a module not built-in
+</p>
+<h3><span class="mw-headline" id="IPC_semaphore_-_function_not_implemented">IPC semaphore - function not implemented</span></h3>
+<p>If you try to run the test procedure, and speaker-test returns an error about a function IPC semaphore not implemented, that is the option to activate in your Kernel&#160;:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #4E9A06">KERNEL</span> <strong></strong></div><pre class="captioned">General setup ---&gt;
+    [*] System V IPC</pre>
+<h3><span class="mw-headline" id="Headphones_jack_not_working">Headphones jack not working</span></h3>
+<p>Sometimes to get headset jack working, additional model information is needed for audio driver. For example, in case of Dell Latitude E7470 laptop with snd-hda-intel driver, this needs to be added to <span style="font-family: monospace; font-size: 95%">/etc/modprobe.d/alsa.conf</span>:
+</p>
+<div class="box-caption"><span class="label" style="margin-right: .5em; background-color: #54487A">FILE</span> <strong><code style="border: none; background: none; color: #54487A; margin-right: .5em;">/etc/modprobe.d/alsa.conf</code></strong><strong></strong></div><pre class="captioned">options snd-hda-intel model=headset-mic</pre>
+<p>More setup information can be found in Linux kernel documentation <span style="font-family: monospace; font-size: 95%">Documentation/sound/hd-audio/models.rst</span>.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="/wiki/Power_management/Soundcard" title="Power management/Soundcard">Power management/Soundcard</a> — describes the setup of <a href="/wiki/Power_management" title="Power management">power management</a> of <a href="/wiki/Category:Sound_devices" title="Category:Sound devices">sound devices</a>.</li>
+<li><a href="/wiki/PulseAudio" title="PulseAudio">PulseAudio</a> — a multi-platform, open source, <i>sound server</i> that provides a number of features on top of the low-level audio interface <a class="mw-selflink selflink">ALSA</a></li>
+<li><a href="/wiki/Pipewire" class="mw-redirect" title="Pipewire">Pipewire</a> — low-latency, graph-based, processing engine and server, for interfacing with audio and video devices.</li></ul>
+<h2><span class="mw-headline" id="External_resources">External resources</span></h2>
+<ul><li><a rel="nofollow" class="external free" href="https://www.alsa-project.org/alsa-doc/alsa-lib/pcm_plugins.html">https://www.alsa-project.org/alsa-doc/alsa-lib/pcm_plugins.html</a> - Official ALSA PCM (digital audio) plugin descriptions and configuration file examples.</li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20230624210124
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+[SMW] In‐text annotation parser time: 0.002 seconds
+CPU time usage: 0.206 seconds
+Real time usage: 0.261 seconds
+Preprocessor visited node count: 5729/1000000
+Post‐expand include size: 116430/2097152 bytes
+Template argument size: 42524/2097152 bytes
+Highest expansion depth: 16/40
+Expensive parser function count: 8/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 7940/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  134.075      1 -total
+ 23.46%   31.454     32 Template:GenericCmd
+ 21.08%   28.260     22 Template:Cmd
+ 18.84%   25.265      3 Template:See_also
+ 13.29%   17.816      1 Template:InfoBox_stack
+  8.89%   11.913     10 Template:RootCmd
+  7.63%   10.228     32 Template:GenericCmd/Line
+  5.96%    7.989      4 Template:InfoBox
+  5.17%    6.926     14 Template:FileBox
+  4.87%    6.536     17 Template:PreBox
+-->
+
+<!-- Saved in parser cache with key gentoo?hwiki:pcache:idhash:1148-0!dateformat=default and timestamp 20230624210123 and revision id 1222824
+ -->
+</div></div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.gentoo.org/index.php?title=ALSA&amp;oldid=1222824">https://wiki.gentoo.org/index.php?title=ALSA&amp;oldid=1222824</a>"</div>
+<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Sound_devices" title="Category:Sound devices">Sound devices</a></li></ul></div></div>						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-offset-2 col-md-7">
+											<div class="spacer"></div>
+						<ul id="f-list">
+							<li id="lastmod>"> This page was last edited on 23 April 2023, at 12:30.</li><li id="privacy>"><a href="/wiki/Gentoo_Wiki:Privacy_policy" class="mw-redirect" title="Gentoo Wiki:Privacy policy">Privacy policy</a></li><li id="about>"><a href="/wiki/Gentoo_Wiki:About" title="Gentoo Wiki:About">About Gentoo Wiki</a></li><li id="disclaimer>"><a href="/wiki/Gentoo_Wiki:General_disclaimer" title="Gentoo Wiki:General disclaimer">Disclaimers</a></li>						</ul>
+									</div>
+				<div class="col-xs-12 col-md-3">
+					<!-- No questions or comments, the Wiki has enough information on how to contact us. -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3 col-md-2">
+					<ul class="footerlinks three-icons">
+						<li><a href="https://twitter.com/gentoo" title="@Gentoo on Twitter"><span class="fa fa-twitter fa-fw"></span></a></li>
+						<li><a href="https://www.facebook.com/gentoo.org" title="Gentoo on Facebook"><span class="fa fa-facebook fa-fw"></span></a></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="col-xs-9 col-md-9">
+					<strong>&copy; 2001&ndash;2023 Gentoo Authors</strong><br />
+					<small>
+						Gentoo is a trademark of the Gentoo Foundation, Inc.
+						The contents of this document, unless otherwise expressly stated, are licensed under the
+						<a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC-BY-SA-4.0</a> license.
+						The <a href="https://www.gentoo.org/inside-gentoo/foundation/name-logo-guidelines.html">Gentoo Name and Logo Usage Guidelines</a> apply.
+					</small>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+<script>
+function defer(method) {
+    if (window.jQuery) {
+        method();
+    } else {
+        setTimeout(function() { defer(method) }, 50);
+    }
+}
+defer(function() { mw.loader.load( 'https://assets.gentoo.org/tyrian/bootstrap.min.js'); });
+</script>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0.002},"limitreport":{"cputime":"0.206","walltime":"0.261","ppvisitednodes":{"value":5729,"limit":1000000},"postexpandincludesize":{"value":116430,"limit":2097152},"templateargumentsize":{"value":42524,"limit":2097152},"expansiondepth":{"value":16,"limit":40},"expensivefunctioncount":{"value":8,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":7940,"limit":5000000},"timingprofile":["100.00%  134.075      1 -total"," 23.46%   31.454     32 Template:GenericCmd"," 21.08%   28.260     22 Template:Cmd"," 18.84%   25.265      3 Template:See_also"," 13.29%   17.816      1 Template:InfoBox_stack","  8.89%   11.913     10 Template:RootCmd","  7.63%   10.228     32 Template:GenericCmd/Line","  5.96%    7.989      4 Template:InfoBox","  5.17%    6.926     14 Template:FileBox","  4.87%    6.536     17 Template:PreBox"]},"cachereport":{"timestamp":"20230624210124","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":57});});</script></body></html>�Pt%V           d��E���d��   J    O^partitionKey=%28https%2Cgentoo.org%29,:https://wiki.gentoo.org/wiki/ALSA strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br request-Accept-Language en-US,en;q=0.5 response-head HTTP/2 200 OK
+server: nginx
+date: Sun, 25 Jun 2023 01:02:13 GMT
+content-type: text/html; charset=UTF-8
+x-content-type-options: nosniff
+content-language: en
+vary: Accept-Encoding, Accept-Language, Cookie, Authorization
+expires: Sun, 25 Jun 2023 01:02:13 GMT
+cache-control: private, must-revalidate, max-age=0
+last-modified: Sun, 25 Jun 2023 01:02:13 GMT
+x-request-id: b7bf8b218016e6417607d6f0
+x-clacks-overhead: Terry Pratchett, Noirin Trouble Pluinceid, Dan Kaminsky
+permissions-policy: interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000
+X-Firefox-Spdy: h2
+ original-response-headers server: nginx
+date: Sun, 25 Jun 2023 01:02:13 GMT
+content-type: text/html; charset=UTF-8
+x-content-type-options: nosniff
+content-language: en
+vary: Accept-Encoding, Accept-Language, Cookie, Authorization
+expires: Sun, 25 Jun 2023 01:02:13 GMT
+cache-control: private, must-revalidate, max-age=0
+last-modified: Sun, 25 Jun 2023 01:02:13 GMT
+x-request-id: b7bf8b218016e6417607d6f0
+x-clacks-overhead: Terry Pratchett, Noirin Trouble Pluinceid, Dan Kaminsky
+permissions-policy: interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0  �~

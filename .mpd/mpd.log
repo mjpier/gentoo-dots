@@ -1,0 +1,106 @@
+May 29 18:17 : state_file: Unrecognized line in state file: ## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
+May 29 18:17 : state_file: Unrecognized line in state file:
+May 29 18:18 : player: played "Janji - Heroes Tonight (feat. Johnning) [NCS Release].mp3"
+May 29 18:23 : player: played "NEFFEX - Grateful [Copyright Free].mp3"
+May 30 18:06 : player: played "Janji - Heroes Tonight (feat. Johnning) [NCS Release].mp3"
+Jun 24 20:34 : exception: Failed to open /home/marlon/.mpd/playlists: No such file or directory
+Jun 24 20:34 : update: updating /Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3
+Jun 24 20:34 : update: updating /Culture Code - Make Me Move (feat. Karra) [NCS Release].mp3
+Jun 24 20:34 : update: updating /Janji - Heroes Tonight (feat. Johnning) [NCS Release].mp3
+Jun 24 20:34 : update: updating /N3WPORT - Power (feat. braev) [NCS Release].mp3
+Jun 24 20:34 : update: updating /NEFFEX - Grateful [Copyright Free].mp3
+Jun 24 20:34 : exception: Failed to open /home/marlon/.mpd/playlists: No such file or directory
+Jun 24 20:34 : player: played "NEFFEX - Grateful [Copyright Free].mp3"
+Jun 24 21:57 : player: played "Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3"
+Jun 25 12:44 : player: played "Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3"
+Jun 25 14:30 : player: played "Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3"
+Jun 25 15:16 : exception: Failed to open /home/marlon/.mpd/playlists: No such file or directory
+Jun 25 15:16 : update: added Cesar Vargas - Himnos/12 - Roca Eterna.mp3
+Jun 25 15:16 : update: added Cesar Vargas - Himnos/05 - Te siente casi resuelto ya.mp3
+Jun 25 15:16 : update: added Cesar Vargas - Himnos/11 - Cariñoso Salvador.mp3
+Jun 25 15:16 : update: added Cesar Vargas - Himnos/04 - El tiene toda potestad.mp3
+Jun 25 15:16 : update: added Cesar Vargas - Himnos/08 - Sembrare la simiente.mp3
+Jun 25 15:16 : update: added Cesar Vargas - Himnos/14 - Oh que amigo nos es Cristo.mp3
+Jun 25 15:16 : update: added Cesar Vargas - Himnos/09 - Oh Cristo Amado.mp3
+Jun 25 15:16 : update: added Cesar Vargas - Himnos/01 - Adoradle.mp3
+Jun 25 15:16 : update: added Cesar Vargas - Himnos/13 - Dulce oración.mp3
+Jun 25 15:16 : update: added Cesar Vargas - Himnos/02 - Dulce comunión.mp3
+Jun 25 15:16 : update: added Cesar Vargas - Himnos/06 - El viene en gloria.mp3
+Jun 25 15:16 : update: added Cesar Vargas - Himnos/10 - Dulces melodias.mp3
+Jun 25 15:16 : update: added Cesar Vargas - Himnos/07 - Yo me rindo a Ti.mp3
+Jun 25 15:16 : update: added Cesar Vargas - Himnos/03 - Cerca de Ti Señor.mp3
+Jun 25 15:16 : update: added Paul Wilbur - Por Siempre Fiel/02 Rey de Gloria.mp3
+Jun 25 15:16 : update: added Paul Wilbur - Por Siempre Fiel/08 Grande es Tu Fidelidad.mp3
+Jun 25 15:16 : update: added Paul Wilbur - Por Siempre Fiel/09 Tuyo es el Poder.mp3
+Jun 25 15:16 : update: added Paul Wilbur - Por Siempre Fiel/01 A Donde IrВ.mp3
+Jun 25 15:16 : update: added Paul Wilbur - Por Siempre Fiel/03 Lechu Neranena L_adonai.mp3
+Jun 25 15:16 : update: added Paul Wilbur - Por Siempre Fiel/10 Adonai Elohai.mp3
+Jun 25 15:16 : update: added Paul Wilbur - Por Siempre Fiel/05 Bendito Aquel que Viene.mp3
+Jun 25 15:16 : update: added Paul Wilbur - Por Siempre Fiel/06 Por Siempre Fiel.mp3
+Jun 25 15:16 : update: added Paul Wilbur - Por Siempre Fiel/07 Clama el Nombre.mp3
+Jun 25 15:16 : update: added Paul Wilbur - Por Siempre Fiel/04 En la Sombra de El Shaddai (feat. Lucia Parker).mp3
+Jun 25 15:16 : update: added Rene Gonzalez - Paz en la tierra/03 - Fe, Justicia y Paz.mp3
+Jun 25 15:16 : update: added Rene Gonzalez - Paz en la tierra/09 - Toma Mi Vida.mp3
+Jun 25 15:16 : update: added Rene Gonzalez - Paz en la tierra/02 - Carpintero.mp3
+Jun 25 15:16 : update: added Rene Gonzalez - Paz en la tierra/07 - De Que Nos Vale.mp3
+Jun 25 15:16 : update: added Rene Gonzalez - Paz en la tierra/05 - Rey De Mi Vida.mp3
+Jun 25 15:16 : update: added Rene Gonzalez - Paz en la tierra/06 - Vendra.mp3
+Jun 25 15:16 : update: added Rene Gonzalez - Paz en la tierra/01 - Paz En La Tierra.mp3
+Jun 25 15:16 : update: added Rene Gonzalez - Paz en la tierra/04 - Que Harias Tu.mp3
+Jun 25 15:16 : update: added Rene Gonzalez - Paz en la tierra/10 - El Vencedor.mp3
+Jun 25 15:16 : update: added Rene Gonzalez - Paz en la tierra/08 - Si Confias.mp3
+Jun 25 15:16 : exception: Failed to open /home/marlon/.mpd/playlists: No such file or directory
+Jun 25 15:18 : exception: Failed to open /home/marlon/.mpd/playlists: No such file or directory
+Jun 25 15:18 : update: removing Janji - Heroes Tonight (feat. Johnning) [NCS Release].mp3
+Jun 25 15:18 : update: removing Culture Code - Make Me Move (feat. Karra) [NCS Release].mp3
+Jun 25 15:18 : update: removing Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3
+Jun 25 15:18 : update: removing NEFFEX - Grateful [Copyright Free].mp3
+Jun 25 15:18 : update: removing N3WPORT - Power (feat. braev) [NCS Release].mp3
+Jun 25 15:18 : update: added DoNotUse/Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3
+Jun 25 15:18 : update: added DoNotUse/Culture Code - Make Me Move (feat. Karra) [NCS Release].mp3
+Jun 25 15:18 : update: added DoNotUse/Janji - Heroes Tonight (feat. Johnning) [NCS Release].mp3
+Jun 25 15:18 : update: added DoNotUse/N3WPORT - Power (feat. braev) [NCS Release].mp3
+Jun 25 15:18 : update: added DoNotUse/NEFFEX - Grateful [Copyright Free].mp3
+Jun 25 15:18 : exception: Failed to open /home/marlon/.mpd/playlists: No such file or directory
+Jun 25 15:25 : player: played "Paul Wilbur - Por Siempre Fiel/03 Lechu Neranena L_adonai.mp3"
+Jun 25 15:25 : exception: Failed to open /home/marlon/.mpd/playlists: No such file or directory
+Jun 25 15:30 : player: played "Paul Wilbur - Por Siempre Fiel/01 A Donde IrВ.mp3"
+Jun 25 15:34 : player: played "Paul Wilbur - Por Siempre Fiel/02 Rey de Gloria.mp3"
+Jun 25 15:38 : player: played "Paul Wilbur - Por Siempre Fiel/03 Lechu Neranena L_adonai.mp3"
+Jun 25 15:42 : player: played "Paul Wilbur - Por Siempre Fiel/04 En la Sombra de El Shaddai (feat. Lucia Parker).mp3"
+Jun 25 15:47 : player: played "Paul Wilbur - Por Siempre Fiel/05 Bendito Aquel que Viene.mp3"
+Jun 25 15:50 : player: played "Paul Wilbur - Por Siempre Fiel/06 Por Siempre Fiel.mp3"
+Jun 25 16:11 : player: played "Paul Wilbur - Por Siempre Fiel/06 Por Siempre Fiel.mp3"
+Jun 25 16:15 : player: played "Paul Wilbur - Por Siempre Fiel/07 Clama el Nombre.mp3"
+Jun 25 16:20 : player: played "Paul Wilbur - Por Siempre Fiel/08 Grande es Tu Fidelidad.mp3"
+Jun 25 16:24 : player: played "Cesar Vargas - Himnos/01 - Adoradle.mp3"
+Jun 25 16:26 : player: played "Cesar Vargas - Himnos/02 - Dulce comunión.mp3"
+Jun 25 16:29 : player: played "Cesar Vargas - Himnos/03 - Cerca de Ti Señor.mp3"
+Jun 25 16:31 : player: played "Cesar Vargas - Himnos/04 - El tiene toda potestad.mp3"
+Jun 25 16:33 : player: played "Cesar Vargas - Himnos/05 - Te siente casi resuelto ya.mp3"
+Jun 25 16:35 : player: played "Cesar Vargas - Himnos/06 - El viene en gloria.mp3"
+Jun 25 16:38 : player: played "Cesar Vargas - Himnos/07 - Yo me rindo a Ti.mp3"
+Jun 25 16:39 : player: played "Cesar Vargas - Himnos/08 - Sembrare la simiente.mp3"
+Jun 25 16:41 : player: played "Cesar Vargas - Himnos/09 - Oh Cristo Amado.mp3"
+Jun 25 16:43 : player: played "Cesar Vargas - Himnos/10 - Dulces melodias.mp3"
+Jun 25 16:46 : player: played "Cesar Vargas - Himnos/11 - Cariñoso Salvador.mp3"
+Jun 25 16:47 : player: played "Cesar Vargas - Himnos/12 - Roca Eterna.mp3"
+Jun 25 16:49 : player: played "Cesar Vargas - Himnos/13 - Dulce oración.mp3"
+Jun 25 16:51 : player: played "Cesar Vargas - Himnos/14 - Oh que amigo nos es Cristo.mp3"
+Jun 25 16:54 : player: played "Paul Wilbur - Por Siempre Fiel/01 A Donde IrВ.mp3"
+Jun 25 16:58 : player: played "Paul Wilbur - Por Siempre Fiel/02 Rey de Gloria.mp3"
+Jun 25 17:03 : player: played "Paul Wilbur - Por Siempre Fiel/03 Lechu Neranena L_adonai.mp3"
+Jun 25 17:07 : player: played "Paul Wilbur - Por Siempre Fiel/04 En la Sombra de El Shaddai (feat. Lucia Parker).mp3"
+Jun 25 17:12 : player: played "Paul Wilbur - Por Siempre Fiel/05 Bendito Aquel que Viene.mp3"
+Jun 25 17:16 : player: played "Paul Wilbur - Por Siempre Fiel/06 Por Siempre Fiel.mp3"
+Jun 25 17:20 : player: played "Paul Wilbur - Por Siempre Fiel/07 Clama el Nombre.mp3"
+Jun 25 17:25 : player: played "Paul Wilbur - Por Siempre Fiel/08 Grande es Tu Fidelidad.mp3"
+Jun 25 17:30 : player: played "Paul Wilbur - Por Siempre Fiel/09 Tuyo es el Poder.mp3"
+Jun 25 17:37 : player: played "Paul Wilbur - Por Siempre Fiel/10 Adonai Elohai.mp3"
+Jun 25 17:41 : player: played "Rene Gonzalez - Paz en la tierra/01 - Paz En La Tierra.mp3"
+Jun 25 17:42 : player: played "Rene Gonzalez - Paz en la tierra/02 - Carpintero.mp3"
+Jun 25 17:49 : player: played "Rene Gonzalez - Paz en la tierra/02 - Carpintero.mp3"
+Jun 25 17:52 : player: played "Rene Gonzalez - Paz en la tierra/07 - De Que Nos Vale.mp3"
+Jul 06 13:02 : player: played "Rene Gonzalez - Paz en la tierra/07 - De Que Nos Vale.mp3"
+Jul 06 13:11 : player: played "Rene Gonzalez - Paz en la tierra/07 - De Que Nos Vale.mp3"
+Jul 06 13:18 : player: played "Paul Wilbur - Por Siempre Fiel/05 Bendito Aquel que Viene.mp3"

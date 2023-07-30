@@ -1,0 +1,35 @@
+21:43:00.209 Info: Start-up 
+21:43:01.246 Info: debugging enabled: false 
+21:43:01.246 Info: Qt library version: 5.15.10 
+21:43:01.246 Info: Qt library location default prefix: "/usr" 
+21:43:01.247 Info: Qt library location documentation: "/usr/share/qt5-doc" 
+21:43:01.247 Info: Qt library location headers: "/usr/include/qt5" 
+21:43:01.247 Info: Qt library location libraries: "/usr/lib64" 
+21:43:01.247 Info: Qt library location executables: "/usr/lib64/qt5/libexec" 
+21:43:01.247 Info: Qt library location Qt binaries: "/usr/lib64/qt5/bin" 
+21:43:01.247 Info: Qt library location Qt plugins: "/usr/lib64/qt5/plugins" 
+21:43:01.247 Info: Qt library location installed QML extensions: "/usr/lib64/qt5/imports" 
+21:43:01.247 Info: Qt library location installed QML extensions: "/usr/lib64/qt5/qml" 
+21:43:01.247 Info: Qt library location dependent Qt data: "/usr/lib64/qt5" 
+21:43:01.247 Info: Qt library location independent Qt data: "/usr/share/qt5" 
+21:43:01.247 Info: Qt library location translation: "/usr/share/qt5/translations" 
+21:43:01.248 Info: Qt library location examples: "/usr/share/qt5/examples" 
+21:43:01.248 Info: Qt library location Qt testcases: "/usr/share/qt5/tests" 
+21:43:01.248 Info: Qt library location Qt settings: "/etc/xdg" 
+21:43:01.248 Info: "QElectroTech V 0.80" 
+21:43:01.248 Info: "Compilation: GCC 13.1.1 20230527" 
+21:43:01.248 Info: "Built with Qt 5.15.10 - Date : Jun 24 2023 : 21:37:24" 
+21:43:01.248 Info: "Run with Qt 5.15.10 using 12 thread(s)" 
+21:43:01.248 Info: "CPU : model name\t: AMD Ryzen 5 4600H with Radeon Graphics\n" 
+21:43:01.248 Info: "RAM Total : 31503 MB" 
+21:43:01.248 Info: "RAM Available : 29175 MB" 
+21:43:01.248 Info: "GPU :  NVIDIA Corporation GA107M [GeForce RTX 3050 Mobile] (rev a1)\n Advanced Micro Devices, Inc. [AMD/ATI] Renoir (rev c7)\n" 
+21:43:01.248 Info: "GPU RAM : @ToDo" 
+21:43:01.248 Info: "OS : linux  - x86_64 - Version : Gentoo Linux - Kernel : 6.3.9-gentoo-dist" 
+21:43:01.248 Info: *** Qt screens *** 
+21:43:01.248 Info: "( 1 : 1920 x 1080 )" 
+21:43:01.517 Info: Elements collection reload 
+21:43:01.778 Info: Elements collection finished to be loaded 
+21:43:11.591 Debug: Export XML de 0 schemas (sources/qetproject.cpp:898, QDomDocument QETProject::toXml())
+21:43:11.592 Debug: is QRegularExpression ok? (sources/titleblocktemplate.cpp:437, void TitleBlockTemplate::parseColumns(const QString&))
+21:43:11.655 Info: Elements collection finished to be loaded 

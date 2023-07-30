@@ -1,0 +1,544 @@
+( function( $ ) {
+
+	'use strict';
+
+	if ( typeof wpcf7 === 'undefined' || wpcf7 === null ) {
+		return;
+	}
+
+	wpcf7 = $.extend( {
+		cached: 0,
+		inputs: []
+	}, wpcf7 );
+
+	$( function() {
+		wpcf7.supportHtml5 = ( function() {
+			var features = {};
+			var input = document.createElement( 'input' );
+
+			features.placeholder = 'placeholder' in input;
+
+			var inputTypes = [ 'email', 'url', 'tel', 'number', 'range', 'date' ];
+
+			$.each( inputTypes, function( index, value ) {
+				input.setAttribute( 'type', value );
+				features[ value ] = input.type !== 'text';
+			} );
+
+			return features;
+		} )();
+
+		$( 'div.wpcf7 > form' ).each( function() {
+			var $form = $( this );
+			wpcf7.initForm( $form );
+
+			if ( wpcf7.cached ) {
+				wpcf7.refill( $form );
+			}
+		} );
+	} );
+
+	wpcf7.getId = function( form ) {
+		return parseInt( $( 'input[name="_wpcf7"]', form ).val(), 10 );
+	};
+
+	wpcf7.initForm = function( form ) {
+		var $form = $( form );
+
+		$form.submit( function( event ) {
+			if ( ! wpcf7.supportHtml5.placeholder ) {
+				$( '[placeholder].placeheld', $form ).each( function( i, n ) {
+					$( n ).val( '' ).removeClass( 'placeheld' );
+				} );
+			}
+
+			if ( typeof window.FormData === 'function' ) {
+				wpcf7.submit( $form );
+				event.preventDefault();
+			}
+		} );
+
+		$( '.wpcf7-submit', $form ).after( '<span class="ajax-loader"></span>' );
+
+		wpcf7.toggleSubmit( $form );
+
+		$form.on( 'click', '.wpcf7-acceptance', function() {
+			wpcf7.toggleSubmit( $form );
+		} );
+
+		// Exclusive Checkbox
+		$( '.wpcf7-exclusive-checkbox', $form ).on( 'click', 'input:checkbox', function() {
+			var name = $( this ).attr( 'name' );
+			$form.find( 'input:checkbox[name="' + name + '"]' ).not( this ).prop( 'checked', false );
+		} );
+
+		// Free Text Option for Checkboxes and Radio Buttons
+		$( '.wpcf7-list-item.has-free-text', $form ).each( function() {
+			var $freetext = $( ':input.wpcf7-free-text', this );
+			var $wrap = $( this ).closest( '.wpcf7-form-control' );
+
+			if ( $( ':checkbox, :radio', this ).is( ':checked' ) ) {
+				$freetext.prop( 'disabled', false );
+			} else {
+				$freetext.prop( 'disabled', true );
+			}
+
+			$wrap.on( 'change', ':checkbox, :radio', function() {
+				var $cb = $( '.has-free-text', $wrap ).find( ':checkbox, :radio' );
+
+				if ( $cb.is( ':checked' ) ) {
+					$freetext.prop( 'disabled', false ).focus();
+				} else {
+					$freetext.prop( 'disabled', true );
+				}
+			} );
+		} );
+
+		// Placeholder Fallback
+		if ( ! wpcf7.supportHtml5.placeholder ) {
+			$( '[placeholder]', $form ).each( function() {
+				$( this ).val( $( this ).attr( 'placeholder' ) );
+				$( this ).addClass( 'placeheld' );
+
+				$( this ).focus( function() {
+					if ( $( this ).hasClass( 'placeheld' ) ) {
+						$( this ).val( '' ).removeClass( 'placeheld' );
+					}
+				} );
+
+				$( this ).blur( function() {
+					if ( '' === $( this ).val() ) {
+						$( this ).val( $( this ).attr( 'placeholder' ) );
+						$( this ).addClass( 'placeheld' );
+					}
+				} );
+			} );
+		}
+
+		if ( wpcf7.jqueryUi && ! wpcf7.supportHtml5.date ) {
+			$form.find( 'input.wpcf7-date[type="date"]' ).each( function() {
+				$( this ).datepicker( {
+					dateFormat: 'yy-mm-dd',
+					minDate: new Date( $( this ).attr( 'min' ) ),
+					maxDate: new Date( $( this ).attr( 'max' ) )
+				} );
+			} );
+		}
+
+		if ( wpcf7.jqueryUi && ! wpcf7.supportHtml5.number ) {
+			$form.find( 'input.wpcf7-number[type="number"]' ).each( function() {
+				$( this ).spinner( {
+					min: $( this ).attr( 'min' ),
+					max: $( this ).attr( 'max' ),
+					step: $( this ).attr( 'step' )
+				} );
+			} );
+		}
+
+		// Character Count
+		$( '.wpcf7-character-count', $form ).each( function() {
+			var $count = $( this );
+			var name = $count.attr( 'data-target-name' );
+			var down = $count.hasClass( 'down' );
+			var starting = parseInt( $count.attr( 'data-starting-value' ), 10 );
+			var maximum = parseInt( $count.attr( 'data-maximum-value' ), 10 );
+			var minimum = parseInt( $count.attr( 'data-minimum-value' ), 10 );
+
+			var updateCount = function( target ) {
+				var $target = $( target );
+				var length = $target.val().length;
+				var count = down ? starting - length : length;
+				$count.attr( 'data-current-value', count );
+				$count.text( count );
+
+				if ( maximum && maximum < length ) {
+					$count.addClass( 'too-long' );
+				} else {
+					$count.removeClass( 'too-long' );
+				}
+
+				if ( minimum && length < minimum ) {
+					$count.addClass( 'too-short' );
+				} else {
+					$count.removeClass( 'too-short' );
+				}
+			};
+
+			$( ':input[name="' + name + '"]', $form ).each( function() {
+				updateCount( this );
+
+				$( this ).keyup( function() {
+					updateCount( this );
+				} );
+			} );
+		} );
+
+		// URL Input Correction
+		$form.on( 'change', '.wpcf7-validates-as-url', function() {
+			var val = $.trim( $( this ).val() );
+
+			if ( val
+			&& ! val.match( /^[a-z][a-z0-9.+-]*:/i )
+			&& -1 !== val.indexOf( '.' ) ) {
+				val = val.replace( /^\/+/, '' );
+				val = 'http://' + val;
+			}
+
+			$( this ).val( val );
+		} );
+	};
+
+	wpcf7.submit = function( form ) {
+		if ( typeof window.FormData !== 'function' ) {
+			return;
+		}
+
+		var $form = $( form );
+
+		$( '.ajax-loader', $form ).addClass( 'is-active' );
+
+		wpcf7.clearResponse( $form );
+
+		var formData = new FormData( $form.get( 0 ) );
+
+		var detail = {
+			id: $form.closest( 'div.wpcf7' ).attr( 'id' ),
+			status: 'init',
+			inputs: [],
+			formData: formData
+		};
+
+		$.each( $form.serializeArray(), function( i, field ) {
+			if ( '_wpcf7' == field.name ) {
+				detail.contactFormId = field.value;
+			} else if ( '_wpcf7_version' == field.name ) {
+				detail.pluginVersion = field.value;
+			} else if ( '_wpcf7_locale' == field.name ) {
+				detail.contactFormLocale = field.value;
+			} else if ( '_wpcf7_unit_tag' == field.name ) {
+				detail.unitTag = field.value;
+			} else if ( '_wpcf7_container_post' == field.name ) {
+				detail.containerPostId = field.value;
+			} else if ( field.name.match( /^_wpcf7_\w+_free_text_/ ) ) {
+				var owner = field.name.replace( /^_wpcf7_\w+_free_text_/, '' );
+				detail.inputs.push( {
+					name: owner + '-free-text',
+					value: field.value
+				} );
+			} else if ( field.name.match( /^_/ ) ) {
+				// do nothing
+			} else {
+				detail.inputs.push( field );
+			}
+		} );
+
+		wpcf7.triggerEvent( $form.closest( 'div.wpcf7' ), 'beforesubmit', detail );
+
+		var ajaxSuccess = function( data, status, xhr, $form ) {
+			detail.id = $( data.into ).attr( 'id' );
+			detail.status = data.status;
+			detail.apiResponse = data;
+
+			var $message = $( '.wpcf7-response-output', $form );
+
+			switch ( data.status ) {
+				case 'validation_failed':
+					$.each( data.invalidFields, function( i, n ) {
+						$( n.into, $form ).each( function() {
+							wpcf7.notValidTip( this, n.message );
+							$( '.wpcf7-form-control', this ).addClass( 'wpcf7-not-valid' );
+							$( '[aria-invalid]', this ).attr( 'aria-invalid', 'true' );
+						} );
+					} );
+
+					$message.addClass( 'wpcf7-validation-errors' );
+					$form.addClass( 'invalid' );
+
+					wpcf7.triggerEvent( data.into, 'invalid', detail );
+					break;
+				case 'acceptance_missing':
+					$message.addClass( 'wpcf7-acceptance-missing' );
+					$form.addClass( 'unaccepted' );
+
+					wpcf7.triggerEvent( data.into, 'unaccepted', detail );
+					break;
+				case 'spam':
+					$message.addClass( 'wpcf7-spam-blocked' );
+					$form.addClass( 'spam' );
+
+					wpcf7.triggerEvent( data.into, 'spam', detail );
+					break;
+				case 'aborted':
+					$message.addClass( 'wpcf7-aborted' );
+					$form.addClass( 'aborted' );
+
+					wpcf7.triggerEvent( data.into, 'aborted', detail );
+					break;
+				case 'mail_sent':
+					$message.addClass( 'wpcf7-mail-sent-ok' );
+					$form.addClass( 'sent' );
+
+					wpcf7.triggerEvent( data.into, 'mailsent', detail );
+					break;
+				case 'mail_failed':
+					$message.addClass( 'wpcf7-mail-sent-ng' );
+					$form.addClass( 'failed' );
+
+					wpcf7.triggerEvent( data.into, 'mailfailed', detail );
+					break;
+				default:
+					var customStatusClass = 'custom-'
+						+ data.status.replace( /[^0-9a-z]+/i, '-' );
+					$message.addClass( 'wpcf7-' + customStatusClass );
+					$form.addClass( customStatusClass );
+			}
+
+			wpcf7.refill( $form, data );
+
+			wpcf7.triggerEvent( data.into, 'submit', detail );
+
+			if ( 'mail_sent' == data.status ) {
+				$form.each( function() {
+					this.reset();
+				} );
+
+				wpcf7.toggleSubmit( $form );
+			}
+
+			if ( ! wpcf7.supportHtml5.placeholder ) {
+				$form.find( '[placeholder].placeheld' ).each( function( i, n ) {
+					$( n ).val( $( n ).attr( 'placeholder' ) );
+				} );
+			}
+
+			$message.html( '' ).append( data.message ).slideDown( 'fast' );
+			$message.attr( 'role', 'alert' );
+
+			$( '.screen-reader-response', $form.closest( '.wpcf7' ) ).each( function() {
+				var $response = $( this );
+				$response.html( '' ).attr( 'role', '' ).append( data.message );
+
+				if ( data.invalidFields ) {
+					var $invalids = $( '<ul></ul>' );
+
+					$.each( data.invalidFields, function( i, n ) {
+						if ( n.idref ) {
+							var $li = $( '<li></li>' ).append( $( '<a></a>' ).attr( 'href', '#' + n.idref ).append( n.message ) );
+						} else {
+							var $li = $( '<li></li>' ).append( n.message );
+						}
+
+						$invalids.append( $li );
+					} );
+
+					$response.append( $invalids );
+				}
+
+				$response.attr( 'role', 'alert' ).focus();
+			} );
+		};
+
+		$.ajax( {
+			type: 'POST',
+			url: wpcf7.apiSettings.getRoute(
+				'/contact-forms/' + wpcf7.getId( $form ) + '/feedback' ),
+			data: formData,
+			dataType: 'json',
+			processData: false,
+			contentType: false
+		} ).done( function( data, status, xhr ) {
+			ajaxSuccess( data, status, xhr, $form );
+			$( '.ajax-loader', $form ).removeClass( 'is-active' );
+		} ).fail( function( xhr, status, error ) {
+			var $e = $( '<div class="ajax-error"></div>' ).text( error.message );
+			$form.after( $e );
+		} );
+	};
+
+	wpcf7.triggerEvent = function( target, name, detail ) {
+		var $target = $( target );
+
+		/* DOM event */
+		var event = new CustomEvent( 'wpcf7' + name, {
+			bubbles: true,
+			detail: detail
+		} );
+
+		$target.get( 0 ).dispatchEvent( event );
+
+		/* jQuery event */
+		$target.trigger( 'wpcf7:' + name, detail );
+		$target.trigger( name + '.wpcf7', detail ); // deprecated
+	};
+
+	wpcf7.toggleSubmit = function( form, state ) {
+		var $form = $( form );
+		var $submit = $( 'input:submit', $form );
+
+		if ( typeof state !== 'undefined' ) {
+			$submit.prop( 'disabled', ! state );
+			return;
+		}
+
+		if ( $form.hasClass( 'wpcf7-acceptance-as-validation' ) ) {
+			return;
+		}
+
+		$submit.prop( 'disabled', false );
+
+		$( '.wpcf7-acceptance', $form ).each( function() {
+			var $span = $( this );
+			var $input = $( 'input:checkbox', $span );
+
+			if ( ! $span.hasClass( 'optional' ) ) {
+				if ( $span.hasClass( 'invert' ) && $input.is( ':checked' )
+				|| ! $span.hasClass( 'invert' ) && ! $input.is( ':checked' ) ) {
+					$submit.prop( 'disabled', true );
+					return false;
+				}
+			}
+		} );
+	};
+
+	wpcf7.notValidTip = function( target, message ) {
+		var $target = $( target );
+		$( '.wpcf7-not-valid-tip', $target ).remove();
+		$( '<span role="alert" class="wpcf7-not-valid-tip"></span>' )
+			.text( message ).appendTo( $target );
+
+		if ( $target.is( '.use-floating-validation-tip *' ) ) {
+			var fadeOut = function( target ) {
+				$( target ).not( ':hidden' ).animate( {
+					opacity: 0
+				}, 'fast', function() {
+					$( this ).css( { 'z-index': -100 } );
+				} );
+			};
+
+			$target.on( 'mouseover', '.wpcf7-not-valid-tip', function() {
+				fadeOut( this );
+			} );
+
+			$target.on( 'focus', ':input', function() {
+				fadeOut( $( '.wpcf7-not-valid-tip', $target ) );
+			} );
+		}
+	};
+
+	wpcf7.refill = function( form, data ) {
+		var $form = $( form );
+
+		var refillCaptcha = function( $form, items ) {
+			$.each( items, function( i, n ) {
+				$form.find( ':input[name="' + i + '"]' ).val( '' );
+				$form.find( 'img.wpcf7-captcha-' + i ).attr( 'src', n );
+				var match = /([0-9]+)\.(png|gif|jpeg)$/.exec( n );
+				$form.find( 'input:hidden[name="_wpcf7_captcha_challenge_' + i + '"]' ).attr( 'value', match[ 1 ] );
+			} );
+		};
+
+		var refillQuiz = function( $form, items ) {
+			$.each( items, function( i, n ) {
+				$form.find( ':input[name="' + i + '"]' ).val( '' );
+				$form.find( ':input[name="' + i + '"]' ).siblings( 'span.wpcf7-quiz-label' ).text( n[ 0 ] );
+				$form.find( 'input:hidden[name="_wpcf7_quiz_answer_' + i + '"]' ).attr( 'value', n[ 1 ] );
+			} );
+		};
+
+		if ( typeof data === 'undefined' ) {
+			$.ajax( {
+				type: 'GET',
+				url: wpcf7.apiSettings.getRoute(
+					'/contact-forms/' + wpcf7.getId( $form ) + '/refill' ),
+				beforeSend: function( xhr ) {
+					var nonce = $form.find( ':input[name="_wpnonce"]' ).val();
+
+					if ( nonce ) {
+						xhr.setRequestHeader( 'X-WP-Nonce', nonce );
+					}
+				},
+				dataType: 'json'
+			} ).done( function( data, status, xhr ) {
+				if ( data.captcha ) {
+					refillCaptcha( $form, data.captcha );
+				}
+
+				if ( data.quiz ) {
+					refillQuiz( $form, data.quiz );
+				}
+			} );
+
+		} else {
+			if ( data.captcha ) {
+				refillCaptcha( $form, data.captcha );
+			}
+
+			if ( data.quiz ) {
+				refillQuiz( $form, data.quiz );
+			}
+		}
+	};
+
+	wpcf7.clearResponse = function( form ) {
+		var $form = $( form );
+		$form.removeClass( 'invalid spam sent failed' );
+		$form.siblings( '.screen-reader-response' ).html( '' ).attr( 'role', '' );
+
+		$( '.wpcf7-not-valid-tip', $form ).remove();
+		$( '[aria-invalid]', $form ).attr( 'aria-invalid', 'false' );
+		$( '.wpcf7-form-control', $form ).removeClass( 'wpcf7-not-valid' );
+
+		$( '.wpcf7-response-output', $form )
+			.hide().empty().removeAttr( 'role' )
+			.removeClass( 'wpcf7-mail-sent-ok wpcf7-mail-sent-ng wpcf7-validation-errors wpcf7-spam-blocked' );
+	};
+
+	wpcf7.apiSettings.getRoute = function( path ) {
+		var url = wpcf7.apiSettings.root;
+
+		url = url.replace(
+			wpcf7.apiSettings.namespace,
+			wpcf7.apiSettings.namespace + path );
+
+		return url;
+	};
+
+} )( jQuery );
+
+/*
+ * Polyfill for Internet Explorer
+ * See https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent
+ */
+( function () {
+	if ( typeof window.CustomEvent === "function" ) return false;
+
+	function CustomEvent ( event, params ) {
+		params = params || { bubbles: false, cancelable: false, detail: undefined };
+		var evt = document.createEvent( 'CustomEvent' );
+		evt.initCustomEvent( event,
+			params.bubbles, params.cancelable, params.detail );
+		return evt;
+	}
+
+	CustomEvent.prototype = window.Event.prototype;
+
+	window.CustomEvent = CustomEvent;
+} )();
+Ôxãë‹)      d˜Mïd˜MðEº# d¡ˆn   „    O^partitionKey=%28https%2Cingdiaz.org%29,:https://www.ingdiaz.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.6 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Sun, 25 Jun 2023 14:23:43 GMT
+Server: Apache
+Last-Modified: Mon, 02 Dec 2019 02:35:30 GMT
+ETag: "3868-598af6edc7fd5"
+Accept-Ranges: bytes
+Content-Length: 14440
+Content-Type: application/x-javascript
+ original-response-headers Date: Sun, 25 Jun 2023 14:23:43 GMT
+Server: Apache
+Last-Modified: Mon, 02 Dec 2019 02:35:30 GMT
+ETag: "3868-598af6edc7fd5"
+Accept-Ranges: bytes
+Content-Length: 14440
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+ ctid 2 uncompressed-len 0 net-response-time-onstart 1312 net-response-time-onstop 1317   8h

@@ -1,0 +1,445 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="top" href="./index.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Gentoo Forums Forum Index" />
+<link rel="search" href="./search.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Search" />
+<link rel="help" href="./faq.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="FAQ" />
+<link rel="author" href="./memberlist.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Memberlist" />
+<link rel="prev" href="viewtopic-t-1162627-view-previous.html-sid-260c528fd7978ac69ba4ef47a5b1f8fd.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="View previous topic" />
+<link rel="next" href="viewtopic-t-1162627-view-next.html-sid-260c528fd7978ac69ba4ef47a5b1f8fd.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="View next topic" />
+<link rel="up" href="viewforum-f-23.html-sid-260c528fd7978ac69ba4ef47a5b1f8fd.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Kernel & Hardware" />
+<link rel="chapter forum" href="viewforum-f-16.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="News & Announcements" />
+<link rel="chapter forum" href="viewforum-f-40.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Frequently Asked Questions" />
+<link rel="chapter forum" href="viewforum-f-14.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Installing Gentoo" />
+<link rel="chapter forum" href="viewforum-f-33.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Multimedia" />
+<link rel="chapter forum" href="viewforum-f-13.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Desktop Environments" />
+<link rel="chapter forum" href="viewforum-f-18.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Networking & Security" />
+<link rel="chapter forum" href="viewforum-f-23.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Kernel & Hardware" />
+<link rel="chapter forum" href="viewforum-f-8.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Portage & Programming" />
+<link rel="chapter forum" href="viewforum-f-19.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Gamers & Players" />
+<link rel="chapter forum" href="viewforum-f-1.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Other Things Gentoo" />
+<link rel="chapter forum" href="viewforum-f-51.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Unsupported Software" />
+<link rel="chapter forum" href="viewforum-f-12.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Documentation, Tips & Tricks" />
+<link rel="chapter forum" href="viewforum-f-7.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Gentoo Chat" />
+<link rel="chapter forum" href="viewforum-f-5.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Gentoo Forums Feedback" />
+<link rel="chapter forum" href="viewforum-f-38.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Duplicate Threads" />
+<link rel="chapter forum" href="viewforum-f-50.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="ä¸­æ–‡ (Chinese)" />
+<link rel="chapter forum" href="viewforum-f-36.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Dutch" />
+<link rel="chapter forum" href="viewforum-f-47.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Finnish" />
+<link rel="chapter forum" href="viewforum-f-35.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="French" />
+<link rel="chapter forum" href="viewforum-f-28.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Deutsches Forum (German)" />
+<link rel="chapter forum" href="viewforum-f-52.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Diskussionsforum" />
+<link rel="chapter forum" href="viewforum-f-53.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Deutsche Dokumentation" />
+<link rel="chapter forum" href="viewforum-f-44.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Greek" />
+<link rel="chapter forum" href="viewforum-f-41.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Forum italiano (Italian)" />
+<link rel="chapter forum" href="viewforum-f-54.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Forum di discussione italiano" />
+<link rel="chapter forum" href="viewforum-f-57.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Risorse italiane (documentazione e tools)" />
+<link rel="chapter forum" href="viewforum-f-45.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Polskie forum (Polish)" />
+<link rel="chapter forum" href="viewforum-f-55.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Instalacja i sprzÄ™t" />
+<link rel="chapter forum" href="viewforum-f-61.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Polish OTW" />
+<link rel="chapter forum" href="viewforum-f-39.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Portuguese" />
+<link rel="chapter forum" href="viewforum-f-59.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="DocumentaÃ§Ã£o, Ferramentas e Dicas" />
+<link rel="chapter forum" href="viewforum-f-43.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Russian" />
+<link rel="chapter forum" href="viewforum-f-37.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Scandinavian" />
+<link rel="chapter forum" href="viewforum-f-30.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Spanish" />
+<link rel="chapter forum" href="viewforum-f-15.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Other Languages" />
+<link rel="chapter forum" href="viewforum-f-46.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Gentoo on AMD64" />
+<link rel="chapter forum" href="viewforum-f-62.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Gentoo on ARM" />
+<link rel="chapter forum" href="viewforum-f-24.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Gentoo on PPC" />
+<link rel="chapter forum" href="viewforum-f-27.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Gentoo on Sparc" />
+<link rel="chapter forum" href="viewforum-f-32.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Gentoo on Alternative Architectures" />
+<link rel="chapter forum" href="viewforum-f-49.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" title="Gentoo for Mac OS X (Portage for Mac OS X)" />
+
+<title>Gentoo Forums :: View topic - AMD backlight not working on kernel 6.1 [SOLVED]</title>
+<link rel="stylesheet" href="templates/gentoo/gentoo.css" type="text/css">
+<style type="text/css">
+/* Import the fancy styles for IE only (NS4.x doesn't use the @import function) */
+@import url("templates/gentoo/formIE.css");
+</style>
+
+
+
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.gentoo.org/search/www-gentoo-org.xml" title="Gentoo Website">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.gentoo.org/search/forums-gentoo-org.xml" title="Gentoo Forums">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.gentoo.org/search/bugs-gentoo-org.xml" title="Gentoo Bugzilla">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.gentoo.org/search/packages-gentoo-org.xml" title="Gentoo Packages">
+
+</head>
+<body bgcolor="#E5E5E5" text="#000000" link="#006699" vlink="#5493B4">
+
+<a name="top"></a>
+<form action="search.php?mode=results&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd" method="POST" id=form1 name=form1>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tr><td width="100%" bgcolor="#46357C">
+		<table width="99%" cellspacing="0" cellpadding="0" border="0">
+			<tr><td colspan="2"><img src="templates/gentoo/images/header_01_top.jpg" alt="Gentoo Forums" border="0" /></td></tr>
+			<tr><td colspan="2"><a href="index.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/header_01_bottom.jpg" alt="Gentoo Forums" border="0" /></a></td></tr>
+			<tr>
+				<td width="455"><a href="index.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/header_02.jpg" alt="Gentoo Forums" border="0" /></a></td>
+				<td valign="bottom" align="right"><table cellspacing="1" cellpadding="1" border="0"><tr>
+				<td>
+					<span class="menu">
+						<a class=menulink href="search.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd">Quick Search</a>:
+						<input type="text" style="width: 100px" class="post" name="search_keywords" size="30" value="" />
+						<input type="hidden" name="search_terms" value="all" />
+						<input type="hidden" name="show_results" value="topics" />
+					</span>
+				</td>
+				<td><span class="searchlink">in <select name="this_search"><option value="0">All available</option><option value="2">This forum</option><option value="1">This topic</option></select><input type="hidden" name="this_forum" value="23"><input type="hidden" name="this_topic" value="1162627"></span></td>
+				</tr></table></td>
+			</tr>
+		</table>
+	<tr><td width="100%" bgcolor="#000000" height="24">
+		<p class="menu">&nbsp;
+		<a class=menulink href="faq.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd">FAQ</a> |
+		<a class=menulink href="search.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd">Search</a> |
+		<a class=menulink href="memberlist.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd">Memberlist</a> |
+		<a class=menulink href="groupcp.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd">Usergroups</a> |
+		<a class=menulink href="statistics.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd">Statistics</a> |
+		<a class=menulink href="profile.php?mode=editprofile&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd">Profile</a> |
+		<a class=menulink href="privmsg.php?folder=inbox&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd">Log in to check your private messages</a> |
+		
+		<a class=menulink href="login.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd">Log in</a>
+		| <a class=menulink href="profile.php?mode=register&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd">Register</a>
+		</p>
+	</td></tr>
+</table>
+</form>
+<table align="center" width="98%"><tr><td>
+
+
+<table width="100%" cellspacing="2" cellpadding="2" border="0">
+  <tr>
+	<td align="left" valign="top" colspan="2"><a class="maintitle" href="viewtopic-t-1162627-start-0-postdays-0-postorder-asc-highlight-.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd">AMD backlight not working on kernel 6.1 [SOLVED]</a><br /></td>
+  <td style="text-align:right;">
+	  <span class="gensmall">
+      <a href="search.php?search_id=unanswered&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd" class="gensmall">View unanswered posts</a><br>
+      <a href="search.php?search_id=last&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd" class="gensmall">View posts from last 24 hours</a><br>
+      <br />
+      <b></b>
+	  &nbsp; </span></td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="2" cellpadding="2" border="0">
+  <tr>
+	<td align="left" valign="bottom" nowrap="nowrap" width="5%"><span class="nav"><a href="posting.php?mode=reply&amp;t=1162627&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/reply.gif" border="0" alt="Reply to topic" align="middle" /></a></span></td>
+	<td align="left" valign="middle"><span class="nav">&nbsp;&nbsp;&nbsp;<a href="index.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd" class="nav">Gentoo Forums Forum Index</a>
+	 <img src="/images/forumpointer.gif" width="18" height="9" border="0" alt=""> <a href="viewforum-f-23.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" class="nav">Kernel & Hardware</a></span></td>
+	<td align="right"><span class="nav"></span></td>
+  </tr>
+</table>
+
+<table class="forumline" width="100%" cellspacing="1" cellpadding="3" border="0">
+	<tr align="right">
+		<td class="catHead" colspan="2" height="28"><span class="nav"><a href="viewtopic-t-1162627-view-previous.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" class="nav">View previous topic</a> :: <a href="viewtopic-t-1162627-view-next.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" class="nav">View next topic</a> &nbsp;</span></td>
+	</tr>
+	
+	<tr>
+		<th class="thLeft" width="150" height="26" nowrap="nowrap">Author</th>
+		<th class="thRight" nowrap="nowrap">Message</th>
+	</tr>
+	<tr>
+		<td width="150" align="left" valign="top" class="row1"><span class="name"><a name="8783751"></a><b>motig</b></span><br /><span class="postdetails">n00b<br /><img src="/images/ranks/rank_rect_0.gif" alt="n00b" title="n00b" border="0" /><br /><br /><br />Joined: 11 Oct 2016<br />Posts: 34<br /></span><br /></td>
+		<td class="row1" width="100%" height="28" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="100%"><a href="viewtopic-p-8783751.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd#8783751"><img src="templates/gentoo/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /></a><span class="postdetails">Posted: Wed Mar 22, 2023 1:43 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: AMD backlight not working on kernel 6.1 [SOLVED]</span></td>
+				<td valign="top" nowrap="nowrap"> <a href="posting.php?mode=quote&amp;p=8783751&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0" /></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Hello,
+<br />
+I have just upgraded my kernel from 5.17.4 to 6.1.12 (gentoo-sources) on my HP laptop and the display backlight is not working with the new kernel. It works fine with the old one, I get 
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center"><tr> 	  <td><span class="genmed"><b>Code:</b></span></td>	</tr>	<tr>	  <td class="code">
+<br />
+# ls -l /sys/class/backlight/
+<br />
+lrwxrwxrwx 1 root root 0 22.Â bÅ™e&nbsp; 2023 amdgpu_bl0 -&gt; ../../devices/pci0000&#58;00/0000&#58;00&#58;08.1/0000&#58;04&#58;00.0/backlight/amdgpu_bl0
+<br />
+</td>	</tr></table><span class="postbody">
+<br />
+
+<br />
+However, the backlight directory is empty on the new kernel. The brightness up/down keys do nothing running KDE - at first I thought it was a keyboard problem but they get recognised properly when tested with evtest. It is just that the backlight device is completely missing.
+<br />
+
+<br />
+It is a custom kernel config, I made the 6.1.12 one using make oldconfig using the one from 5.17.4 as the base. I have also compared them using diff but nothing looks suspicious.
+<br />
+
+<br />
+Here's a link to the new kernel config: <a href="https://paste.k3a.me/view/c422c027" target="_blank" class="postlink">https://paste.k3a.me/view/c422c027</a>
+<br />
+
+<br />
+I do not know what else to check, any suggestions will be appreciated.</span><span class="gensmall"><br /><br />Last edited by motig on Fri Mar 24, 2023 12:29 pm; edited 1 time in total</span></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td class="row1" width="150" align="left" valign="middle"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row1" width="100%" height="28" valign="bottom" nowrap="nowrap"><table cellspacing="0" cellpadding="0" border="0" height="18" width="100%">
+			<tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php?mode=viewprofile&amp;u=360622&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0" /></a> <a href="privmsg.php?mode=post&amp;u=360622&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_pm.gif" alt="Send private message" title="Send private message" border="0" /></a>       </a></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="templates/gentoo/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	<tr>
+		<td width="150" align="left" valign="top" class="row2"><span class="name"><a name="8783757"></a><b>logrusx</b></span><br /><span class="postdetails">l33t<br /><img src="/images/ranks/rank_rect_4.gif" alt="l33t" title="l33t" border="0" /><br /><br /><br />Joined: 22 Feb 2018<br />Posts: 660<br /></span><br /></td>
+		<td class="row2" width="100%" height="28" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="100%"><a href="viewtopic-p-8783757.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd#8783757"><img src="templates/gentoo/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /></a><span class="postdetails">Posted: Wed Mar 22, 2023 2:34 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td valign="top" nowrap="nowrap"> <a href="posting.php?mode=quote&amp;p=8783757&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0" /></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Try with gentoo-kernel-bin, if it still doesn't work, it's most certainly not in your config.
+<br />
+
+<br />
+On a side note, I use olddefconfig to give new options default values. On another note, I tried 6.1.12 and I wasn't happy with it.
+<br />
+
+<br />
+Best Regards,
+<br />
+Georgi</span><span class="gensmall"></span></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td class="row2" width="150" align="left" valign="middle"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row2" width="100%" height="28" valign="bottom" nowrap="nowrap"><table cellspacing="0" cellpadding="0" border="0" height="18" width="100%">
+			<tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php?mode=viewprofile&amp;u=376030&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0" /></a> <a href="privmsg.php?mode=post&amp;u=376030&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_pm.gif" alt="Send private message" title="Send private message" border="0" /></a>       </a></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="templates/gentoo/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	<tr>
+		<td width="150" align="left" valign="top" class="row1"><span class="name"><a name="8783759"></a><b>pietinger</b></span><br /><span class="postdetails">Moderator<br /><img src="/images/ranks/rank-mod.gif" alt="Moderator" title="Moderator" border="0" /><br /><br /><br />Joined: 17 Oct 2006<br />Posts: 2817<br />Location: Bavaria</span><br /></td>
+		<td class="row1" width="100%" height="28" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="100%"><a href="viewtopic-p-8783759.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd#8783759"><img src="templates/gentoo/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /></a><span class="postdetails">Posted: Wed Mar 22, 2023 2:40 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td valign="top" nowrap="nowrap"> <a href="posting.php?mode=quote&amp;p=8783759&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0" /></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">What happens if your try kernel version 6.1.19 (latest Gentoo stable) or - better - 6.1.21 (latest Linux stable) ?
+<br />
+
+<br />
+(I have read something with backlight problems but cannot remember which version it was)</span><span class="gensmall"></span></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td class="row1" width="150" align="left" valign="middle"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row1" width="100%" height="28" valign="bottom" nowrap="nowrap"><table cellspacing="0" cellpadding="0" border="0" height="18" width="100%">
+			<tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php?mode=viewprofile&amp;u=149344&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0" /></a> <a href="privmsg.php?mode=post&amp;u=149344&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_pm.gif" alt="Send private message" title="Send private message" border="0" /></a>       </a></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="templates/gentoo/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	<tr>
+		<td width="150" align="left" valign="top" class="row2"><span class="name"><a name="8783863"></a><b>motig</b></span><br /><span class="postdetails">n00b<br /><img src="/images/ranks/rank_rect_0.gif" alt="n00b" title="n00b" border="0" /><br /><br /><br />Joined: 11 Oct 2016<br />Posts: 34<br /></span><br /></td>
+		<td class="row2" width="100%" height="28" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="100%"><a href="viewtopic-p-8783863.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd#8783863"><img src="templates/gentoo/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /></a><span class="postdetails">Posted: Thu Mar 23, 2023 9:41 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td valign="top" nowrap="nowrap"> <a href="posting.php?mode=quote&amp;p=8783863&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0" /></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Thank you for pointing out the latest versions. It turned out my home server which was doing portage sync had an out-of-date mirror in its config, making all my local machines have old portage trees. I will try the newer versions and see if it works. I cannot easily test a bin kernel because I need a custom initramfs due to my disk encryption.</span><span class="gensmall"></span></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td class="row2" width="150" align="left" valign="middle"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row2" width="100%" height="28" valign="bottom" nowrap="nowrap"><table cellspacing="0" cellpadding="0" border="0" height="18" width="100%">
+			<tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php?mode=viewprofile&amp;u=360622&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0" /></a> <a href="privmsg.php?mode=post&amp;u=360622&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_pm.gif" alt="Send private message" title="Send private message" border="0" /></a>       </a></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="templates/gentoo/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	<tr>
+		<td width="150" align="left" valign="top" class="row1"><span class="name"><a name="8784047"></a><b>motig</b></span><br /><span class="postdetails">n00b<br /><img src="/images/ranks/rank_rect_0.gif" alt="n00b" title="n00b" border="0" /><br /><br /><br />Joined: 11 Oct 2016<br />Posts: 34<br /></span><br /></td>
+		<td class="row1" width="100%" height="28" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="100%"><a href="viewtopic-p-8784047.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd#8784047"><img src="templates/gentoo/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /></a><span class="postdetails">Posted: Fri Mar 24, 2023 12:29 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td valign="top" nowrap="nowrap"> <a href="posting.php?mode=quote&amp;p=8784047&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0" /></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">I have finally fixed the problem. Turns out there was a revamp of the backlight system in 6.1 <a href="https://hansdegoede.livejournal.com/26427.html" target="_blank" class="postlink">https://hansdegoede.livejournal.com/26427.html</a>
+<br />
+Booting with &quot;acpi_backlight=video&quot; did add a backlight device and I was able to control it from KDE but it did nothing (did not actually change the brightness).
+<br />
+However, there are more parameters to this option as described in <a href="https://wiki.archlinux.org/title/Backlight#Kernel_command-line_options" target="_blank" class="postlink">https://wiki.archlinux.org/title/Backlight#Kernel_command-line_options</a> - setting <span style="font-weight: bold">&quot;acpi_backlight=native&quot;</span> did the trick.</span><span class="gensmall"></span></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td class="row1" width="150" align="left" valign="middle"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row1" width="100%" height="28" valign="bottom" nowrap="nowrap"><table cellspacing="0" cellpadding="0" border="0" height="18" width="100%">
+			<tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php?mode=viewprofile&amp;u=360622&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0" /></a> <a href="privmsg.php?mode=post&amp;u=360622&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_pm.gif" alt="Send private message" title="Send private message" border="0" /></a>       </a></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="templates/gentoo/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	<tr>
+		<td width="150" align="left" valign="top" class="row2"><span class="name"><a name="8784049"></a><b>pietinger</b></span><br /><span class="postdetails">Moderator<br /><img src="/images/ranks/rank-mod.gif" alt="Moderator" title="Moderator" border="0" /><br /><br /><br />Joined: 17 Oct 2006<br />Posts: 2817<br />Location: Bavaria</span><br /></td>
+		<td class="row2" width="100%" height="28" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="100%"><a href="viewtopic-p-8784049.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd#8784049"><img src="templates/gentoo/images/icon_minipost.gif" width="12" height="9" alt="Post" title="Post" border="0" /></a><span class="postdetails">Posted: Fri Mar 24, 2023 12:47 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td valign="top" nowrap="nowrap"> <a href="posting.php?mode=quote&amp;p=8784049&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0" /></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">motig,
+<br />
+
+<br />
+thank you for reporting back. It may help other users also.
+<br />
+
+<br />
+Have fun with Gentoo !  <img src="images/smiles/icon_biggrin.gif" alt=":D" title="Very Happy" border="0" /></span><span class="gensmall"></span></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td class="row2" width="150" align="left" valign="middle"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row2" width="100%" height="28" valign="bottom" nowrap="nowrap"><table cellspacing="0" cellpadding="0" border="0" height="18" width="100%">
+			<tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php?mode=viewprofile&amp;u=149344&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0" /></a> <a href="privmsg.php?mode=post&amp;u=149344&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/icon_pm.gif" alt="Send private message" title="Send private message" border="0" /></a>       </a></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="templates/gentoo/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	<tr align="center">
+		<td class="catBottom" colspan="2" height="28"><table cellspacing="0" cellpadding="0" border="0">
+			<tr><form method="post" action="viewtopic-t-1162627-start-0.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd">
+				<td align="center"><span class="gensmall">Display posts from previous: <select name="postdays"><option value="0" selected="selected">All Posts</option><option value="1">1 Day</option><option value="7">7 Days</option><option value="14">2 Weeks</option><option value="30">1 Month</option><option value="90">3 Months</option><option value="180">6 Months</option><option value="364">1 Year</option></select>&nbsp;<select name="postorder"><option value="asc" selected="selected">Oldest First</option><option value="desc">Newest First</option></select>&nbsp;<input type="submit" value="Go" class="liteoption" name="submit" /></span></td>
+			</form></tr>
+		</table></td>
+	</tr>
+</table>
+
+<table width="100%" cellspacing="2" cellpadding="2" border="0" align="center">
+  <tr>
+	<td align="left" valign="middle" nowrap="nowrap"><span class="nav"><a href="posting.php?mode=reply&amp;t=1162627&amp;sid=260c528fd7978ac69ba4ef47a5b1f8fd"><img src="templates/gentoo/images/lang_english/reply.gif" border="0" alt="Reply to topic" align="middle" /></a></span></td>
+	<td align="left" valign="middle" width="100%"><span class="nav">&nbsp;&nbsp;&nbsp;<a href="index.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd" class="nav">Gentoo Forums Forum Index</a>
+	  <img src="/images/forumpointer.gif" width="18" height="9" border="0" alt=""> <a href="viewforum-f-23.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" class="nav">Kernel & Hardware</a></span></td>
+	<td align="right" valign="top" nowrap="nowrap"><span class="gensmall">All times are GMT</span><br /><span class="nav"></span>
+	  </td>
+  </tr>
+  <tr>
+	<td align="left" colspan="3"><span class="nav">Page <b>1</b> of <b>1</b></span></td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="2" border="0" align="center">
+  <tr>
+	<td width="40%" valign="top" nowrap="nowrap" align="left"><span class="gensmall"></span><br />
+	  &nbsp;<br />
+	  </td>
+	<td align="right" valign="top" nowrap="nowrap">
+<form method="get" name="jumpbox" action="viewforum.html?sid=260c528fd7978ac69ba4ef47a5b1f8fd" onSubmit="if(document.jumpbox.f.value == -1){return false;}"><table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td nowrap="nowrap"><span class="gensmall">Jump to:&nbsp;<select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ forms['jumpbox'].submit() }"><option value="-1">Select a forum</option><option value="-1">&nbsp;</option><option value="-1">Assistance</option><option value="-1">----------------</option><option value="16">News & Announcements</option><option value="40">Frequently Asked Questions</option><option value="14">Installing Gentoo</option><option value="33">Multimedia</option><option value="13">Desktop Environments</option><option value="18">Networking & Security</option><option value="23"selected="selected">Kernel & Hardware</option><option value="8">Portage & Programming</option><option value="19">Gamers & Players</option><option value="1">Other Things Gentoo</option><option value="51">Unsupported Software</option><option value="-1">&nbsp;</option><option value="-1">Discussion & Documentation</option><option value="-1">----------------</option><option value="12">Documentation, Tips & Tricks</option><option value="7">Gentoo Chat</option><option value="5">Gentoo Forums Feedback</option><option value="38">Duplicate Threads</option><option value="-1">&nbsp;</option><option value="-1">International Gentoo Users</option><option value="-1">----------------</option><option value="50">ä¸­æ–‡ (Chinese)</option><option value="36">Dutch</option><option value="47">Finnish</option><option value="35">French</option><option value="28">Deutsches Forum (German)</option><option value="52">&nbsp;&nbsp;Diskussionsforum</option><option value="53">&nbsp;&nbsp;Deutsche Dokumentation</option><option value="44">Greek</option><option value="41">Forum italiano (Italian)</option><option value="54">&nbsp;&nbsp;Forum di discussione italiano</option><option value="57">&nbsp;&nbsp;Risorse italiane (documentazione e tools)</option><option value="45">Polskie forum (Polish)</option><option value="55">&nbsp;&nbsp;Instalacja i sprzÄ™t</option><option value="61">&nbsp;&nbsp;Polish OTW</option><option value="39">Portuguese</option><option value="59">&nbsp;&nbsp;DocumentaÃ§Ã£o, Ferramentas e Dicas</option><option value="43">Russian</option><option value="37">Scandinavian</option><option value="30">Spanish</option><option value="15">Other Languages</option><option value="-1">&nbsp;</option><option value="-1">Architectures & Platforms</option><option value="-1">----------------</option><option value="46">Gentoo on AMD64</option><option value="62">Gentoo on ARM</option><option value="24">Gentoo on PPC</option><option value="27">Gentoo on Sparc</option><option value="32">Gentoo on Alternative Architectures</option><option value="49">Gentoo for Mac OS X (Portage for Mac OS X)</option></select><input type="hidden" name="sid" value="260c528fd7978ac69ba4ef47a5b1f8fd" />&nbsp;<input type="submit" value="Go" class="liteoption" /></span></td>
+	</tr>
+</table></form>
+
+<span class="gensmall">You <b>cannot</b> post new topics in this forum<br />You <b>cannot</b> reply to topics in this forum<br />You <b>cannot</b> edit your posts in this forum<br />You <b>cannot</b> delete your posts in this forum<br />You <b>cannot</b> vote in polls in this forum<br /></span></td>
+  </tr>
+</table>
+
+</td></tr></table>
+<br>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tr><td><div align="center"><span class="copyright"><br /><br /></span></div></td></tr>
+	<tr><td width="100%" bgcolor="#000000">
+		<p class="menu">&nbsp;<a class=menulink href="sitemap/index.html">Links</a>:
+		<a class=menulink href="index.php?sid=260c528fd7978ac69ba4ef47a5b1f8fd">forums.gentoo.org</a> |
+		<a class=menulink href="http://www.gentoo.org">www.gentoo.org</a> |
+		<a class=menulink href="https://bugs.gentoo.org">bugs.gentoo.org</a> |
+		<a class=menulink href="https://wiki.gentoo.org">wiki.gentoo.org</a> |
+		<a class=menulink href="mailto:forum-mods@gentoo.org">forum-mods@gentoo.org</a>
+		</p>
+	</td></tr><tr><td height="25" bgcolor="#000000">
+		<p align="center" class="copyright">
+			Copyright 2001-2023 Gentoo Foundation, Inc.
+			Designed by <a href="http://www.frozenliquid.net" target="_phpbb" class="copyright">Kyle Manna</a> &copy; 2003;
+			Style derived from original subSilver theme.&nbsp;|
+			Hosting by <a href="http://www.gossamer-threads.com/" target="_phpbb" class="copyright">Gossamer Threads Inc.</a> &copy;&nbsp;|
+			Powered by <a href="http://www.phpbb.com/" target="_phpbb" class="copyright">phpBB</a> 2.0.23-gentoo-p11 &copy; 2001, 2002 phpBB Group<br />
+            <a href="https://wiki.gentoo.org/wiki/Foundation:Privacy_Policy">Privacy Policy</a> <br />
+		</p>
+	</td></tr>
+</table>
+
+</body>
+</html>
+
+ƒÏÀ»NŸ      d˜¥d˜¥Eº_Šd˜¥   €    O^partitionKey=%28https%2Cgentoo.org%29,:https://forums.gentoo.org/viewtopic-t-1162627.html?sid=ecea53a56c16a1d928422a9314e09699 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+server: nginx
+date: Sun, 25 Jun 2023 20:35:36 GMT
+content-type: text/html; charset=UTF-8
+x-powered-by: PHP/5.6.40
+cache-control: private, pre-check=0, post-check=0, max-age=0
+expires: 0
+pragma: no-cache
+x-clacks-overhead: Terry Pratchett, Noirin Trouble Pluinceid, Dan Kaminsky
+permissions-policy: interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+X-Firefox-Spdy: h2
+ original-response-headers server: nginx
+date: Sun, 25 Jun 2023 20:35:36 GMT
+content-type: text/html; charset=UTF-8
+x-powered-by: PHP/5.6.40
+set-cookie: phpbb2mysql_sid_s=260c528fd7978ac69ba4ef47a5b1f8fd; path=/; domain=forums.gentoo.org; secure
+set-cookie: phpbb2mysql_data_s=a%3A2%3A%7Bs%3A11%3A%22autologinid%22%3Bs%3A0%3A%22%22%3Bs%3A6%3A%22userid%22%3Bi%3A-1%3B%7D; expires=Mon, 24-Jun-2024 20:35:36 GMT; Max-Age=31536000; path=/; domain=forums.gentoo.org; secure
+cache-control: private, pre-check=0, post-check=0, max-age=0
+expires: 0
+pragma: no-cache
+x-clacks-overhead: Terry Pratchett, Noirin Trouble Pluinceid, Dan Kaminsky
+permissions-policy: interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0 net-response-time-onstart 1799 net-response-time-onstop 1882   ŠÇ
