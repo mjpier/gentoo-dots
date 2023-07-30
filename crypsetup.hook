@@ -1,0 +1,128 @@
+#!/bin/sh
+
+build_hook() {
+	add_binary cryptsetup
+	add_binary dmsetup
+	
+	add_binary stty
+	add_binary expr
+	
+	add_module dm_mod
+	add_module dm_crypt
+
+	add_file /etc/crypttab
+	add_file /crypto_keyfile.bin
+	add_file /lib/udev/rules.d/10-dm.rules
+	add_file /lib/udev/rules.d/13-dm-disk.rules
+	add_file /lib/udev/rules.d/95-dm-notify.rules
+	add_file /lib/udev/rules.d/64-btrfs-dm.rules
+
+	add_file /usr/lib/libgcc_s.so.1
+	add_file /usr/lib/libgcc_s.so
+}
+
+run_earlyhook() {
+	modprobe dm_mod
+	modprobe dm_crypt
+	sleep 2	
+	CONSOLE=/dev/tty1
+	TRIES=0
+	SUCCESS=0
+
+	# Get keyfile if specified
+	ckeyfile="/crypto_keyfile.bin"
+	if [ -n "$cryptkey" ]; then
+        IFS=: read ckdev ckarg1 ckarg2 <<EOF
+$cryptkey
+EOF
+
+  # If keyfile exists, try to use that
+            if [ -f ${ckeyfile} ]; then
+                if eval cryptsetup --key-file ${ckeyfile} open --type luks \
+		    $device venom - > /dev/null && SUCCESS=1
+                else
+                    echo "Invalid keyfile. Reverting to passphrase."
+                fi
+            fi
+
+command -v cryptsetup > /dev/null && test -f /etc/crypttab && {
+    log "Activating LUKS devices (if any exist)..."
+
+    mkdir -p /run/cryptsetup 2> /dev/null
+    exec 3<&0; while read -r name dev pass opts err; do
+
+        # Skip comments.
+        [ "${name##\#*}" ] || continue
+
+        # Break on invalid crypttab.
+        [ "$err" ] && {
+            log "A valid /etc/crypttab has only 4 columns. Aborting..."
+            break
+        }
+
+        # Turn 'UUID=*', 'LABEL=*', 'PARTUUID=*' into device name.
+        case "${dev%%=*}" in UUID|LABEL|PARTUUID)
+            for line in $(blkid); do case "${line%%=*}" in
+                /dev/*)
+                    _dev="${line%:}"
+                ;;
+                UUID|LABEL|PARTUUID)
+                    _line="${line##*=}"
+                    _line="${_line%\"}"
+                    _line="${_line#\"}"
+
+                    [ "$_line" = "${dev##*=}" ] && {
+                        dev="$_dev"
+                        break
+                    }
+                ;;
+            esac; done
+        esac
+
+        # Sanity check.
+        [ "${dev#/dev/*}" ] && {
+            log "Failed to resolve $dev. Aborting..."
+            continue
+        }
+
+        # Parse options by turning the list into a pseudo array.
+        # shellcheck disable=2086
+        { IFS=,; set -- $opts; unset IFS; }
+
+        # Create an argument list (no other way to do this in sh).
+        for opt; do case "$opt" in
+            readonly|read-only) copts="$copts -r"     ;;
+            header=*) copts="$copts --${opt}"         ;;
+            tries=*)  copts="$copts -T ${opt##*=}"    ;;
+            discard)  copts="$copts --allow-discards" ;;
+            noauto)   copts=; continue 2              ;;
+        esac; done
+
+        # If password is 'none', '-' or empty ask for it.
+        # shellcheck disable=2086
+        case "$pass" in
+            none|-|"") cryptsetup open $copts "$dev" "$name" <&3 ;;
+            *) cryptsetup open $copts -d "$pass" "$dev" "$name"  ;;
+        esac
+    copts=; done < /etc/crypttab; exec 3>&-
+	
+}
+
+run_cleanuphook {
+
+command -v cryptsetup > /dev/null && {
+    log "Deactivating LUKS devices (if any exist)..."
+
+    for file in /sys/block/*/dm/uuid; do
+
+        # format
+        # $TYPE-$CRYPT_TYPE-$UUID-$DM_NAME
+        # example
+        # CRYPT-LUKS2-6ebc0f95ff2344208ce4977bd3eb296e-enc
+        IFS=- read -r dm_type _ _ dm_name < "$file"
+
+        # Use --deferred to prevent hang if / is encrypted
+        [ "$dm_type" = CRYPT ] && cryptsetup close --deferred "$dm_name"
+    done
+
+}
